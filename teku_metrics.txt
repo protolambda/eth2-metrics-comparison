@@ -1,0 +1,1186 @@
+# HELP storage_hot_manifest_file_sync_micros RocksDB histogram for storage_hot_manifest_file_sync_micros
+# TYPE storage_hot_manifest_file_sync_micros summary
+storage_hot_manifest_file_sync_micros{quantile="0.5",} 1780.0
+storage_hot_manifest_file_sync_micros{quantile="0.95",} 1976.0
+storage_hot_manifest_file_sync_micros{quantile="0.99",} 1976.0
+# HELP storage_hot_bytes_read RocksDB reported statistics for BYTES_READ
+# TYPE storage_hot_bytes_read gauge
+storage_hot_bytes_read 3568880.0
+# HELP storage_hot_write_with_wal RocksDB reported statistics for WRITE_WITH_WAL
+# TYPE storage_hot_write_with_wal gauge
+storage_hot_write_with_wal 2732.0
+# HELP storage_hot_filter_operation_total_time RocksDB reported statistics for FILTER_OPERATION_TOTAL_TIME
+# TYPE storage_hot_filter_operation_total_time gauge
+storage_hot_filter_operation_total_time 0.0
+# HELP storage_hot_number_keys_read RocksDB reported statistics for NUMBER_KEYS_READ
+# TYPE storage_hot_number_keys_read gauge
+storage_hot_number_keys_read 80.0
+# HELP storage_finalized_wal_file_synced RocksDB reported statistics for WAL_FILE_SYNCED
+# TYPE storage_finalized_wal_file_synced gauge
+storage_finalized_wal_file_synced 0.0
+# HELP beacon_head_slot Slot of the head block of the beacon chain
+# TYPE beacon_head_slot gauge
+beacon_head_slot 139475.0
+# HELP storage_hot_compact_write_bytes RocksDB reported statistics for COMPACT_WRITE_BYTES
+# TYPE storage_hot_compact_write_bytes gauge
+storage_hot_compact_write_bytes 3914127.0
+# HELP beacon_previous_live_validators Number of active validators that successfully included attestation on chain for previous epoch
+# TYPE beacon_previous_live_validators gauge
+beacon_previous_live_validators 3220.0
+# HELP storage_hot_bytes_compressed RocksDB histogram for storage_hot_bytes_compressed
+# TYPE storage_hot_bytes_compressed summary
+storage_hot_bytes_compressed{quantile="0.5",} 0.0
+storage_hot_bytes_compressed{quantile="0.95",} 0.0
+storage_hot_bytes_compressed{quantile="0.99",} 0.0
+# HELP storage_hot_decompression_times_nanos RocksDB histogram for storage_hot_decompression_times_nanos
+# TYPE storage_hot_decompression_times_nanos summary
+storage_hot_decompression_times_nanos{quantile="0.5",} 0.0
+storage_hot_decompression_times_nanos{quantile="0.95",} 0.0
+storage_hot_decompression_times_nanos{quantile="0.99",} 0.0
+# HELP storage_hot_bytes_written RocksDB reported statistics for BYTES_WRITTEN
+# TYPE storage_hot_bytes_written gauge
+storage_hot_bytes_written 8.0571259E7
+# HELP beacon_finalized_epoch Current finalized epoch
+# TYPE beacon_finalized_epoch gauge
+beacon_finalized_epoch 4356.0
+# HELP storage_hot_block_cache_data_miss RocksDB reported statistics for BLOCK_CACHE_DATA_MISS
+# TYPE storage_hot_block_cache_data_miss gauge
+storage_hot_block_cache_data_miss 665.0
+# HELP storage_hot_number_multiget_calls RocksDB reported statistics for NUMBER_MULTIGET_CALLS
+# TYPE storage_hot_number_multiget_calls gauge
+storage_hot_number_multiget_calls 0.0
+# HELP beacon_head_root Root of the head block of the beacon chain
+# TYPE beacon_head_root gauge
+beacon_head_root -7.2182972519009423E18
+# HELP storage_hot_number_multiget_bytes_read RocksDB reported statistics for NUMBER_MULTIGET_BYTES_READ
+# TYPE storage_hot_number_multiget_bytes_read gauge
+storage_hot_number_multiget_bytes_read 0.0
+# HELP storage_finalized_block_cache_data_miss RocksDB reported statistics for BLOCK_CACHE_DATA_MISS
+# TYPE storage_finalized_block_cache_data_miss gauge
+storage_finalized_block_cache_data_miss 15.0
+# HELP storage_hot_block_cache_filter_hit RocksDB reported statistics for BLOCK_CACHE_FILTER_HIT
+# TYPE storage_hot_block_cache_filter_hit gauge
+storage_hot_block_cache_filter_hit 0.0
+# HELP storage_finalized_block_cache_hit RocksDB reported statistics for BLOCK_CACHE_HIT
+# TYPE storage_finalized_block_cache_hit gauge
+storage_finalized_block_cache_hit 216.0
+# HELP storage_hot_block_cache_filter_miss RocksDB reported statistics for BLOCK_CACHE_FILTER_MISS
+# TYPE storage_hot_block_cache_filter_miss gauge
+storage_hot_block_cache_filter_miss 0.0
+# HELP beacon_current_active_validators Number of active validators in the current epoch
+# TYPE beacon_current_active_validators gauge
+beacon_current_active_validators 4119.0
+# HELP storage_finalized_number_rate_limiter_drains RocksDB reported statistics for NUMBER_RATE_LIMITER_DRAINS
+# TYPE storage_finalized_number_rate_limiter_drains gauge
+storage_finalized_number_rate_limiter_drains 0.0
+# HELP storage_hot_db_mutex_wait_micros RocksDB reported statistics for DB_MUTEX_WAIT_MICROS
+# TYPE storage_hot_db_mutex_wait_micros gauge
+storage_hot_db_mutex_wait_micros 0.0
+# HELP storage_finalized_number_superversion_acquires RocksDB reported statistics for NUMBER_SUPERVERSION_ACQUIRES
+# TYPE storage_finalized_number_superversion_acquires gauge
+storage_finalized_number_superversion_acquires 11.0
+# HELP storage_finalized_compaction_key_drop_user RocksDB reported statistics for COMPACTION_KEY_DROP_USER
+# TYPE storage_finalized_compaction_key_drop_user gauge
+storage_finalized_compaction_key_drop_user 0.0
+# HELP storage_finalized_compaction_outfile_sync_micros RocksDB histogram for storage_finalized_compaction_outfile_sync_micros
+# TYPE storage_finalized_compaction_outfile_sync_micros summary
+storage_finalized_compaction_outfile_sync_micros{quantile="0.5",} 0.0
+storage_finalized_compaction_outfile_sync_micros{quantile="0.95",} 0.0
+storage_finalized_compaction_outfile_sync_micros{quantile="0.99",} 0.0
+# HELP storage_finalized_read_block_get_micros RocksDB histogram for storage_finalized_read_block_get_micros
+# TYPE storage_finalized_read_block_get_micros summary
+storage_finalized_read_block_get_micros{quantile="0.5",} 440.0
+storage_finalized_read_block_get_micros{quantile="0.95",} 4212.5
+storage_finalized_read_block_get_micros{quantile="0.99",} 4542.0
+# HELP storage_finalized_compaction_key_drop_obsolete RocksDB reported statistics for COMPACTION_KEY_DROP_OBSOLETE
+# TYPE storage_finalized_compaction_key_drop_obsolete gauge
+storage_finalized_compaction_key_drop_obsolete 0.0
+# HELP storage_finalized_number_multiget_keys_found RocksDB reported statistics for NUMBER_MULTIGET_KEYS_FOUND
+# TYPE storage_finalized_number_multiget_keys_found gauge
+storage_finalized_number_multiget_keys_found 0.0
+# HELP storage_hot_number_db_seek_found RocksDB reported statistics for NUMBER_DB_SEEK_FOUND
+# TYPE storage_hot_number_db_seek_found gauge
+storage_hot_number_db_seek_found 3.0
+# HELP storage_memory_state_count Number of beacon states held in the in-memory store
+# TYPE storage_memory_state_count gauge
+storage_memory_state_count 66.0
+# HELP storage_finalized_db_get RocksDB histogram for storage_finalized_db_get
+# TYPE storage_finalized_db_get summary
+storage_finalized_db_get{quantile="0.5",} 0.0
+storage_finalized_db_get{quantile="0.95",} 0.0
+storage_finalized_db_get{quantile="0.99",} 0.0
+# HELP storage_hot_number_multiget_keys_read RocksDB reported statistics for NUMBER_MULTIGET_KEYS_READ
+# TYPE storage_hot_number_multiget_keys_read gauge
+storage_hot_number_multiget_keys_read 0.0
+# HELP storage_finalized_no_file_closes RocksDB reported statistics for NO_FILE_CLOSES
+# TYPE storage_finalized_no_file_closes gauge
+storage_finalized_no_file_closes 0.0
+# HELP storage_finalized_sim_block_cache_miss RocksDB reported statistics for SIM_BLOCK_CACHE_MISS
+# TYPE storage_finalized_sim_block_cache_miss gauge
+storage_finalized_sim_block_cache_miss 0.0
+# HELP network_peer_goodbye_total Total number of goodbye messages received from peers
+# TYPE network_peer_goodbye_total counter
+network_peer_goodbye_total{reason="UNKNOWN",} 9.0
+network_peer_goodbye_total{reason="IRRELEVANT_NETWORK",} 1.0
+# HELP executor_validator_queue_size Current size of the executor task queue
+# TYPE executor_validator_queue_size gauge
+executor_validator_queue_size 0.0
+# HELP executor_beaconchain_thread_active_count Current number of threads executing tasks for this executor
+# TYPE executor_beaconchain_thread_active_count gauge
+executor_beaconchain_thread_active_count 0.0
+# HELP storage_hot_block_cache_index_miss RocksDB reported statistics for BLOCK_CACHE_INDEX_MISS
+# TYPE storage_hot_block_cache_index_miss gauge
+storage_hot_block_cache_index_miss 0.0
+# HELP storage_hot_rate_limit_delay_millis RocksDB reported statistics for RATE_LIMIT_DELAY_MILLIS
+# TYPE storage_hot_rate_limit_delay_millis gauge
+storage_hot_rate_limit_delay_millis 0.0
+# HELP storage_finalized_number_merge_failures RocksDB reported statistics for NUMBER_MERGE_FAILURES
+# TYPE storage_finalized_number_merge_failures gauge
+storage_finalized_number_merge_failures 0.0
+# HELP beacon_epoch Latest epoch recorded by the beacon chain
+# TYPE beacon_epoch gauge
+beacon_epoch 4358.0
+# HELP storage_hot_stall_micros RocksDB reported statistics for STALL_MICROS
+# TYPE storage_hot_stall_micros gauge
+storage_hot_stall_micros 0.0
+# HELP storage_finalized_block_cache_add RocksDB reported statistics for BLOCK_CACHE_ADD
+# TYPE storage_finalized_block_cache_add gauge
+storage_finalized_block_cache_add 15.0
+# HELP storage_finalized_num_subcompactions_scheduled RocksDB histogram for storage_finalized_num_subcompactions_scheduled
+# TYPE storage_finalized_num_subcompactions_scheduled summary
+storage_finalized_num_subcompactions_scheduled{quantile="0.5",} 0.0
+storage_finalized_num_subcompactions_scheduled{quantile="0.95",} 0.0
+storage_finalized_num_subcompactions_scheduled{quantile="0.99",} 0.0
+# HELP storage_finalized_number_block_compressed RocksDB reported statistics for NUMBER_BLOCK_COMPRESSED
+# TYPE storage_finalized_number_block_compressed gauge
+storage_finalized_number_block_compressed 0.0
+# HELP executor_p2p_queue_size Current size of the executor task queue
+# TYPE executor_p2p_queue_size gauge
+executor_p2p_queue_size 0.0
+# HELP storage_finalized_block_cache_compressed_hit RocksDB reported statistics for BLOCK_CACHE_COMPRESSED_HIT
+# TYPE storage_finalized_block_cache_compressed_hit gauge
+storage_finalized_block_cache_compressed_hit 0.0
+# HELP storage_finalized_number_multiget_keys_read RocksDB reported statistics for NUMBER_MULTIGET_KEYS_READ
+# TYPE storage_finalized_number_multiget_keys_read gauge
+storage_finalized_number_multiget_keys_read 0.0
+# HELP validator_beacon_node_published_aggregate_total Counter recording the number of signed aggregate attestations sent to the beacon node
+# TYPE validator_beacon_node_published_aggregate_total counter
+validator_beacon_node_published_aggregate_total 6.0
+# HELP storage_hot_compaction_key_drop_range_del RocksDB reported statistics for COMPACTION_KEY_DROP_RANGE_DEL
+# TYPE storage_hot_compaction_key_drop_range_del gauge
+storage_hot_compaction_key_drop_range_del 0.0
+# HELP beacon_finalized_root Current finalized root
+# TYPE beacon_finalized_root gauge
+beacon_finalized_root -5.7295937589357742E18
+# HELP storage_hot_table_open_io_micros RocksDB histogram for storage_hot_table_open_io_micros
+# TYPE storage_hot_table_open_io_micros summary
+storage_hot_table_open_io_micros{quantile="0.5",} 479.23664122137404
+storage_hot_table_open_io_micros{quantile="0.95",} 1222.5999999999995
+storage_hot_table_open_io_micros{quantile="0.99",} 2959.999999999988
+# HELP storage_finalized_block_cache_index_bytes_insert RocksDB reported statistics for BLOCK_CACHE_INDEX_BYTES_INSERT
+# TYPE storage_finalized_block_cache_index_bytes_insert gauge
+storage_finalized_block_cache_index_bytes_insert 0.0
+# HELP storage_hot_get_updates_since_calls RocksDB reported statistics for GET_UPDATES_SINCE_CALLS
+# TYPE storage_hot_get_updates_since_calls gauge
+storage_hot_get_updates_since_calls 0.0
+# HELP storage_finalized_stall_l0_slowdown_count RocksDB histogram for storage_finalized_stall_l0_slowdown_count
+# TYPE storage_finalized_stall_l0_slowdown_count summary
+storage_finalized_stall_l0_slowdown_count{quantile="0.5",} 0.0
+storage_finalized_stall_l0_slowdown_count{quantile="0.95",} 0.0
+storage_finalized_stall_l0_slowdown_count{quantile="0.99",} 0.0
+# HELP storage_finalized_wal_file_sync_micros RocksDB histogram for storage_finalized_wal_file_sync_micros
+# TYPE storage_finalized_wal_file_sync_micros summary
+storage_finalized_wal_file_sync_micros{quantile="0.5",} 0.0
+storage_finalized_wal_file_sync_micros{quantile="0.95",} 0.0
+storage_finalized_wal_file_sync_micros{quantile="0.99",} 0.0
+# HELP storage_hot_compaction_key_drop_user RocksDB reported statistics for COMPACTION_KEY_DROP_USER
+# TYPE storage_hot_compaction_key_drop_user gauge
+storage_hot_compaction_key_drop_user 0.0
+# HELP storage_hot_stall_l0_num_files_count RocksDB histogram for storage_hot_stall_l0_num_files_count
+# TYPE storage_hot_stall_l0_num_files_count summary
+storage_hot_stall_l0_num_files_count{quantile="0.5",} 0.0
+storage_hot_stall_l0_num_files_count{quantile="0.95",} 0.0
+storage_hot_stall_l0_num_files_count{quantile="0.99",} 0.0
+# HELP storage_finalized_read_block_compaction_micros RocksDB histogram for storage_finalized_read_block_compaction_micros
+# TYPE storage_finalized_read_block_compaction_micros summary
+storage_finalized_read_block_compaction_micros{quantile="0.5",} 0.0
+storage_finalized_read_block_compaction_micros{quantile="0.95",} 0.0
+storage_finalized_read_block_compaction_micros{quantile="0.99",} 0.0
+# HELP storage_finalized_number_keys_written RocksDB reported statistics for NUMBER_KEYS_WRITTEN
+# TYPE storage_finalized_number_keys_written gauge
+storage_finalized_number_keys_written 272.0
+# HELP validator_beacon_node_published_attestation_total Counter recording the number of signed attestations sent to the beacon node
+# TYPE validator_beacon_node_published_attestation_total counter
+validator_beacon_node_published_attestation_total 59.0
+# HELP storage_finalized_wal_file_bytes RocksDB reported statistics for WAL_FILE_BYTES
+# TYPE storage_finalized_wal_file_bytes gauge
+storage_finalized_wal_file_bytes 312010.0
+# HELP storage_finalized_db_write RocksDB histogram for storage_finalized_db_write
+# TYPE storage_finalized_db_write summary
+storage_finalized_db_write{quantile="0.5",} 358.33333333333337
+storage_finalized_db_write{quantile="0.95",} 2650.0
+storage_finalized_db_write{quantile="0.99",} 2712.0
+# HELP storage_hot_no_file_errors RocksDB reported statistics for NO_FILE_ERRORS
+# TYPE storage_hot_no_file_errors gauge
+storage_hot_no_file_errors 0.0
+# HELP storage_hot_number_superversion_acquires RocksDB reported statistics for NUMBER_SUPERVERSION_ACQUIRES
+# TYPE storage_hot_number_superversion_acquires gauge
+storage_hot_number_superversion_acquires 7.0
+# HELP storage_hot_number_db_prev RocksDB reported statistics for NUMBER_DB_PREV
+# TYPE storage_hot_number_db_prev gauge
+storage_hot_number_db_prev 0.0
+# HELP storage_finalized_compact_write_bytes RocksDB reported statistics for COMPACT_WRITE_BYTES
+# TYPE storage_finalized_compact_write_bytes gauge
+storage_finalized_compact_write_bytes 2.6042406E7
+# HELP storage_finalized_compaction_key_drop_range_del RocksDB reported statistics for COMPACTION_KEY_DROP_RANGE_DEL
+# TYPE storage_finalized_compaction_key_drop_range_del gauge
+storage_finalized_compaction_key_drop_range_del 0.0
+# HELP storage_hot_number_direct_load_table_properties RocksDB reported statistics for NUMBER_DIRECT_LOAD_TABLE_PROPERTIES
+# TYPE storage_hot_number_direct_load_table_properties gauge
+storage_hot_number_direct_load_table_properties 17.0
+# HELP jvm_classes_loaded The number of classes that are currently loaded in the JVM
+# TYPE jvm_classes_loaded gauge
+jvm_classes_loaded 12103.0
+# HELP jvm_classes_loaded_total The total number of classes that have been loaded since the JVM has started execution
+# TYPE jvm_classes_loaded_total counter
+jvm_classes_loaded_total 12103.0
+# HELP jvm_classes_unloaded_total The total number of classes that have been unloaded since the JVM has started execution
+# TYPE jvm_classes_unloaded_total counter
+jvm_classes_unloaded_total 0.0
+# HELP storage_finalized_manifest_file_sync_micros RocksDB histogram for storage_finalized_manifest_file_sync_micros
+# TYPE storage_finalized_manifest_file_sync_micros summary
+storage_finalized_manifest_file_sync_micros{quantile="0.5",} 1728.0
+storage_finalized_manifest_file_sync_micros{quantile="0.95",} 1850.0
+storage_finalized_manifest_file_sync_micros{quantile="0.99",} 1850.0
+# HELP storage_hot_read_block_compaction_micros RocksDB histogram for storage_hot_read_block_compaction_micros
+# TYPE storage_hot_read_block_compaction_micros summary
+storage_hot_read_block_compaction_micros{quantile="0.5",} 0.0
+storage_hot_read_block_compaction_micros{quantile="0.95",} 0.0
+storage_hot_read_block_compaction_micros{quantile="0.99",} 0.0
+# HELP storage_hot_num_files_in_single_compaction RocksDB histogram for storage_hot_num_files_in_single_compaction
+# TYPE storage_hot_num_files_in_single_compaction summary
+storage_hot_num_files_in_single_compaction{quantile="0.5",} 0.0
+storage_hot_num_files_in_single_compaction{quantile="0.95",} 0.0
+storage_hot_num_files_in_single_compaction{quantile="0.99",} 0.0
+# HELP validator_beacon_node_duties_requests_total Counter recording the number of requests for validator duties
+# TYPE validator_beacon_node_duties_requests_total counter
+validator_beacon_node_duties_requests_total{outcome="SUCCESS",} 9.0
+validator_beacon_node_duties_requests_total{outcome="ERROR",} 24.0
+# HELP storage_hot_iter_bytes_read RocksDB reported statistics for ITER_BYTES_READ
+# TYPE storage_hot_iter_bytes_read gauge
+storage_hot_iter_bytes_read 1632346.0
+# HELP storage_finalized_block_cache_compressed_miss RocksDB reported statistics for BLOCK_CACHE_COMPRESSED_MISS
+# TYPE storage_finalized_block_cache_compressed_miss gauge
+storage_finalized_block_cache_compressed_miss 0.0
+# HELP beacon_current_justified_root Current justified root
+# TYPE beacon_current_justified_root gauge
+beacon_current_justified_root -3.1475449352519526E18
+# HELP storage_finalized_number_superversion_cleanups RocksDB reported statistics for NUMBER_SUPERVERSION_CLEANUPS
+# TYPE storage_finalized_number_superversion_cleanups gauge
+storage_finalized_number_superversion_cleanups 0.0
+# HELP storage_finalized_block_cache_filter_add RocksDB reported statistics for BLOCK_CACHE_FILTER_ADD
+# TYPE storage_finalized_block_cache_filter_add gauge
+storage_finalized_block_cache_filter_add 0.0
+# HELP storage_finalized_block_cache_filter_bytes_insert RocksDB reported statistics for BLOCK_CACHE_FILTER_BYTES_INSERT
+# TYPE storage_finalized_block_cache_filter_bytes_insert gauge
+storage_finalized_block_cache_filter_bytes_insert 0.0
+# HELP storage_finalized_write_with_wal RocksDB reported statistics for WRITE_WITH_WAL
+# TYPE storage_finalized_write_with_wal gauge
+storage_finalized_write_with_wal 10.0
+# HELP storage_hot_compaction_time RocksDB histogram for storage_hot_compaction_time
+# TYPE storage_hot_compaction_time summary
+storage_hot_compaction_time{quantile="0.5",} 0.0
+storage_hot_compaction_time{quantile="0.95",} 0.0
+storage_hot_compaction_time{quantile="0.99",} 0.0
+# HELP validator_beacon_node_aggregate_requests_total Counter recording the number of requests for aggregate attestations
+# TYPE validator_beacon_node_aggregate_requests_total counter
+validator_beacon_node_aggregate_requests_total{outcome="SUCCESS",} 6.0
+# HELP storage_finalized_db_mutex_wait_micros RocksDB reported statistics for DB_MUTEX_WAIT_MICROS
+# TYPE storage_finalized_db_mutex_wait_micros gauge
+storage_finalized_db_mutex_wait_micros 0.0
+# HELP storage_hot_block_cache_index_bytes_evict RocksDB reported statistics for BLOCK_CACHE_INDEX_BYTES_EVICT
+# TYPE storage_hot_block_cache_index_bytes_evict gauge
+storage_hot_block_cache_index_bytes_evict 0.0
+# HELP storage_hot_stall_l0_slowdown_count RocksDB histogram for storage_hot_stall_l0_slowdown_count
+# TYPE storage_hot_stall_l0_slowdown_count summary
+storage_hot_stall_l0_slowdown_count{quantile="0.5",} 0.0
+storage_hot_stall_l0_slowdown_count{quantile="0.95",} 0.0
+storage_hot_stall_l0_slowdown_count{quantile="0.99",} 0.0
+# HELP storage_memory_block_count Number of beacon blocks held in the in-memory store
+# TYPE storage_memory_block_count gauge
+storage_memory_block_count 66.0
+# HELP storage_hot_block_cache_bytes_write RocksDB reported statistics for BLOCK_CACHE_BYTES_WRITE
+# TYPE storage_hot_block_cache_bytes_write gauge
+storage_hot_block_cache_bytes_write 1.9646E7
+# HELP storage_finalized_number_of_reseeks_in_iteration RocksDB reported statistics for NUMBER_OF_RESEEKS_IN_ITERATION
+# TYPE storage_finalized_number_of_reseeks_in_iteration gauge
+storage_finalized_number_of_reseeks_in_iteration 0.0
+# HELP storage_hot_number_block_not_compressed RocksDB reported statistics for NUMBER_BLOCK_NOT_COMPRESSED
+# TYPE storage_hot_number_block_not_compressed gauge
+storage_hot_number_block_not_compressed 0.0
+# HELP storage_finalized_number_block_decompressed RocksDB reported statistics for NUMBER_BLOCK_DECOMPRESSED
+# TYPE storage_finalized_number_block_decompressed gauge
+storage_finalized_number_block_decompressed 2.0
+# HELP storage_finalized_no_file_opens RocksDB reported statistics for NO_FILE_OPENS
+# TYPE storage_finalized_no_file_opens gauge
+storage_finalized_no_file_opens 10.0
+# HELP storage_finalized_number_superversion_releases RocksDB reported statistics for NUMBER_SUPERVERSION_RELEASES
+# TYPE storage_finalized_number_superversion_releases gauge
+storage_finalized_number_superversion_releases 0.0
+# HELP storage_finalized_write_timedout RocksDB reported statistics for WRITE_TIMEDOUT
+# TYPE storage_finalized_write_timedout gauge
+storage_finalized_write_timedout 0.0
+# HELP storage_hot_compaction_key_drop_obsolete RocksDB reported statistics for COMPACTION_KEY_DROP_OBSOLETE
+# TYPE storage_hot_compaction_key_drop_obsolete gauge
+storage_hot_compaction_key_drop_obsolete 0.0
+# HELP storage_hot_wal_file_bytes RocksDB reported statistics for WAL_FILE_BYTES
+# TYPE storage_hot_wal_file_bytes gauge
+storage_hot_wal_file_bytes 8.0571259E7
+# HELP beacon_slot Latest slot recorded by the beacon chain
+# TYPE beacon_slot gauge
+beacon_slot 139476.0
+# HELP beacon_block_import_total The number of block imports performed
+# TYPE beacon_block_import_total counter
+beacon_block_import_total{result="imported",} 0.0
+beacon_block_import_total{result="rejected",} 0.0
+# HELP storage_hot_get_hit_l2_and_up RocksDB reported statistics for GET_HIT_L2_AND_UP
+# TYPE storage_hot_get_hit_l2_and_up gauge
+storage_hot_get_hit_l2_and_up 0.0
+# HELP storage_finalized_number_filtered_deletes RocksDB reported statistics for NUMBER_FILTERED_DELETES
+# TYPE storage_finalized_number_filtered_deletes gauge
+storage_finalized_number_filtered_deletes 0.0
+# HELP executor_powchain_queue_size Current size of the executor task queue
+# TYPE executor_powchain_queue_size gauge
+executor_powchain_queue_size 0.0
+# HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.
+# TYPE process_cpu_seconds_total counter
+process_cpu_seconds_total 304.26
+# HELP process_start_time_seconds Start time of the process since unix epoch in seconds.
+# TYPE process_start_time_seconds gauge
+process_start_time_seconds 1.595105640972E9
+# HELP process_open_fds Number of open file descriptors.
+# TYPE process_open_fds gauge
+process_open_fds 469.0
+# HELP process_max_fds Maximum number of open file descriptors.
+# TYPE process_max_fds gauge
+process_max_fds 1048576.0
+# HELP process_virtual_memory_bytes Virtual memory size in bytes.
+# TYPE process_virtual_memory_bytes gauge
+process_virtual_memory_bytes 6.149619712E9
+# HELP process_resident_memory_bytes Resident memory size in bytes.
+# TYPE process_resident_memory_bytes gauge
+process_resident_memory_bytes 1.222725632E9
+# HELP storage_finalized_persistent_cache_miss RocksDB reported statistics for PERSISTENT_CACHE_MISS
+# TYPE storage_finalized_persistent_cache_miss gauge
+storage_finalized_persistent_cache_miss 0.0
+# HELP storage_finalized_number_db_next_found RocksDB reported statistics for NUMBER_DB_NEXT_FOUND
+# TYPE storage_finalized_number_db_next_found gauge
+storage_finalized_number_db_next_found 33.0
+# HELP storage_finalized_read_amp_total_read_bytes RocksDB reported statistics for READ_AMP_TOTAL_READ_BYTES
+# TYPE storage_finalized_read_amp_total_read_bytes gauge
+storage_finalized_read_amp_total_read_bytes 0.0
+# HELP storage_hot_persistent_cache_hit RocksDB reported statistics for PERSISTENT_CACHE_HIT
+# TYPE storage_hot_persistent_cache_hit gauge
+storage_hot_persistent_cache_hit 0.0
+# HELP storage_hot_read_block_get_micros RocksDB histogram for storage_hot_read_block_get_micros
+# TYPE storage_hot_read_block_get_micros summary
+storage_hot_read_block_get_micros{quantile="0.5",} 7.796610169491526
+storage_hot_read_block_get_micros{quantile="0.95",} 459.59999999999945
+storage_hot_read_block_get_micros{quantile="0.99",} 2289.9999999999864
+# HELP storage_hot_block_cache_add RocksDB reported statistics for BLOCK_CACHE_ADD
+# TYPE storage_hot_block_cache_add gauge
+storage_hot_block_cache_add 665.0
+# HELP validator_beacon_node_published_block_total Counter recording the number of signed blocks sent to the beacon node
+# TYPE validator_beacon_node_published_block_total counter
+validator_beacon_node_published_block_total 0.0
+# HELP storage_hot_read_amp_total_read_bytes RocksDB reported statistics for READ_AMP_TOTAL_READ_BYTES
+# TYPE storage_hot_read_amp_total_read_bytes gauge
+storage_hot_read_amp_total_read_bytes 0.0
+# HELP storage_hot_number_db_prev_found RocksDB reported statistics for NUMBER_DB_PREV_FOUND
+# TYPE storage_hot_number_db_prev_found gauge
+storage_hot_number_db_prev_found 0.0
+# HELP storage_finalized_bloom_filter_prefix_checked RocksDB reported statistics for BLOOM_FILTER_PREFIX_CHECKED
+# TYPE storage_finalized_bloom_filter_prefix_checked gauge
+storage_finalized_bloom_filter_prefix_checked 0.0
+# HELP storage_finalized_block_cache_index_miss RocksDB reported statistics for BLOCK_CACHE_INDEX_MISS
+# TYPE storage_finalized_block_cache_index_miss gauge
+storage_finalized_block_cache_index_miss 0.0
+# HELP storage_finalized_filter_operation_total_time RocksDB reported statistics for FILTER_OPERATION_TOTAL_TIME
+# TYPE storage_finalized_filter_operation_total_time gauge
+storage_finalized_filter_operation_total_time 0.0
+# HELP storage_finalized_stall_l0_num_files_count RocksDB histogram for storage_finalized_stall_l0_num_files_count
+# TYPE storage_finalized_stall_l0_num_files_count summary
+storage_finalized_stall_l0_num_files_count{quantile="0.5",} 0.0
+storage_finalized_stall_l0_num_files_count{quantile="0.95",} 0.0
+storage_finalized_stall_l0_num_files_count{quantile="0.99",} 0.0
+# HELP storage_hot_num_subcompactions_scheduled RocksDB histogram for storage_hot_num_subcompactions_scheduled
+# TYPE storage_hot_num_subcompactions_scheduled summary
+storage_hot_num_subcompactions_scheduled{quantile="0.5",} 0.0
+storage_hot_num_subcompactions_scheduled{quantile="0.95",} 0.0
+storage_hot_num_subcompactions_scheduled{quantile="0.99",} 0.0
+# HELP jvm_buffer_pool_used_bytes Used bytes of a given JVM buffer pool.
+# TYPE jvm_buffer_pool_used_bytes gauge
+jvm_buffer_pool_used_bytes{pool="mapped",} 0.0
+jvm_buffer_pool_used_bytes{pool="direct",} 8.3976224E7
+# HELP jvm_buffer_pool_capacity_bytes Bytes capacity of a given JVM buffer pool.
+# TYPE jvm_buffer_pool_capacity_bytes gauge
+jvm_buffer_pool_capacity_bytes{pool="mapped",} 0.0
+jvm_buffer_pool_capacity_bytes{pool="direct",} 8.3976223E7
+# HELP jvm_buffer_pool_used_buffers Used buffers of a given JVM buffer pool.
+# TYPE jvm_buffer_pool_used_buffers gauge
+jvm_buffer_pool_used_buffers{pool="mapped",} 0.0
+jvm_buffer_pool_used_buffers{pool="direct",} 17.0
+# HELP jvm_threads_current Current thread count of a JVM
+# TYPE jvm_threads_current gauge
+jvm_threads_current 131.0
+# HELP jvm_threads_daemon Daemon thread count of a JVM
+# TYPE jvm_threads_daemon gauge
+jvm_threads_daemon 76.0
+# HELP jvm_threads_peak Peak thread count of a JVM
+# TYPE jvm_threads_peak gauge
+jvm_threads_peak 134.0
+# HELP jvm_threads_started_total Started thread count of a JVM
+# TYPE jvm_threads_started_total counter
+jvm_threads_started_total 344.0
+# HELP jvm_threads_deadlocked Cycles of JVM-threads that are in deadlock waiting to acquire object monitors or ownable synchronizers
+# TYPE jvm_threads_deadlocked gauge
+jvm_threads_deadlocked 0.0
+# HELP jvm_threads_deadlocked_monitor Cycles of JVM-threads that are in deadlock waiting to acquire object monitors
+# TYPE jvm_threads_deadlocked_monitor gauge
+jvm_threads_deadlocked_monitor 0.0
+# HELP jvm_threads_state Current count of threads by state
+# TYPE jvm_threads_state gauge
+jvm_threads_state{state="TIMED_WAITING",} 65.0
+jvm_threads_state{state="BLOCKED",} 0.0
+jvm_threads_state{state="RUNNABLE",} 16.0
+jvm_threads_state{state="WAITING",} 50.0
+jvm_threads_state{state="TERMINATED",} 0.0
+jvm_threads_state{state="NEW",} 0.0
+# HELP storage_hot_persistent_cache_miss RocksDB reported statistics for PERSISTENT_CACHE_MISS
+# TYPE storage_hot_persistent_cache_miss gauge
+storage_hot_persistent_cache_miss 0.0
+# HELP storage_hot_block_cache_bytes_read RocksDB reported statistics for BLOCK_CACHE_BYTES_READ
+# TYPE storage_hot_block_cache_bytes_read gauge
+storage_hot_block_cache_bytes_read 546032.0
+# HELP jvm_memory_bytes_used Used bytes of a given JVM memory area.
+# TYPE jvm_memory_bytes_used gauge
+jvm_memory_bytes_used{area="heap",} 4.6094496E8
+jvm_memory_bytes_used{area="nonheap",} 1.20626936E8
+# HELP jvm_memory_bytes_committed Committed (bytes) of a given JVM memory area.
+# TYPE jvm_memory_bytes_committed gauge
+jvm_memory_bytes_committed{area="heap",} 7.03594496E8
+jvm_memory_bytes_committed{area="nonheap",} 1.35798784E8
+# HELP jvm_memory_bytes_max Max (bytes) of a given JVM memory area.
+# TYPE jvm_memory_bytes_max gauge
+jvm_memory_bytes_max{area="heap",} 2.9360128E9
+jvm_memory_bytes_max{area="nonheap",} -1.0
+# HELP jvm_memory_bytes_init Initial bytes of a given JVM memory area.
+# TYPE jvm_memory_bytes_init gauge
+jvm_memory_bytes_init{area="heap",} 5.0331648E7
+jvm_memory_bytes_init{area="nonheap",} 7667712.0
+# HELP jvm_memory_pool_bytes_used Used bytes of a given JVM memory pool.
+# TYPE jvm_memory_pool_bytes_used gauge
+jvm_memory_pool_bytes_used{pool="CodeHeap 'non-nmethods'",} 1375616.0
+jvm_memory_pool_bytes_used{pool="Metaspace",} 6.8466424E7
+jvm_memory_pool_bytes_used{pool="CodeHeap 'profiled nmethods'",} 2.700608E7
+jvm_memory_pool_bytes_used{pool="Compressed Class Space",} 7689216.0
+jvm_memory_pool_bytes_used{pool="G1 Eden Space",} 1.4155776E8
+jvm_memory_pool_bytes_used{pool="G1 Old Gen",} 3.13095744E8
+jvm_memory_pool_bytes_used{pool="G1 Survivor Space",} 6291456.0
+jvm_memory_pool_bytes_used{pool="CodeHeap 'non-profiled nmethods'",} 1.60896E7
+# HELP jvm_memory_pool_bytes_committed Committed bytes of a given JVM memory pool.
+# TYPE jvm_memory_pool_bytes_committed gauge
+jvm_memory_pool_bytes_committed{pool="CodeHeap 'non-nmethods'",} 2555904.0
+jvm_memory_pool_bytes_committed{pool="Metaspace",} 7.1430144E7
+jvm_memory_pool_bytes_committed{pool="CodeHeap 'profiled nmethods'",} 3.6831232E7
+jvm_memory_pool_bytes_committed{pool="Compressed Class Space",} 8859648.0
+jvm_memory_pool_bytes_committed{pool="G1 Eden Space",} 3.1981568E8
+jvm_memory_pool_bytes_committed{pool="G1 Old Gen",} 3.7748736E8
+jvm_memory_pool_bytes_committed{pool="G1 Survivor Space",} 6291456.0
+jvm_memory_pool_bytes_committed{pool="CodeHeap 'non-profiled nmethods'",} 1.6121856E7
+# HELP jvm_memory_pool_bytes_max Max bytes of a given JVM memory pool.
+# TYPE jvm_memory_pool_bytes_max gauge
+jvm_memory_pool_bytes_max{pool="CodeHeap 'non-nmethods'",} 5828608.0
+jvm_memory_pool_bytes_max{pool="Metaspace",} -1.0
+jvm_memory_pool_bytes_max{pool="CodeHeap 'profiled nmethods'",} 1.22912768E8
+jvm_memory_pool_bytes_max{pool="Compressed Class Space",} 1.073741824E9
+jvm_memory_pool_bytes_max{pool="G1 Eden Space",} -1.0
+jvm_memory_pool_bytes_max{pool="G1 Old Gen",} 2.9360128E9
+jvm_memory_pool_bytes_max{pool="G1 Survivor Space",} -1.0
+jvm_memory_pool_bytes_max{pool="CodeHeap 'non-profiled nmethods'",} 1.22916864E8
+# HELP jvm_memory_pool_bytes_init Initial bytes of a given JVM memory pool.
+# TYPE jvm_memory_pool_bytes_init gauge
+jvm_memory_pool_bytes_init{pool="CodeHeap 'non-nmethods'",} 2555904.0
+jvm_memory_pool_bytes_init{pool="Metaspace",} 0.0
+jvm_memory_pool_bytes_init{pool="CodeHeap 'profiled nmethods'",} 2555904.0
+jvm_memory_pool_bytes_init{pool="Compressed Class Space",} 0.0
+jvm_memory_pool_bytes_init{pool="G1 Eden Space",} 8388608.0
+jvm_memory_pool_bytes_init{pool="G1 Old Gen",} 4.194304E7
+jvm_memory_pool_bytes_init{pool="G1 Survivor Space",} 0.0
+jvm_memory_pool_bytes_init{pool="CodeHeap 'non-profiled nmethods'",} 2555904.0
+# HELP storage_finalized_number_db_next RocksDB reported statistics for NUMBER_DB_NEXT
+# TYPE storage_finalized_number_db_next gauge
+storage_finalized_number_db_next 33.0
+# HELP storage_hot_db_get RocksDB histogram for storage_hot_db_get
+# TYPE storage_hot_db_get summary
+storage_hot_db_get{quantile="0.5",} 13.508771929824562
+storage_hot_db_get{quantile="0.95",} 3400.0
+storage_hot_db_get{quantile="0.99",} 10720.000000000011
+# HELP storage_finalized_no_iterators RocksDB reported statistics for NO_ITERATORS
+# TYPE storage_finalized_no_iterators gauge
+storage_finalized_no_iterators 0.0
+# HELP storage_finalized_compaction_key_drop_newer_entry RocksDB reported statistics for COMPACTION_KEY_DROP_NEWER_ENTRY
+# TYPE storage_finalized_compaction_key_drop_newer_entry gauge
+storage_finalized_compaction_key_drop_newer_entry 0.0
+# HELP storage_finalized_number_db_seek_found RocksDB reported statistics for NUMBER_DB_SEEK_FOUND
+# TYPE storage_finalized_number_db_seek_found gauge
+storage_finalized_number_db_seek_found 33.0
+# HELP storage_finalized_number_multiget_bytes_read RocksDB reported statistics for NUMBER_MULTIGET_BYTES_READ
+# TYPE storage_finalized_number_multiget_bytes_read gauge
+storage_finalized_number_multiget_bytes_read 0.0
+# HELP beacon_peer_count Tracks number of connected peers, verified to be on the same chain
+# TYPE beacon_peer_count gauge
+beacon_peer_count 41.0
+# HELP storage_hot_number_merge_failures RocksDB reported statistics for NUMBER_MERGE_FAILURES
+# TYPE storage_hot_number_merge_failures gauge
+storage_hot_number_merge_failures 0.0
+# HELP storage_hot_block_cache_add_failures RocksDB reported statistics for BLOCK_CACHE_ADD_FAILURES
+# TYPE storage_hot_block_cache_add_failures gauge
+storage_hot_block_cache_add_failures 0.0
+# HELP storage_hot_block_cache_filter_add RocksDB reported statistics for BLOCK_CACHE_FILTER_ADD
+# TYPE storage_hot_block_cache_filter_add gauge
+storage_hot_block_cache_filter_add 0.0
+# HELP executor_p2p_thread_active_count Current number of threads executing tasks for this executor
+# TYPE executor_p2p_thread_active_count gauge
+executor_p2p_thread_active_count 0.0
+# HELP storage_hot_block_cache_hit RocksDB reported statistics for BLOCK_CACHE_HIT
+# TYPE storage_hot_block_cache_hit gauge
+storage_hot_block_cache_hit 99.0
+# HELP storage_finalized_bytes_written RocksDB reported statistics for BYTES_WRITTEN
+# TYPE storage_finalized_bytes_written gauge
+storage_finalized_bytes_written 312010.0
+# HELP validator_scheduled_duties_current Current number of pending duties that have been scheduled
+# TYPE validator_scheduled_duties_current gauge
+validator_scheduled_duties_current 16.0
+# HELP eventbus_event_published_count Total number of events published
+# TYPE eventbus_event_published_count counter
+eventbus_event_published_count{channel="StorageQueryChannel",} 35.0
+eventbus_event_published_count{channel="Eth1EventsChannel",} 3226.0
+eventbus_event_published_count{channel="TimeTickChannel",} 3732.0
+eventbus_event_published_count{channel="FinalizedCheckpointChannel",} 5.0
+eventbus_event_published_count{channel="SlotEventsChannel",} 156.0
+eventbus_event_published_count{channel="ValidatorTimingChannel",} 749.0
+eventbus_event_published_count{channel="ReorgEventChannel",} 1.0
+eventbus_event_published_count{channel="ProtoArrayStorageChannel",} 6.0
+eventbus_event_published_count{channel="Eth1DepositStorageChannel",} 1.0
+eventbus_event_published_count{channel="ValidatorApiChannel",} 427.0
+eventbus_event_published_count{channel="StorageUpdateChannel",} 5093.0
+# HELP validator_beacon_node_persistent_subscription_requests_total Counter recording the number of requests to subscribe to persistent committees
+# TYPE validator_beacon_node_persistent_subscription_requests_total counter
+validator_beacon_node_persistent_subscription_requests_total 1.0
+# HELP storage_hot_write_done_by_self RocksDB reported statistics for WRITE_DONE_BY_SELF
+# TYPE storage_hot_write_done_by_self gauge
+storage_hot_write_done_by_self 1366.0
+# HELP storage_hot_bloom_filter_prefix_checked RocksDB reported statistics for BLOOM_FILTER_PREFIX_CHECKED
+# TYPE storage_hot_bloom_filter_prefix_checked gauge
+storage_hot_bloom_filter_prefix_checked 0.0
+# HELP libp2p_peers Tracks number of libp2p peers
+# TYPE libp2p_peers gauge
+libp2p_peers 41.0
+# HELP storage_hot_compact_read_bytes RocksDB reported statistics for COMPACT_READ_BYTES
+# TYPE storage_hot_compact_read_bytes gauge
+storage_hot_compact_read_bytes 0.0
+# HELP executor_validator_thread_pool_size Current number of threads in the executor thread pool
+# TYPE executor_validator_thread_pool_size gauge
+executor_validator_thread_pool_size 5.0
+# HELP storage_hot_number_filtered_deletes RocksDB reported statistics for NUMBER_FILTERED_DELETES
+# TYPE storage_hot_number_filtered_deletes gauge
+storage_hot_number_filtered_deletes 0.0
+# HELP storage_finalized_number_keys_read RocksDB reported statistics for NUMBER_KEYS_READ
+# TYPE storage_finalized_number_keys_read gauge
+storage_finalized_number_keys_read 0.0
+# HELP storage_hot_get_hit_l1 RocksDB reported statistics for GET_HIT_L1
+# TYPE storage_hot_get_hit_l1 gauge
+storage_hot_get_hit_l1 2.0
+# HELP storage_finalized_table_open_io_micros RocksDB histogram for storage_finalized_table_open_io_micros
+# TYPE storage_finalized_table_open_io_micros summary
+storage_finalized_table_open_io_micros{quantile="0.5",} 1300.0
+storage_finalized_table_open_io_micros{quantile="0.95",} 5505.0
+storage_finalized_table_open_io_micros{quantile="0.99",} 5505.0
+# HELP storage_hot_wal_file_sync_micros RocksDB histogram for storage_hot_wal_file_sync_micros
+# TYPE storage_hot_wal_file_sync_micros summary
+storage_hot_wal_file_sync_micros{quantile="0.5",} 0.0
+storage_hot_wal_file_sync_micros{quantile="0.95",} 0.0
+storage_hot_wal_file_sync_micros{quantile="0.99",} 0.0
+# HELP storage_finalized_memtable_miss RocksDB reported statistics for MEMTABLE_MISS
+# TYPE storage_finalized_memtable_miss gauge
+storage_finalized_memtable_miss 0.0
+# HELP storage_finalized_number_db_prev RocksDB reported statistics for NUMBER_DB_PREV
+# TYPE storage_finalized_number_db_prev gauge
+storage_finalized_number_db_prev 0.0
+# HELP storage_hot_stall_memtable_compaction_count RocksDB histogram for storage_hot_stall_memtable_compaction_count
+# TYPE storage_hot_stall_memtable_compaction_count summary
+storage_hot_stall_memtable_compaction_count{quantile="0.5",} 0.0
+storage_hot_stall_memtable_compaction_count{quantile="0.95",} 0.0
+storage_hot_stall_memtable_compaction_count{quantile="0.99",} 0.0
+# HELP storage_hot_write_raw_block_micros RocksDB histogram for storage_hot_write_raw_block_micros
+# TYPE storage_hot_write_raw_block_micros summary
+storage_hot_write_raw_block_micros{quantile="0.5",} 5.925233644859813
+storage_hot_write_raw_block_micros{quantile="0.95",} 13.4375
+storage_hot_write_raw_block_micros{quantile="0.99",} 99.79999999999961
+# HELP storage_hot_compaction_outfile_sync_micros RocksDB histogram for storage_hot_compaction_outfile_sync_micros
+# TYPE storage_hot_compaction_outfile_sync_micros summary
+storage_hot_compaction_outfile_sync_micros{quantile="0.5",} 0.0
+storage_hot_compaction_outfile_sync_micros{quantile="0.95",} 0.0
+storage_hot_compaction_outfile_sync_micros{quantile="0.99",} 0.0
+# HELP storage_finalized_number_block_not_compressed RocksDB reported statistics for NUMBER_BLOCK_NOT_COMPRESSED
+# TYPE storage_finalized_number_block_not_compressed gauge
+storage_finalized_number_block_not_compressed 0.0
+# HELP storage_hot_block_cache_data_add RocksDB reported statistics for BLOCK_CACHE_DATA_ADD
+# TYPE storage_hot_block_cache_data_add gauge
+storage_hot_block_cache_data_add 665.0
+# HELP storage_finalized_write_stall RocksDB histogram for storage_finalized_write_stall
+# TYPE storage_finalized_write_stall summary
+storage_finalized_write_stall{quantile="0.5",} 0.0
+storage_finalized_write_stall{quantile="0.95",} 0.0
+storage_finalized_write_stall{quantile="0.99",} 0.0
+# HELP storage_hot_bytes_decompressed RocksDB histogram for storage_hot_bytes_decompressed
+# TYPE storage_hot_bytes_decompressed summary
+storage_hot_bytes_decompressed{quantile="0.5",} 3581.818181818182
+storage_hot_bytes_decompressed{quantile="0.95",} 5719.999999999999
+storage_hot_bytes_decompressed{quantile="0.99",} 6286.0
+# HELP storage_finalized_bloom_filter_useful RocksDB reported statistics for BLOOM_FILTER_USEFUL
+# TYPE storage_finalized_bloom_filter_useful gauge
+storage_finalized_bloom_filter_useful 0.0
+# HELP storage_finalized_iter_bytes_read RocksDB reported statistics for ITER_BYTES_READ
+# TYPE storage_finalized_iter_bytes_read gauge
+storage_finalized_iter_bytes_read 312295.0
+# HELP validator_beacon_node_unsigned_attestation_requests_total Counter recording the number of requests for unsigned attestations
+# TYPE validator_beacon_node_unsigned_attestation_requests_total counter
+validator_beacon_node_unsigned_attestation_requests_total{outcome="SUCCESS",} 55.0
+# HELP storage_finalized_row_cache_hit RocksDB reported statistics for ROW_CACHE_HIT
+# TYPE storage_finalized_row_cache_hit gauge
+storage_finalized_row_cache_hit 0.0
+# HELP storage_finalized_block_cache_index_add RocksDB reported statistics for BLOCK_CACHE_INDEX_ADD
+# TYPE storage_finalized_block_cache_index_add gauge
+storage_finalized_block_cache_index_add 0.0
+# HELP jvm_gc_collection_seconds Time spent in a given JVM garbage collector in seconds.
+# TYPE jvm_gc_collection_seconds summary
+jvm_gc_collection_seconds_count{gc="G1 Young Generation",} 470.0
+jvm_gc_collection_seconds_sum{gc="G1 Young Generation",} 7.037
+jvm_gc_collection_seconds_count{gc="G1 Old Generation",} 0.0
+jvm_gc_collection_seconds_sum{gc="G1 Old Generation",} 0.0
+# HELP storage_finalized_number_iter_skip RocksDB reported statistics for NUMBER_ITER_SKIP
+# TYPE storage_finalized_number_iter_skip gauge
+storage_finalized_number_iter_skip 39.0
+# HELP storage_finalized_bytes_decompressed RocksDB histogram for storage_finalized_bytes_decompressed
+# TYPE storage_finalized_bytes_decompressed summary
+storage_finalized_bytes_decompressed{quantile="0.5",} 34.0
+storage_finalized_bytes_decompressed{quantile="0.95",} 432.0
+storage_finalized_bytes_decompressed{quantile="0.99",} 432.0
+# HELP storage_hot_hard_rate_limit_delay_count RocksDB histogram for storage_hot_hard_rate_limit_delay_count
+# TYPE storage_hot_hard_rate_limit_delay_count summary
+storage_hot_hard_rate_limit_delay_count{quantile="0.5",} 0.0
+storage_hot_hard_rate_limit_delay_count{quantile="0.95",} 0.0
+storage_hot_hard_rate_limit_delay_count{quantile="0.99",} 0.0
+# HELP storage_hot_number_db_next RocksDB reported statistics for NUMBER_DB_NEXT
+# TYPE storage_hot_number_db_next gauge
+storage_hot_number_db_next 6096.0
+# HELP storage_finalized_compression_times_nanos RocksDB histogram for storage_finalized_compression_times_nanos
+# TYPE storage_finalized_compression_times_nanos summary
+storage_finalized_compression_times_nanos{quantile="0.5",} 0.0
+storage_finalized_compression_times_nanos{quantile="0.95",} 0.0
+storage_finalized_compression_times_nanos{quantile="0.99",} 0.0
+# HELP storage_finalized_row_cache_miss RocksDB reported statistics for ROW_CACHE_MISS
+# TYPE storage_finalized_row_cache_miss gauge
+storage_finalized_row_cache_miss 0.0
+# HELP storage_finalized_number_multiget_calls RocksDB reported statistics for NUMBER_MULTIGET_CALLS
+# TYPE storage_finalized_number_multiget_calls gauge
+storage_finalized_number_multiget_calls 0.0
+# HELP storage_hot_block_cache_data_hit RocksDB reported statistics for BLOCK_CACHE_DATA_HIT
+# TYPE storage_hot_block_cache_data_hit gauge
+storage_hot_block_cache_data_hit 99.0
+# HELP storage_hot_bytes_per_write RocksDB histogram for storage_hot_bytes_per_write
+# TYPE storage_hot_bytes_per_write summary
+storage_hot_bytes_per_write{quantile="0.5",} 108.47832167832168
+storage_hot_bytes_per_write{quantile="0.95",} 493394.9044585988
+storage_hot_bytes_per_write{quantile="0.99",} 559519.7452229299
+# HELP storage_finalized_get_hit_l1 RocksDB reported statistics for GET_HIT_L1
+# TYPE storage_finalized_get_hit_l1 gauge
+storage_finalized_get_hit_l1 0.0
+# HELP storage_finalized_get_hit_l0 RocksDB reported statistics for GET_HIT_L0
+# TYPE storage_finalized_get_hit_l0 gauge
+storage_finalized_get_hit_l0 0.0
+# HELP storage_finalized_number_db_prev_found RocksDB reported statistics for NUMBER_DB_PREV_FOUND
+# TYPE storage_finalized_number_db_prev_found gauge
+storage_finalized_number_db_prev_found 0.0
+# HELP storage_finalized_write_done_by_other RocksDB reported statistics for WRITE_DONE_BY_OTHER
+# TYPE storage_finalized_write_done_by_other gauge
+storage_finalized_write_done_by_other 0.0
+# HELP storage_hot_no_file_closes RocksDB reported statistics for NO_FILE_CLOSES
+# TYPE storage_hot_no_file_closes gauge
+storage_hot_no_file_closes 0.0
+# HELP storage_finalized_block_cache_filter_hit RocksDB reported statistics for BLOCK_CACHE_FILTER_HIT
+# TYPE storage_finalized_block_cache_filter_hit gauge
+storage_finalized_block_cache_filter_hit 0.0
+# HELP storage_hot_block_cache_compressed_hit RocksDB reported statistics for BLOCK_CACHE_COMPRESSED_HIT
+# TYPE storage_hot_block_cache_compressed_hit gauge
+storage_hot_block_cache_compressed_hit 0.0
+# HELP storage_hot_no_iterators RocksDB reported statistics for NO_ITERATORS
+# TYPE storage_hot_no_iterators gauge
+storage_hot_no_iterators 0.0
+# HELP storage_memory_state_requests Number of requests for BeaconState from the in-memory store
+# TYPE storage_memory_state_requests counter
+storage_memory_state_requests{result="cached",} 2136.0
+storage_memory_state_requests{result="miss",} 6.0
+storage_memory_state_requests{result="regenerate",} 0.0
+# HELP storage_hot_read_amp_estimate_useful_bytes RocksDB reported statistics for READ_AMP_ESTIMATE_USEFUL_BYTES
+# TYPE storage_hot_read_amp_estimate_useful_bytes gauge
+storage_hot_read_amp_estimate_useful_bytes 0.0
+# HELP storage_finalized_block_cache_data_bytes_insert RocksDB reported statistics for BLOCK_CACHE_DATA_BYTES_INSERT
+# TYPE storage_finalized_block_cache_data_bytes_insert gauge
+storage_finalized_block_cache_data_bytes_insert 106144.0
+# HELP storage_finalized_bloom_filter_prefix_useful RocksDB reported statistics for BLOOM_FILTER_PREFIX_USEFUL
+# TYPE storage_finalized_bloom_filter_prefix_useful gauge
+storage_finalized_bloom_filter_prefix_useful 0.0
+# HELP storage_hot_memtable_miss RocksDB reported statistics for MEMTABLE_MISS
+# TYPE storage_hot_memtable_miss gauge
+storage_hot_memtable_miss 80.0
+# HELP storage_finalized_write_raw_block_micros RocksDB histogram for storage_finalized_write_raw_block_micros
+# TYPE storage_finalized_write_raw_block_micros summary
+storage_finalized_write_raw_block_micros{quantile="0.5",} 5.763361462728551
+storage_finalized_write_raw_block_micros{quantile="0.95",} 9.921403152008132
+storage_finalized_write_raw_block_micros{quantile="0.99",} 26.001538461538495
+# HELP storage_hot_soft_rate_limit_delay_count RocksDB histogram for storage_hot_soft_rate_limit_delay_count
+# TYPE storage_hot_soft_rate_limit_delay_count summary
+storage_hot_soft_rate_limit_delay_count{quantile="0.5",} 0.0
+storage_hot_soft_rate_limit_delay_count{quantile="0.95",} 0.0
+storage_hot_soft_rate_limit_delay_count{quantile="0.99",} 0.0
+# HELP executor_powchain_thread_pool_size Current number of threads in the executor thread pool
+# TYPE executor_powchain_thread_pool_size gauge
+executor_powchain_thread_pool_size 5.0
+# HELP storage_hot_number_rate_limiter_drains RocksDB reported statistics for NUMBER_RATE_LIMITER_DRAINS
+# TYPE storage_hot_number_rate_limiter_drains gauge
+storage_hot_number_rate_limiter_drains 0.0
+# HELP storage_hot_bytes_per_read RocksDB histogram for storage_hot_bytes_per_read
+# TYPE storage_hot_bytes_per_read summary
+storage_hot_bytes_per_read{quantile="0.5",} 1871.4285714285716
+storage_hot_bytes_per_read{quantile="0.95",} 4400.0
+storage_hot_bytes_per_read{quantile="0.99",} 3180000.0000000037
+# HELP storage_finalized_block_cache_compressed_add_failures RocksDB reported statistics for BLOCK_CACHE_COMPRESSED_ADD_FAILURES
+# TYPE storage_finalized_block_cache_compressed_add_failures gauge
+storage_finalized_block_cache_compressed_add_failures 0.0
+# HELP beacon_previous_justified_epoch Current previously justified epoch
+# TYPE beacon_previous_justified_epoch gauge
+beacon_previous_justified_epoch 4356.0
+# HELP storage_hot_number_block_decompressed RocksDB reported statistics for NUMBER_BLOCK_DECOMPRESSED
+# TYPE storage_hot_number_block_decompressed gauge
+storage_hot_number_block_decompressed 16.0
+# HELP storage_finalized_bytes_read RocksDB reported statistics for BYTES_READ
+# TYPE storage_finalized_bytes_read gauge
+storage_finalized_bytes_read 0.0
+# HELP storage_hot_number_superversion_cleanups RocksDB reported statistics for NUMBER_SUPERVERSION_CLEANUPS
+# TYPE storage_hot_number_superversion_cleanups gauge
+storage_hot_number_superversion_cleanups 0.0
+# HELP storage_hot_write_stall RocksDB histogram for storage_hot_write_stall
+# TYPE storage_hot_write_stall summary
+storage_hot_write_stall{quantile="0.5",} 0.0
+storage_hot_write_stall{quantile="0.95",} 0.0
+storage_hot_write_stall{quantile="0.99",} 0.0
+# HELP executor_powchain_thread_active_count Current number of threads executing tasks for this executor
+# TYPE executor_powchain_thread_active_count gauge
+executor_powchain_thread_active_count 0.0
+# HELP beacon_current_live_validators Number of active validators that successfully included attestation on chain for current epoch
+# TYPE beacon_current_live_validators gauge
+beacon_current_live_validators 1815.0
+# HELP storage_finalized_bytes_compressed RocksDB histogram for storage_finalized_bytes_compressed
+# TYPE storage_finalized_bytes_compressed summary
+storage_finalized_bytes_compressed{quantile="0.5",} 0.0
+storage_finalized_bytes_compressed{quantile="0.95",} 0.0
+storage_finalized_bytes_compressed{quantile="0.99",} 0.0
+# HELP storage_finalized_block_cache_filter_bytes_evict RocksDB reported statistics for BLOCK_CACHE_FILTER_BYTES_EVICT
+# TYPE storage_finalized_block_cache_filter_bytes_evict gauge
+storage_finalized_block_cache_filter_bytes_evict 0.0
+# HELP storage_finalized_db_multiget RocksDB histogram for storage_finalized_db_multiget
+# TYPE storage_finalized_db_multiget summary
+storage_finalized_db_multiget{quantile="0.5",} 0.0
+storage_finalized_db_multiget{quantile="0.95",} 0.0
+storage_finalized_db_multiget{quantile="0.99",} 0.0
+# HELP storage_hot_number_iter_skip RocksDB reported statistics for NUMBER_ITER_SKIP
+# TYPE storage_hot_number_iter_skip gauge
+storage_hot_number_iter_skip 9460.0
+# HELP executor_p2p_thread_pool_size Current number of threads in the executor thread pool
+# TYPE executor_p2p_thread_pool_size gauge
+executor_p2p_thread_pool_size 10.0
+# HELP storage_hot_flush_write_bytes RocksDB reported statistics for FLUSH_WRITE_BYTES
+# TYPE storage_hot_flush_write_bytes gauge
+storage_hot_flush_write_bytes 397941.0
+# HELP storage_finalized_stall_micros RocksDB reported statistics for STALL_MICROS
+# TYPE storage_finalized_stall_micros gauge
+storage_finalized_stall_micros 0.0
+# HELP validator_beacon_node_fork_info_requests_total Counter recording the number of requests for fork info
+# TYPE validator_beacon_node_fork_info_requests_total counter
+validator_beacon_node_fork_info_requests_total{outcome="SUCCESS",} 259.0
+# HELP storage_finalized_num_files_in_single_compaction RocksDB histogram for storage_finalized_num_files_in_single_compaction
+# TYPE storage_finalized_num_files_in_single_compaction summary
+storage_finalized_num_files_in_single_compaction{quantile="0.5",} 0.0
+storage_finalized_num_files_in_single_compaction{quantile="0.95",} 0.0
+storage_finalized_num_files_in_single_compaction{quantile="0.99",} 0.0
+# HELP network_peer_reputation_cache_size Total number of peer reputations tracked
+# TYPE network_peer_reputation_cache_size gauge
+network_peer_reputation_cache_size 79.0
+# HELP storage_hot_compaction_range_del_drop_obsolete RocksDB reported statistics for COMPACTION_RANGE_DEL_DROP_OBSOLETE
+# TYPE storage_hot_compaction_range_del_drop_obsolete gauge
+storage_hot_compaction_range_del_drop_obsolete 0.0
+# HELP storage_finalized_number_db_seek RocksDB reported statistics for NUMBER_DB_SEEK
+# TYPE storage_finalized_number_db_seek gauge
+storage_finalized_number_db_seek 38.0
+# HELP storage_memory_checkpoint_state_count Number of checkpoint states held in the in-memory store
+# TYPE storage_memory_checkpoint_state_count gauge
+storage_memory_checkpoint_state_count 7.0
+# HELP storage_hot_block_cache_index_bytes_insert RocksDB reported statistics for BLOCK_CACHE_INDEX_BYTES_INSERT
+# TYPE storage_hot_block_cache_index_bytes_insert gauge
+storage_hot_block_cache_index_bytes_insert 0.0
+# HELP storage_finalized_stall_memtable_compaction_count RocksDB histogram for storage_finalized_stall_memtable_compaction_count
+# TYPE storage_finalized_stall_memtable_compaction_count summary
+storage_finalized_stall_memtable_compaction_count{quantile="0.5",} 0.0
+storage_finalized_stall_memtable_compaction_count{quantile="0.95",} 0.0
+storage_finalized_stall_memtable_compaction_count{quantile="0.99",} 0.0
+# HELP storage_hot_memtable_hit RocksDB reported statistics for MEMTABLE_HIT
+# TYPE storage_hot_memtable_hit gauge
+storage_hot_memtable_hit 0.0
+# HELP storage_finalized_soft_rate_limit_delay_count RocksDB histogram for storage_finalized_soft_rate_limit_delay_count
+# TYPE storage_finalized_soft_rate_limit_delay_count summary
+storage_finalized_soft_rate_limit_delay_count{quantile="0.5",} 0.0
+storage_finalized_soft_rate_limit_delay_count{quantile="0.95",} 0.0
+storage_finalized_soft_rate_limit_delay_count{quantile="0.99",} 0.0
+# HELP storage_finalized_subcompaction_setup_time RocksDB histogram for storage_finalized_subcompaction_setup_time
+# TYPE storage_finalized_subcompaction_setup_time summary
+storage_finalized_subcompaction_setup_time{quantile="0.5",} 0.0
+storage_finalized_subcompaction_setup_time{quantile="0.95",} 0.0
+storage_finalized_subcompaction_setup_time{quantile="0.99",} 0.0
+# HELP storage_hot_sim_block_cache_hit RocksDB reported statistics for SIM_BLOCK_CACHE_HIT
+# TYPE storage_hot_sim_block_cache_hit gauge
+storage_hot_sim_block_cache_hit 0.0
+# HELP storage_finalized_block_cache_filter_miss RocksDB reported statistics for BLOCK_CACHE_FILTER_MISS
+# TYPE storage_finalized_block_cache_filter_miss gauge
+storage_finalized_block_cache_filter_miss 0.0
+# HELP storage_hot_db_write RocksDB histogram for storage_hot_db_write
+# TYPE storage_hot_db_write summary
+storage_hot_db_write{quantile="0.5",} 46.09615384615385
+storage_hot_db_write{quantile="0.95",} 11827.000000000002
+storage_hot_db_write{quantile="0.99",} 13863.581818181816
+# HELP beacon_previous_justified_root Current previously justified root
+# TYPE beacon_previous_justified_root gauge
+beacon_previous_justified_root -5.7295937589357742E18
+# HELP storage_hot_block_cache_index_hit RocksDB reported statistics for BLOCK_CACHE_INDEX_HIT
+# TYPE storage_hot_block_cache_index_hit gauge
+storage_hot_block_cache_index_hit 0.0
+# HELP storage_hot_merge_operation_total_time RocksDB reported statistics for MERGE_OPERATION_TOTAL_TIME
+# TYPE storage_hot_merge_operation_total_time gauge
+storage_hot_merge_operation_total_time 0.0
+# HELP storage_hot_db_multiget RocksDB histogram for storage_hot_db_multiget
+# TYPE storage_hot_db_multiget summary
+storage_hot_db_multiget{quantile="0.5",} 0.0
+storage_hot_db_multiget{quantile="0.95",} 0.0
+storage_hot_db_multiget{quantile="0.99",} 0.0
+# HELP beacon_current_justified_epoch Current justified epoch
+# TYPE beacon_current_justified_epoch gauge
+beacon_current_justified_epoch 4357.0
+# HELP storage_finalized_block_cache_index_hit RocksDB reported statistics for BLOCK_CACHE_INDEX_HIT
+# TYPE storage_finalized_block_cache_index_hit gauge
+storage_finalized_block_cache_index_hit 0.0
+# HELP storage_hot_row_cache_miss RocksDB reported statistics for ROW_CACHE_MISS
+# TYPE storage_hot_row_cache_miss gauge
+storage_hot_row_cache_miss 0.0
+# HELP storage_finalized_block_cache_data_add RocksDB reported statistics for BLOCK_CACHE_DATA_ADD
+# TYPE storage_finalized_block_cache_data_add gauge
+storage_finalized_block_cache_data_add 15.0
+# HELP beacon_published_attestation_total Total number of attestations sent to the gossip network
+# TYPE beacon_published_attestation_total counter
+beacon_published_attestation_total{result="failure",} 0.0
+beacon_published_attestation_total{result="success",} 59.0
+# HELP storage_hot_number_db_next_found RocksDB reported statistics for NUMBER_DB_NEXT_FOUND
+# TYPE storage_hot_number_db_next_found gauge
+storage_hot_number_db_next_found 6093.0
+# HELP validator_local_validator_count Current number of valdiators running in this validator client
+# TYPE validator_local_validator_count gauge
+validator_local_validator_count 12.0
+# HELP storage_finalized_block_cache_index_bytes_evict RocksDB reported statistics for BLOCK_CACHE_INDEX_BYTES_EVICT
+# TYPE storage_finalized_block_cache_index_bytes_evict gauge
+storage_finalized_block_cache_index_bytes_evict 0.0
+# HELP storage_finalized_decompression_times_nanos RocksDB histogram for storage_finalized_decompression_times_nanos
+# TYPE storage_finalized_decompression_times_nanos summary
+storage_finalized_decompression_times_nanos{quantile="0.5",} 0.0
+storage_finalized_decompression_times_nanos{quantile="0.95",} 0.0
+storage_finalized_decompression_times_nanos{quantile="0.99",} 0.0
+# HELP storage_hot_number_superversion_releases RocksDB reported statistics for NUMBER_SUPERVERSION_RELEASES
+# TYPE storage_hot_number_superversion_releases gauge
+storage_hot_number_superversion_releases 0.0
+# HELP storage_hot_db_seek RocksDB histogram for storage_hot_db_seek
+# TYPE storage_hot_db_seek summary
+storage_hot_db_seek{quantile="0.5",} 0.0
+storage_hot_db_seek{quantile="0.95",} 0.0
+storage_hot_db_seek{quantile="0.99",} 0.0
+# HELP executor_beaconchain_thread_pool_size Current number of threads in the executor thread pool
+# TYPE executor_beaconchain_thread_pool_size gauge
+executor_beaconchain_thread_pool_size 5.0
+# HELP storage_hot_block_cache_filter_bytes_evict RocksDB reported statistics for BLOCK_CACHE_FILTER_BYTES_EVICT
+# TYPE storage_hot_block_cache_filter_bytes_evict gauge
+storage_hot_block_cache_filter_bytes_evict 0.0
+# HELP storage_finalized_bytes_per_read RocksDB histogram for storage_finalized_bytes_per_read
+# TYPE storage_finalized_bytes_per_read summary
+storage_finalized_bytes_per_read{quantile="0.5",} 0.0
+storage_finalized_bytes_per_read{quantile="0.95",} 0.0
+storage_finalized_bytes_per_read{quantile="0.99",} 0.0
+# HELP storage_finalized_sim_block_cache_hit RocksDB reported statistics for SIM_BLOCK_CACHE_HIT
+# TYPE storage_finalized_sim_block_cache_hit gauge
+storage_finalized_sim_block_cache_hit 0.0
+# HELP storage_finalized_compact_read_bytes RocksDB reported statistics for COMPACT_READ_BYTES
+# TYPE storage_finalized_compact_read_bytes gauge
+storage_finalized_compact_read_bytes 0.0
+# HELP storage_finalized_sst_read_micros RocksDB histogram for storage_finalized_sst_read_micros
+# TYPE storage_finalized_sst_read_micros summary
+storage_finalized_sst_read_micros{quantile="0.5",} 8.0
+storage_finalized_sst_read_micros{quantile="0.95",} 3025.0
+storage_finalized_sst_read_micros{quantile="0.99",} 4107.0
+# HELP eventbus_event_failed_count Number of events which failed to be processed
+# TYPE eventbus_event_failed_count counter
+# HELP storage_hot_write_done_by_other RocksDB reported statistics for WRITE_DONE_BY_OTHER
+# TYPE storage_hot_write_done_by_other gauge
+storage_hot_write_done_by_other 0.0
+# HELP storage_finalized_block_cache_bytes_write RocksDB reported statistics for BLOCK_CACHE_BYTES_WRITE
+# TYPE storage_finalized_block_cache_bytes_write gauge
+storage_finalized_block_cache_bytes_write 106144.0
+# HELP storage_hot_sst_read_micros RocksDB histogram for storage_hot_sst_read_micros
+# TYPE storage_hot_sst_read_micros summary
+storage_hot_sst_read_micros{quantile="0.5",} 2.3102094240837694
+storage_hot_sst_read_micros{quantile="0.95",} 507.9629629629628
+storage_hot_sst_read_micros{quantile="0.99",} 1550.999999999999
+# HELP storage_hot_compression_times_nanos RocksDB histogram for storage_hot_compression_times_nanos
+# TYPE storage_hot_compression_times_nanos summary
+storage_hot_compression_times_nanos{quantile="0.5",} 0.0
+storage_hot_compression_times_nanos{quantile="0.95",} 0.0
+storage_hot_compression_times_nanos{quantile="0.99",} 0.0
+# HELP storage_hot_write_timedout RocksDB reported statistics for WRITE_TIMEDOUT
+# TYPE storage_hot_write_timedout gauge
+storage_hot_write_timedout 0.0
+# HELP storage_finalized_block_cache_bytes_read RocksDB reported statistics for BLOCK_CACHE_BYTES_READ
+# TYPE storage_finalized_block_cache_bytes_read gauge
+storage_finalized_block_cache_bytes_read 1184368.0
+# HELP eventbus_event_consumed_count Total number of events consumed
+# TYPE eventbus_event_consumed_count counter
+eventbus_event_consumed_count{channel="SlotEventsChannel",subscriber="AttestationTopicSubscriber",} 156.0
+eventbus_event_consumed_count{channel="ValidatorTimingChannel",subscriber="DutyScheduler",} 749.0
+eventbus_event_consumed_count{channel="FinalizedCheckpointChannel",subscriber="PendingPool",} 10.0
+eventbus_event_consumed_count{channel="FinalizedCheckpointChannel",subscriber="DepositProvider",} 5.0
+eventbus_event_consumed_count{channel="StorageQueryChannel",subscriber="ChainStorage",} 35.0
+eventbus_event_consumed_count{channel="TimeTickChannel",subscriber="BeaconChainController",} 3732.0
+eventbus_event_consumed_count{channel="SlotEventsChannel",subscriber="AttestationManager",} 156.0
+eventbus_event_consumed_count{channel="SlotEventsChannel",subscriber="BeaconChainEventAdapter",} 156.0
+eventbus_event_consumed_count{channel="ValidatorApiChannel",subscriber="ValidatorApiHandler",} 427.0
+eventbus_event_consumed_count{channel="Eth1EventsChannel",subscriber="DepositProvider",} 3226.0
+eventbus_event_consumed_count{channel="SlotEventsChannel",subscriber="AggregatingAttestationPool",} 156.0
+eventbus_event_consumed_count{channel="ProtoArrayStorageChannel",subscriber="ProtoArrayStorage",} 6.0
+eventbus_event_consumed_count{channel="ReorgEventChannel",subscriber="BeaconChainEventAdapter",} 1.0
+eventbus_event_consumed_count{channel="SlotEventsChannel",subscriber="BlockManager",} 156.0
+eventbus_event_consumed_count{channel="Eth1EventsChannel",subscriber="DepositStorage",} 3226.0
+eventbus_event_consumed_count{channel="SlotEventsChannel",subscriber="BeaconChainMetrics",} 156.0
+eventbus_event_consumed_count{channel="StorageUpdateChannel",subscriber="ChainStorage",} 5093.0
+eventbus_event_consumed_count{channel="Eth1DepositStorageChannel",subscriber="DepositStorage",} 1.0
+# HELP storage_hot_number_db_seek RocksDB reported statistics for NUMBER_DB_SEEK
+# TYPE storage_hot_number_db_seek gauge
+storage_hot_number_db_seek 3.0
+# HELP storage_finalized_write_done_by_self RocksDB reported statistics for WRITE_DONE_BY_SELF
+# TYPE storage_finalized_write_done_by_self gauge
+storage_finalized_write_done_by_self 5.0
+# HELP storage_finalized_merge_operation_total_time RocksDB reported statistics for MERGE_OPERATION_TOTAL_TIME
+# TYPE storage_finalized_merge_operation_total_time gauge
+storage_finalized_merge_operation_total_time 0.0
+# HELP storage_memory_checkpoint_state_requests Number of requests for checkpoint states from the in-memory store
+# TYPE storage_memory_checkpoint_state_requests counter
+storage_memory_checkpoint_state_requests{result="cached",} 1231.0
+storage_memory_checkpoint_state_requests{result="miss",} 7.0
+storage_memory_checkpoint_state_requests{result="regenerate",} 1.0
+# HELP storage_hot_read_num_merge_operands RocksDB histogram for storage_hot_read_num_merge_operands
+# TYPE storage_hot_read_num_merge_operands summary
+storage_hot_read_num_merge_operands{quantile="0.5",} 0.0
+storage_hot_read_num_merge_operands{quantile="0.95",} 0.0
+storage_hot_read_num_merge_operands{quantile="0.99",} 0.0
+# HELP storage_hot_number_of_reseeks_in_iteration RocksDB reported statistics for NUMBER_OF_RESEEKS_IN_ITERATION
+# TYPE storage_hot_number_of_reseeks_in_iteration gauge
+storage_hot_number_of_reseeks_in_iteration 0.0
+# HELP storage_hot_block_cache_compressed_add_failures RocksDB reported statistics for BLOCK_CACHE_COMPRESSED_ADD_FAILURES
+# TYPE storage_hot_block_cache_compressed_add_failures gauge
+storage_hot_block_cache_compressed_add_failures 0.0
+# HELP storage_hot_subcompaction_setup_time RocksDB histogram for storage_hot_subcompaction_setup_time
+# TYPE storage_hot_subcompaction_setup_time summary
+storage_hot_subcompaction_setup_time{quantile="0.5",} 0.0
+storage_hot_subcompaction_setup_time{quantile="0.95",} 0.0
+storage_hot_subcompaction_setup_time{quantile="0.99",} 0.0
+# HELP storage_finalized_get_hit_l2_and_up RocksDB reported statistics for GET_HIT_L2_AND_UP
+# TYPE storage_finalized_get_hit_l2_and_up gauge
+storage_finalized_get_hit_l2_and_up 0.0
+# HELP executor_validator_thread_active_count Current number of threads executing tasks for this executor
+# TYPE executor_validator_thread_active_count gauge
+executor_validator_thread_active_count 0.0
+# HELP beacon_reorgs_total Total occurrences of reorganizations of the chain
+# TYPE beacon_reorgs_total counter
+beacon_reorgs_total 1.0
+# HELP storage_hot_block_cache_filter_bytes_insert RocksDB reported statistics for BLOCK_CACHE_FILTER_BYTES_INSERT
+# TYPE storage_hot_block_cache_filter_bytes_insert gauge
+storage_hot_block_cache_filter_bytes_insert 0.0
+# HELP storage_finalized_bytes_per_write RocksDB histogram for storage_finalized_bytes_per_write
+# TYPE storage_finalized_bytes_per_write summary
+storage_finalized_bytes_per_write{quantile="0.5",} 62500.0
+storage_finalized_bytes_per_write{quantile="0.95",} 65921.0
+storage_finalized_bytes_per_write{quantile="0.99",} 65921.0
+# HELP network_peer_connection_attempt_count Total number of outbound connection attempts made
+# TYPE network_peer_connection_attempt_count counter
+network_peer_connection_attempt_count{status="failed",} 63.0
+network_peer_connection_attempt_count{status="attempted",} 101.0
+network_peer_connection_attempt_count{status="successful",} 38.0
+# HELP storage_hot_block_cache_index_add RocksDB reported statistics for BLOCK_CACHE_INDEX_ADD
+# TYPE storage_hot_block_cache_index_add gauge
+storage_hot_block_cache_index_add 0.0
+# HELP storage_finalized_compaction_time RocksDB histogram for storage_finalized_compaction_time
+# TYPE storage_finalized_compaction_time summary
+storage_finalized_compaction_time{quantile="0.5",} 0.0
+storage_finalized_compaction_time{quantile="0.95",} 0.0
+storage_finalized_compaction_time{quantile="0.99",} 0.0
+# HELP validator_beacon_node_unsigned_block_requests_total Counter recording the number of requests for unsigned blocks
+# TYPE validator_beacon_node_unsigned_block_requests_total counter
+# HELP storage_finalized_compaction_range_del_drop_obsolete RocksDB reported statistics for COMPACTION_RANGE_DEL_DROP_OBSOLETE
+# TYPE storage_finalized_compaction_range_del_drop_obsolete gauge
+storage_finalized_compaction_range_del_drop_obsolete 0.0
+# HELP storage_finalized_hard_rate_limit_delay_count RocksDB histogram for storage_finalized_hard_rate_limit_delay_count
+# TYPE storage_finalized_hard_rate_limit_delay_count summary
+storage_finalized_hard_rate_limit_delay_count{quantile="0.5",} 0.0
+storage_finalized_hard_rate_limit_delay_count{quantile="0.95",} 0.0
+storage_finalized_hard_rate_limit_delay_count{quantile="0.99",} 0.0
+# HELP storage_hot_number_keys_updated RocksDB reported statistics for NUMBER_KEYS_UPDATED
+# TYPE storage_hot_number_keys_updated gauge
+storage_hot_number_keys_updated 0.0
+# HELP storage_finalized_get_updates_since_calls RocksDB reported statistics for GET_UPDATES_SINCE_CALLS
+# TYPE storage_finalized_get_updates_since_calls gauge
+storage_finalized_get_updates_since_calls 0.0
+# HELP executor_beaconchain_queue_size Current size of the executor task queue
+# TYPE executor_beaconchain_queue_size gauge
+executor_beaconchain_queue_size 0.0
+# HELP storage_finalized_number_keys_updated RocksDB reported statistics for NUMBER_KEYS_UPDATED
+# TYPE storage_finalized_number_keys_updated gauge
+storage_finalized_number_keys_updated 0.0
+# HELP storage_finalized_read_amp_estimate_useful_bytes RocksDB reported statistics for READ_AMP_ESTIMATE_USEFUL_BYTES
+# TYPE storage_finalized_read_amp_estimate_useful_bytes gauge
+storage_finalized_read_amp_estimate_useful_bytes 0.0
+# HELP validator_beacon_node_aggregation_subscription_requests_total Counter recording the number of requests to subscribe to committees for aggregation
+# TYPE validator_beacon_node_aggregation_subscription_requests_total counter
+validator_beacon_node_aggregation_subscription_requests_total 8.0
+# HELP storage_hot_get_hit_l0 RocksDB reported statistics for GET_HIT_L0
+# TYPE storage_hot_get_hit_l0 gauge
+storage_hot_get_hit_l0 78.0
+# HELP storage_finalized_db_seek RocksDB histogram for storage_finalized_db_seek
+# TYPE storage_finalized_db_seek summary
+storage_finalized_db_seek{quantile="0.5",} 33.57142857142857
+storage_finalized_db_seek{quantile="0.95",} 945.2499999999995
+storage_finalized_db_seek{quantile="0.99",} 1191.0
+# HELP storage_hot_number_keys_written RocksDB reported statistics for NUMBER_KEYS_WRITTEN
+# TYPE storage_hot_number_keys_written gauge
+storage_hot_number_keys_written 756572.0
+# HELP storage_finalized_flush_write_bytes RocksDB reported statistics for FLUSH_WRITE_BYTES
+# TYPE storage_finalized_flush_write_bytes gauge
+storage_finalized_flush_write_bytes 0.0
+# HELP network_peer_chain_validation_attempts Number of peers chain verification has been performed on
+# TYPE network_peer_chain_validation_attempts counter
+network_peer_chain_validation_attempts{status="error",} 0.0
+network_peer_chain_validation_attempts{status="valid",} 57.0
+network_peer_chain_validation_attempts{status="invalid",} 0.0
+network_peer_chain_validation_attempts{status="started",} 57.0
+# HELP storage_hot_no_file_opens RocksDB reported statistics for NO_FILE_OPENS
+# TYPE storage_hot_no_file_opens gauge
+storage_hot_no_file_opens 196.0
+# HELP beacon_previous_active_validators Number of active validators in the previous epoch
+# TYPE beacon_previous_active_validators gauge
+beacon_previous_active_validators 4119.0
+# HELP storage_hot_bytes_per_multiget RocksDB histogram for storage_hot_bytes_per_multiget
+# TYPE storage_hot_bytes_per_multiget summary
+storage_hot_bytes_per_multiget{quantile="0.5",} 0.0
+storage_hot_bytes_per_multiget{quantile="0.95",} 0.0
+storage_hot_bytes_per_multiget{quantile="0.99",} 0.0
+# HELP storage_hot_number_multiget_keys_found RocksDB reported statistics for NUMBER_MULTIGET_KEYS_FOUND
+# TYPE storage_hot_number_multiget_keys_found gauge
+storage_hot_number_multiget_keys_found 0.0
+# HELP storage_finalized_table_sync_micros RocksDB histogram for storage_finalized_table_sync_micros
+# TYPE storage_finalized_table_sync_micros summary
+storage_finalized_table_sync_micros{quantile="0.5",} 4400.0
+storage_finalized_table_sync_micros{quantile="0.95",} 8568.0
+storage_finalized_table_sync_micros{quantile="0.99",} 8568.0
+# HELP storage_hot_block_cache_compressed_add RocksDB reported statistics for BLOCK_CACHE_COMPRESSED_ADD
+# TYPE storage_hot_block_cache_compressed_add gauge
+storage_hot_block_cache_compressed_add 0.0
+# HELP storage_finalized_no_file_errors RocksDB reported statistics for NO_FILE_ERRORS
+# TYPE storage_finalized_no_file_errors gauge
+storage_finalized_no_file_errors 0.0
+# HELP storage_finalized_number_direct_load_table_properties RocksDB reported statistics for NUMBER_DIRECT_LOAD_TABLE_PROPERTIES
+# TYPE storage_finalized_number_direct_load_table_properties gauge
+storage_finalized_number_direct_load_table_properties 0.0
+# HELP storage_hot_table_sync_micros RocksDB histogram for storage_hot_table_sync_micros
+# TYPE storage_hot_table_sync_micros summary
+storage_hot_table_sync_micros{quantile="0.5",} 3650.0
+storage_hot_table_sync_micros{quantile="0.95",} 10809.0
+storage_hot_table_sync_micros{quantile="0.99",} 10809.0
+# HELP storage_hot_bloom_filter_useful RocksDB reported statistics for BLOOM_FILTER_USEFUL
+# TYPE storage_hot_bloom_filter_useful gauge
+storage_hot_bloom_filter_useful 0.0
+# HELP storage_hot_bloom_filter_prefix_useful RocksDB reported statistics for BLOOM_FILTER_PREFIX_USEFUL
+# TYPE storage_hot_bloom_filter_prefix_useful gauge
+storage_hot_bloom_filter_prefix_useful 0.0
+# HELP storage_hot_block_cache_data_bytes_insert RocksDB reported statistics for BLOCK_CACHE_DATA_BYTES_INSERT
+# TYPE storage_hot_block_cache_data_bytes_insert gauge
+storage_hot_block_cache_data_bytes_insert 1.9646E7
+# HELP storage_hot_compaction_key_drop_newer_entry RocksDB reported statistics for COMPACTION_KEY_DROP_NEWER_ENTRY
+# TYPE storage_hot_compaction_key_drop_newer_entry gauge
+storage_hot_compaction_key_drop_newer_entry 0.0
+# HELP storage_hot_block_cache_compressed_miss RocksDB reported statistics for BLOCK_CACHE_COMPRESSED_MISS
+# TYPE storage_hot_block_cache_compressed_miss gauge
+storage_hot_block_cache_compressed_miss 0.0
+# HELP storage_hot_wal_file_synced RocksDB reported statistics for WAL_FILE_SYNCED
+# TYPE storage_hot_wal_file_synced gauge
+storage_hot_wal_file_synced 0.0
+# HELP storage_finalized_block_cache_add_failures RocksDB reported statistics for BLOCK_CACHE_ADD_FAILURES
+# TYPE storage_finalized_block_cache_add_failures gauge
+storage_finalized_block_cache_add_failures 0.0
+# HELP storage_finalized_bytes_per_multiget RocksDB histogram for storage_finalized_bytes_per_multiget
+# TYPE storage_finalized_bytes_per_multiget summary
+storage_finalized_bytes_per_multiget{quantile="0.5",} 0.0
+storage_finalized_bytes_per_multiget{quantile="0.95",} 0.0
+storage_finalized_bytes_per_multiget{quantile="0.99",} 0.0
+# HELP storage_finalized_block_cache_data_hit RocksDB reported statistics for BLOCK_CACHE_DATA_HIT
+# TYPE storage_finalized_block_cache_data_hit gauge
+storage_finalized_block_cache_data_hit 216.0
+# HELP storage_finalized_persistent_cache_hit RocksDB reported statistics for PERSISTENT_CACHE_HIT
+# TYPE storage_finalized_persistent_cache_hit gauge
+storage_finalized_persistent_cache_hit 0.0
+# HELP storage_hot_row_cache_hit RocksDB reported statistics for ROW_CACHE_HIT
+# TYPE storage_hot_row_cache_hit gauge
+storage_hot_row_cache_hit 0.0
+# HELP storage_finalized_block_cache_compressed_add RocksDB reported statistics for BLOCK_CACHE_COMPRESSED_ADD
+# TYPE storage_finalized_block_cache_compressed_add gauge
+storage_finalized_block_cache_compressed_add 0.0
+# HELP storage_hot_sim_block_cache_miss RocksDB reported statistics for SIM_BLOCK_CACHE_MISS
+# TYPE storage_hot_sim_block_cache_miss gauge
+storage_hot_sim_block_cache_miss 0.0
+# HELP storage_finalized_memtable_hit RocksDB reported statistics for MEMTABLE_HIT
+# TYPE storage_finalized_memtable_hit gauge
+storage_finalized_memtable_hit 0.0
+# HELP storage_finalized_read_num_merge_operands RocksDB histogram for storage_finalized_read_num_merge_operands
+# TYPE storage_finalized_read_num_merge_operands summary
+storage_finalized_read_num_merge_operands{quantile="0.5",} 0.0
+storage_finalized_read_num_merge_operands{quantile="0.95",} 0.0
+storage_finalized_read_num_merge_operands{quantile="0.99",} 0.0
+# HELP storage_hot_number_block_compressed RocksDB reported statistics for NUMBER_BLOCK_COMPRESSED
+# TYPE storage_hot_number_block_compressed gauge
+storage_hot_number_block_compressed 0.0
+# HELP storage_finalized_rate_limit_delay_millis RocksDB reported statistics for RATE_LIMIT_DELAY_MILLIS
+# TYPE storage_finalized_rate_limit_delay_millis gauge
+storage_finalized_rate_limit_delay_millis 0.0

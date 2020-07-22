@@ -1,0 +1,1036 @@
+# HELP async_tasks_count Total number of async tasks spawned using spawn
+# TYPE async_tasks_count gauge
+async_tasks_count{async_task_count="discv5"} 4
+async_tasks_count{async_task_count="eth1"} 1
+async_tasks_count{async_task_count="http"} 1
+async_tasks_count{async_task_count="libp2p"} 138
+async_tasks_count{async_task_count="network"} 1
+async_tasks_count{async_task_count="notifier"} 1
+async_tasks_count{async_task_count="router"} 1
+async_tasks_count{async_task_count="sync"} 1
+async_tasks_count{async_task_count="timer"} 1
+# HELP beacon_aggregated_attestation_gossip_verification_seconds Full runtime of aggregated attestation gossip verification
+# TYPE beacon_aggregated_attestation_gossip_verification_seconds histogram
+beacon_aggregated_attestation_gossip_verification_seconds_bucket{le="0.005"} 797093
+beacon_aggregated_attestation_gossip_verification_seconds_bucket{le="0.01"} 797099
+beacon_aggregated_attestation_gossip_verification_seconds_bucket{le="0.025"} 1261239
+beacon_aggregated_attestation_gossip_verification_seconds_bucket{le="0.05"} 1261640
+beacon_aggregated_attestation_gossip_verification_seconds_bucket{le="0.1"} 1261673
+beacon_aggregated_attestation_gossip_verification_seconds_bucket{le="0.25"} 1262255
+beacon_aggregated_attestation_gossip_verification_seconds_bucket{le="0.5"} 1262260
+beacon_aggregated_attestation_gossip_verification_seconds_bucket{le="1"} 1262261
+beacon_aggregated_attestation_gossip_verification_seconds_bucket{le="2.5"} 1262262
+beacon_aggregated_attestation_gossip_verification_seconds_bucket{le="5"} 1262265
+beacon_aggregated_attestation_gossip_verification_seconds_bucket{le="10"} 1262266
+beacon_aggregated_attestation_gossip_verification_seconds_bucket{le="+Inf"} 1262266
+beacon_aggregated_attestation_gossip_verification_seconds_sum 8721.009990308148
+beacon_aggregated_attestation_gossip_verification_seconds_count 1262266
+# HELP beacon_aggregated_attestation_processing_requests_total Count of all aggregated attestations submitted for processing
+# TYPE beacon_aggregated_attestation_processing_requests_total counter
+beacon_aggregated_attestation_processing_requests_total 1262266
+# HELP beacon_aggregated_attestation_processing_successes_total Number of aggregated attestations verified for gossip
+# TYPE beacon_aggregated_attestation_processing_successes_total counter
+beacon_aggregated_attestation_processing_successes_total 463664
+# HELP beacon_attestation_processing_agg_pool_aggregation Time spent doing signature aggregation when adding to the agg poll
+# TYPE beacon_attestation_processing_agg_pool_aggregation histogram
+beacon_attestation_processing_agg_pool_aggregation_bucket{le="0.005"} 673276
+beacon_attestation_processing_agg_pool_aggregation_bucket{le="0.01"} 673278
+beacon_attestation_processing_agg_pool_aggregation_bucket{le="0.025"} 673278
+beacon_attestation_processing_agg_pool_aggregation_bucket{le="0.05"} 673278
+beacon_attestation_processing_agg_pool_aggregation_bucket{le="0.1"} 673278
+beacon_attestation_processing_agg_pool_aggregation_bucket{le="0.25"} 673278
+beacon_attestation_processing_agg_pool_aggregation_bucket{le="0.5"} 673278
+beacon_attestation_processing_agg_pool_aggregation_bucket{le="1"} 673278
+beacon_attestation_processing_agg_pool_aggregation_bucket{le="2.5"} 673278
+beacon_attestation_processing_agg_pool_aggregation_bucket{le="5"} 673278
+beacon_attestation_processing_agg_pool_aggregation_bucket{le="10"} 673278
+beacon_attestation_processing_agg_pool_aggregation_bucket{le="+Inf"} 673278
+beacon_attestation_processing_agg_pool_aggregation_sum 5.740040254000211
+beacon_attestation_processing_agg_pool_aggregation_count 673278
+# HELP beacon_attestation_processing_agg_pool_core_insert Time spent for the core map.insert() function of agg pool
+# TYPE beacon_attestation_processing_agg_pool_core_insert histogram
+beacon_attestation_processing_agg_pool_core_insert_bucket{le="0.005"} 718381
+beacon_attestation_processing_agg_pool_core_insert_bucket{le="0.01"} 718384
+beacon_attestation_processing_agg_pool_core_insert_bucket{le="0.025"} 718384
+beacon_attestation_processing_agg_pool_core_insert_bucket{le="0.05"} 718384
+beacon_attestation_processing_agg_pool_core_insert_bucket{le="0.1"} 718384
+beacon_attestation_processing_agg_pool_core_insert_bucket{le="0.25"} 718384
+beacon_attestation_processing_agg_pool_core_insert_bucket{le="0.5"} 718384
+beacon_attestation_processing_agg_pool_core_insert_bucket{le="1"} 718384
+beacon_attestation_processing_agg_pool_core_insert_bucket{le="2.5"} 718384
+beacon_attestation_processing_agg_pool_core_insert_bucket{le="5"} 718384
+beacon_attestation_processing_agg_pool_core_insert_bucket{le="10"} 718384
+beacon_attestation_processing_agg_pool_core_insert_bucket{le="+Inf"} 718384
+beacon_attestation_processing_agg_pool_core_insert_sum 8.794357932999668
+beacon_attestation_processing_agg_pool_core_insert_count 718384
+# HELP beacon_attestation_processing_agg_pool_create_map Time spent for creating a map for a new slot
+# TYPE beacon_attestation_processing_agg_pool_create_map histogram
+beacon_attestation_processing_agg_pool_create_map_bucket{le="0.005"} 44015
+beacon_attestation_processing_agg_pool_create_map_bucket{le="0.01"} 44015
+beacon_attestation_processing_agg_pool_create_map_bucket{le="0.025"} 44015
+beacon_attestation_processing_agg_pool_create_map_bucket{le="0.05"} 44015
+beacon_attestation_processing_agg_pool_create_map_bucket{le="0.1"} 44015
+beacon_attestation_processing_agg_pool_create_map_bucket{le="0.25"} 44015
+beacon_attestation_processing_agg_pool_create_map_bucket{le="0.5"} 44015
+beacon_attestation_processing_agg_pool_create_map_bucket{le="1"} 44015
+beacon_attestation_processing_agg_pool_create_map_bucket{le="2.5"} 44015
+beacon_attestation_processing_agg_pool_create_map_bucket{le="5"} 44015
+beacon_attestation_processing_agg_pool_create_map_bucket{le="10"} 44015
+beacon_attestation_processing_agg_pool_create_map_bucket{le="+Inf"} 44015
+beacon_attestation_processing_agg_pool_create_map_sum 1.090462692999991
+beacon_attestation_processing_agg_pool_create_map_count 44015
+# HELP beacon_attestation_processing_agg_pool_insert Time spent for the outer pool.insert() function of agg pool
+# TYPE beacon_attestation_processing_agg_pool_insert histogram
+beacon_attestation_processing_agg_pool_insert_bucket{le="0.005"} 718357
+beacon_attestation_processing_agg_pool_insert_bucket{le="0.01"} 718382
+beacon_attestation_processing_agg_pool_insert_bucket{le="0.025"} 718384
+beacon_attestation_processing_agg_pool_insert_bucket{le="0.05"} 718384
+beacon_attestation_processing_agg_pool_insert_bucket{le="0.1"} 718384
+beacon_attestation_processing_agg_pool_insert_bucket{le="0.25"} 718384
+beacon_attestation_processing_agg_pool_insert_bucket{le="0.5"} 718384
+beacon_attestation_processing_agg_pool_insert_bucket{le="1"} 718384
+beacon_attestation_processing_agg_pool_insert_bucket{le="2.5"} 718384
+beacon_attestation_processing_agg_pool_insert_bucket{le="5"} 718384
+beacon_attestation_processing_agg_pool_insert_bucket{le="10"} 718384
+beacon_attestation_processing_agg_pool_insert_bucket{le="+Inf"} 718384
+beacon_attestation_processing_agg_pool_insert_sum 16.3177983280006
+beacon_attestation_processing_agg_pool_insert_count 718384
+# HELP beacon_attestation_processing_agg_pool_maps_write_lock Time spent waiting for the maps write lock when adding to the agg poll
+# TYPE beacon_attestation_processing_agg_pool_maps_write_lock histogram
+beacon_attestation_processing_agg_pool_maps_write_lock_bucket{le="0.005"} 718377
+beacon_attestation_processing_agg_pool_maps_write_lock_bucket{le="0.01"} 718384
+beacon_attestation_processing_agg_pool_maps_write_lock_bucket{le="0.025"} 718384
+beacon_attestation_processing_agg_pool_maps_write_lock_bucket{le="0.05"} 718384
+beacon_attestation_processing_agg_pool_maps_write_lock_bucket{le="0.1"} 718384
+beacon_attestation_processing_agg_pool_maps_write_lock_bucket{le="0.25"} 718384
+beacon_attestation_processing_agg_pool_maps_write_lock_bucket{le="0.5"} 718384
+beacon_attestation_processing_agg_pool_maps_write_lock_bucket{le="1"} 718384
+beacon_attestation_processing_agg_pool_maps_write_lock_bucket{le="2.5"} 718384
+beacon_attestation_processing_agg_pool_maps_write_lock_bucket{le="5"} 718384
+beacon_attestation_processing_agg_pool_maps_write_lock_bucket{le="10"} 718384
+beacon_attestation_processing_agg_pool_maps_write_lock_bucket{le="+Inf"} 718384
+beacon_attestation_processing_agg_pool_maps_write_lock_sum 1.2086297900020313
+beacon_attestation_processing_agg_pool_maps_write_lock_count 718384
+# HELP beacon_attestation_processing_agg_pool_prune Time spent for the agg pool to prune
+# TYPE beacon_attestation_processing_agg_pool_prune histogram
+beacon_attestation_processing_agg_pool_prune_bucket{le="0.005"} 857844
+beacon_attestation_processing_agg_pool_prune_bucket{le="0.01"} 857857
+beacon_attestation_processing_agg_pool_prune_bucket{le="0.025"} 857858
+beacon_attestation_processing_agg_pool_prune_bucket{le="0.05"} 857858
+beacon_attestation_processing_agg_pool_prune_bucket{le="0.1"} 857858
+beacon_attestation_processing_agg_pool_prune_bucket{le="0.25"} 857858
+beacon_attestation_processing_agg_pool_prune_bucket{le="0.5"} 857858
+beacon_attestation_processing_agg_pool_prune_bucket{le="1"} 857858
+beacon_attestation_processing_agg_pool_prune_bucket{le="2.5"} 857858
+beacon_attestation_processing_agg_pool_prune_bucket{le="5"} 857858
+beacon_attestation_processing_agg_pool_prune_bucket{le="10"} 857858
+beacon_attestation_processing_agg_pool_prune_bucket{le="+Inf"} 857858
+beacon_attestation_processing_agg_pool_prune_sum 2.5808999049991437
+beacon_attestation_processing_agg_pool_prune_count 857858
+# HELP beacon_attestation_processing_apply_to_agg_pool Time spent applying an attestation to the naive aggregation pool
+# TYPE beacon_attestation_processing_apply_to_agg_pool histogram
+beacon_attestation_processing_apply_to_agg_pool_bucket{le="0.005"} 711378
+beacon_attestation_processing_apply_to_agg_pool_bucket{le="0.01"} 718243
+beacon_attestation_processing_apply_to_agg_pool_bucket{le="0.025"} 718384
+beacon_attestation_processing_apply_to_agg_pool_bucket{le="0.05"} 718384
+beacon_attestation_processing_apply_to_agg_pool_bucket{le="0.1"} 718384
+beacon_attestation_processing_apply_to_agg_pool_bucket{le="0.25"} 718384
+beacon_attestation_processing_apply_to_agg_pool_bucket{le="0.5"} 718384
+beacon_attestation_processing_apply_to_agg_pool_bucket{le="1"} 718384
+beacon_attestation_processing_apply_to_agg_pool_bucket{le="2.5"} 718384
+beacon_attestation_processing_apply_to_agg_pool_bucket{le="5"} 718384
+beacon_attestation_processing_apply_to_agg_pool_bucket{le="10"} 718384
+beacon_attestation_processing_apply_to_agg_pool_bucket{le="+Inf"} 718384
+beacon_attestation_processing_apply_to_agg_pool_sum 127.09444486500446
+beacon_attestation_processing_apply_to_agg_pool_count 718384
+# HELP beacon_attestation_processing_apply_to_op_pool Time spent applying an attestation to the block inclusion pool
+# TYPE beacon_attestation_processing_apply_to_op_pool histogram
+beacon_attestation_processing_apply_to_op_pool_bucket{le="0.005"} 463611
+beacon_attestation_processing_apply_to_op_pool_bucket{le="0.01"} 463611
+beacon_attestation_processing_apply_to_op_pool_bucket{le="0.025"} 463611
+beacon_attestation_processing_apply_to_op_pool_bucket{le="0.05"} 463611
+beacon_attestation_processing_apply_to_op_pool_bucket{le="0.1"} 463611
+beacon_attestation_processing_apply_to_op_pool_bucket{le="0.25"} 463611
+beacon_attestation_processing_apply_to_op_pool_bucket{le="0.5"} 463611
+beacon_attestation_processing_apply_to_op_pool_bucket{le="1"} 463611
+beacon_attestation_processing_apply_to_op_pool_bucket{le="2.5"} 463611
+beacon_attestation_processing_apply_to_op_pool_bucket{le="5"} 463611
+beacon_attestation_processing_apply_to_op_pool_bucket{le="10"} 463611
+beacon_attestation_processing_apply_to_op_pool_bucket{le="+Inf"} 463611
+beacon_attestation_processing_apply_to_op_pool_sum 8.973143871999703
+beacon_attestation_processing_apply_to_op_pool_count 463611
+# HELP beacon_attestation_processing_committee_building_seconds Time spent on building committees during attestation processing
+# TYPE beacon_attestation_processing_committee_building_seconds histogram
+beacon_attestation_processing_committee_building_seconds_bucket{le="0.005"} 1012
+beacon_attestation_processing_committee_building_seconds_bucket{le="0.01"} 1014
+beacon_attestation_processing_committee_building_seconds_bucket{le="0.025"} 1014
+beacon_attestation_processing_committee_building_seconds_bucket{le="0.05"} 1014
+beacon_attestation_processing_committee_building_seconds_bucket{le="0.1"} 1014
+beacon_attestation_processing_committee_building_seconds_bucket{le="0.25"} 1014
+beacon_attestation_processing_committee_building_seconds_bucket{le="0.5"} 1014
+beacon_attestation_processing_committee_building_seconds_bucket{le="1"} 1014
+beacon_attestation_processing_committee_building_seconds_bucket{le="2.5"} 1014
+beacon_attestation_processing_committee_building_seconds_bucket{le="5"} 1014
+beacon_attestation_processing_committee_building_seconds_bucket{le="10"} 1014
+beacon_attestation_processing_committee_building_seconds_bucket{le="+Inf"} 1014
+beacon_attestation_processing_committee_building_seconds_sum 1.1462943630000024
+beacon_attestation_processing_committee_building_seconds_count 1014
+# HELP beacon_attestation_processing_shuffling_cache_wait_seconds Time spent on waiting for the shuffling cache lock during attestation processing
+# TYPE beacon_attestation_processing_shuffling_cache_wait_seconds histogram
+beacon_attestation_processing_shuffling_cache_wait_seconds_bucket{le="0.005"} 1246264
+beacon_attestation_processing_shuffling_cache_wait_seconds_bucket{le="0.01"} 1246274
+beacon_attestation_processing_shuffling_cache_wait_seconds_bucket{le="0.025"} 1246274
+beacon_attestation_processing_shuffling_cache_wait_seconds_bucket{le="0.05"} 1246274
+beacon_attestation_processing_shuffling_cache_wait_seconds_bucket{le="0.1"} 1246274
+beacon_attestation_processing_shuffling_cache_wait_seconds_bucket{le="0.25"} 1246274
+beacon_attestation_processing_shuffling_cache_wait_seconds_bucket{le="0.5"} 1246274
+beacon_attestation_processing_shuffling_cache_wait_seconds_bucket{le="1"} 1246274
+beacon_attestation_processing_shuffling_cache_wait_seconds_bucket{le="2.5"} 1246274
+beacon_attestation_processing_shuffling_cache_wait_seconds_bucket{le="5"} 1246274
+beacon_attestation_processing_shuffling_cache_wait_seconds_bucket{le="10"} 1246274
+beacon_attestation_processing_shuffling_cache_wait_seconds_bucket{le="+Inf"} 1246274
+beacon_attestation_processing_shuffling_cache_wait_seconds_sum 1.814399094999476
+beacon_attestation_processing_shuffling_cache_wait_seconds_count 1246274
+# HELP beacon_attestation_processing_signature_seconds Time spent on the signature verification of attestation processing
+# TYPE beacon_attestation_processing_signature_seconds histogram
+beacon_attestation_processing_signature_seconds_bucket{le="0.005"} 0
+beacon_attestation_processing_signature_seconds_bucket{le="0.01"} 715139
+beacon_attestation_processing_signature_seconds_bucket{le="0.025"} 718716
+beacon_attestation_processing_signature_seconds_bucket{le="0.05"} 718730
+beacon_attestation_processing_signature_seconds_bucket{le="0.1"} 718730
+beacon_attestation_processing_signature_seconds_bucket{le="0.25"} 718730
+beacon_attestation_processing_signature_seconds_bucket{le="0.5"} 718730
+beacon_attestation_processing_signature_seconds_bucket{le="1"} 718730
+beacon_attestation_processing_signature_seconds_bucket{le="2.5"} 718730
+beacon_attestation_processing_signature_seconds_bucket{le="5"} 718730
+beacon_attestation_processing_signature_seconds_bucket{le="10"} 718730
+beacon_attestation_processing_signature_seconds_bucket{le="+Inf"} 718730
+beacon_attestation_processing_signature_seconds_sum 5259.333065047043
+beacon_attestation_processing_signature_seconds_count 718730
+# HELP beacon_attestation_processing_signature_setup_seconds Time spent on setting up for the signature verification of attestation processing
+# TYPE beacon_attestation_processing_signature_setup_seconds histogram
+beacon_attestation_processing_signature_setup_seconds_bucket{le="0.005"} 718719
+beacon_attestation_processing_signature_setup_seconds_bucket{le="0.01"} 718730
+beacon_attestation_processing_signature_setup_seconds_bucket{le="0.025"} 718730
+beacon_attestation_processing_signature_setup_seconds_bucket{le="0.05"} 718730
+beacon_attestation_processing_signature_setup_seconds_bucket{le="0.1"} 718730
+beacon_attestation_processing_signature_setup_seconds_bucket{le="0.25"} 718730
+beacon_attestation_processing_signature_setup_seconds_bucket{le="0.5"} 718730
+beacon_attestation_processing_signature_setup_seconds_bucket{le="1"} 718730
+beacon_attestation_processing_signature_setup_seconds_bucket{le="2.5"} 718730
+beacon_attestation_processing_signature_setup_seconds_bucket{le="5"} 718730
+beacon_attestation_processing_signature_setup_seconds_bucket{le="10"} 718730
+beacon_attestation_processing_signature_setup_seconds_bucket{le="+Inf"} 718730
+beacon_attestation_processing_signature_setup_seconds_sum 14.276256283999436
+beacon_attestation_processing_signature_setup_seconds_count 718730
+# HELP beacon_attestation_processing_state_read_seconds Time spent on reading the state during attestation processing
+# TYPE beacon_attestation_processing_state_read_seconds histogram
+beacon_attestation_processing_state_read_seconds_bucket{le="0.005"} 53
+beacon_attestation_processing_state_read_seconds_bucket{le="0.01"} 67
+beacon_attestation_processing_state_read_seconds_bucket{le="0.025"} 75
+beacon_attestation_processing_state_read_seconds_bucket{le="0.05"} 91
+beacon_attestation_processing_state_read_seconds_bucket{le="0.1"} 134
+beacon_attestation_processing_state_read_seconds_bucket{le="0.25"} 1053
+beacon_attestation_processing_state_read_seconds_bucket{le="0.5"} 1057
+beacon_attestation_processing_state_read_seconds_bucket{le="1"} 1058
+beacon_attestation_processing_state_read_seconds_bucket{le="2.5"} 1060
+beacon_attestation_processing_state_read_seconds_bucket{le="5"} 1066
+beacon_attestation_processing_state_read_seconds_bucket{le="10"} 1067
+beacon_attestation_processing_state_read_seconds_bucket{le="+Inf"} 1067
+beacon_attestation_processing_state_read_seconds_sum 169.11589325799977
+beacon_attestation_processing_state_read_seconds_count 1067
+# HELP beacon_attestation_processing_state_skip_seconds Time spent on reading the state during attestation processing
+# TYPE beacon_attestation_processing_state_skip_seconds histogram
+beacon_attestation_processing_state_skip_seconds_bucket{le="0.005"} 997
+beacon_attestation_processing_state_skip_seconds_bucket{le="0.01"} 1002
+beacon_attestation_processing_state_skip_seconds_bucket{le="0.025"} 1004
+beacon_attestation_processing_state_skip_seconds_bucket{le="0.05"} 1009
+beacon_attestation_processing_state_skip_seconds_bucket{le="0.1"} 1013
+beacon_attestation_processing_state_skip_seconds_bucket{le="0.25"} 1014
+beacon_attestation_processing_state_skip_seconds_bucket{le="0.5"} 1014
+beacon_attestation_processing_state_skip_seconds_bucket{le="1"} 1014
+beacon_attestation_processing_state_skip_seconds_bucket{le="2.5"} 1014
+beacon_attestation_processing_state_skip_seconds_bucket{le="5"} 1014
+beacon_attestation_processing_state_skip_seconds_bucket{le="10"} 1014
+beacon_attestation_processing_state_skip_seconds_bucket{le="+Inf"} 1014
+beacon_attestation_processing_state_skip_seconds_sum 0.8005871770000004
+beacon_attestation_processing_state_skip_seconds_count 1014
+# HELP beacon_attn_observation_epoch_aggregators Count of aggregators that have been seen by the beacon chain in the previous epoch
+# TYPE beacon_attn_observation_epoch_aggregators gauge
+beacon_attn_observation_epoch_aggregators 72
+# HELP beacon_attn_observation_epoch_attesters Count of attesters that have been seen by the beacon chain in the previous epoch
+# TYPE beacon_attn_observation_epoch_attesters gauge
+beacon_attn_observation_epoch_attesters 102
+# HELP beacon_balances_cache_hits_total Count of times balances cache fulfils request
+# TYPE beacon_balances_cache_hits_total counter
+beacon_balances_cache_hits_total 3653
+# HELP beacon_balances_cache_misses_total Count of times balances cache fulfils request
+# TYPE beacon_balances_cache_misses_total counter
+beacon_balances_cache_misses_total 512
+# HELP beacon_block_processing_attestation_observation_seconds Time spent hashing and remembering all the attestations in the block
+# TYPE beacon_block_processing_attestation_observation_seconds histogram
+beacon_block_processing_attestation_observation_seconds_bucket{le="0.005"} 121604
+beacon_block_processing_attestation_observation_seconds_bucket{le="0.01"} 121604
+beacon_block_processing_attestation_observation_seconds_bucket{le="0.025"} 121604
+beacon_block_processing_attestation_observation_seconds_bucket{le="0.05"} 121604
+beacon_block_processing_attestation_observation_seconds_bucket{le="0.1"} 121604
+beacon_block_processing_attestation_observation_seconds_bucket{le="0.25"} 121604
+beacon_block_processing_attestation_observation_seconds_bucket{le="0.5"} 121604
+beacon_block_processing_attestation_observation_seconds_bucket{le="1"} 121604
+beacon_block_processing_attestation_observation_seconds_bucket{le="2.5"} 121604
+beacon_block_processing_attestation_observation_seconds_bucket{le="5"} 121604
+beacon_block_processing_attestation_observation_seconds_bucket{le="10"} 121604
+beacon_block_processing_attestation_observation_seconds_bucket{le="+Inf"} 121604
+beacon_block_processing_attestation_observation_seconds_sum 9.840267238000107
+beacon_block_processing_attestation_observation_seconds_count 121604
+# HELP beacon_block_processing_block_root_seconds Time spent calculating the block root when processing a block.
+# TYPE beacon_block_processing_block_root_seconds histogram
+beacon_block_processing_block_root_seconds_bucket{le="0.005"} 121790
+beacon_block_processing_block_root_seconds_bucket{le="0.01"} 121791
+beacon_block_processing_block_root_seconds_bucket{le="0.025"} 121791
+beacon_block_processing_block_root_seconds_bucket{le="0.05"} 121791
+beacon_block_processing_block_root_seconds_bucket{le="0.1"} 121791
+beacon_block_processing_block_root_seconds_bucket{le="0.25"} 121791
+beacon_block_processing_block_root_seconds_bucket{le="0.5"} 121791
+beacon_block_processing_block_root_seconds_bucket{le="1"} 121791
+beacon_block_processing_block_root_seconds_bucket{le="2.5"} 121791
+beacon_block_processing_block_root_seconds_bucket{le="5"} 121791
+beacon_block_processing_block_root_seconds_bucket{le="10"} 121791
+beacon_block_processing_block_root_seconds_bucket{le="+Inf"} 121791
+beacon_block_processing_block_root_seconds_sum 14.634750899000169
+beacon_block_processing_block_root_seconds_count 121791
+# HELP beacon_block_processing_catch_up_state_seconds Time spent skipping slots on a state before processing a block.
+# TYPE beacon_block_processing_catch_up_state_seconds histogram
+beacon_block_processing_catch_up_state_seconds_bucket{le="0.005"} 114025
+beacon_block_processing_catch_up_state_seconds_bucket{le="0.01"} 119772
+beacon_block_processing_catch_up_state_seconds_bucket{le="0.025"} 121334
+beacon_block_processing_catch_up_state_seconds_bucket{le="0.05"} 121383
+beacon_block_processing_catch_up_state_seconds_bucket{le="0.1"} 121510
+beacon_block_processing_catch_up_state_seconds_bucket{le="0.25"} 121582
+beacon_block_processing_catch_up_state_seconds_bucket{le="0.5"} 121587
+beacon_block_processing_catch_up_state_seconds_bucket{le="1"} 121598
+beacon_block_processing_catch_up_state_seconds_bucket{le="2.5"} 121599
+beacon_block_processing_catch_up_state_seconds_bucket{le="5"} 121604
+beacon_block_processing_catch_up_state_seconds_bucket{le="10"} 121604
+beacon_block_processing_catch_up_state_seconds_bucket{le="+Inf"} 121604
+beacon_block_processing_catch_up_state_seconds_sum 156.34906518599993
+beacon_block_processing_catch_up_state_seconds_count 121604
+# HELP beacon_block_processing_committee_building_seconds Time spent building/obtaining committees for block processing.
+# TYPE beacon_block_processing_committee_building_seconds histogram
+beacon_block_processing_committee_building_seconds_bucket{le="0.005"} 121604
+beacon_block_processing_committee_building_seconds_bucket{le="0.01"} 121604
+beacon_block_processing_committee_building_seconds_bucket{le="0.025"} 121604
+beacon_block_processing_committee_building_seconds_bucket{le="0.05"} 121604
+beacon_block_processing_committee_building_seconds_bucket{le="0.1"} 121604
+beacon_block_processing_committee_building_seconds_bucket{le="0.25"} 121604
+beacon_block_processing_committee_building_seconds_bucket{le="0.5"} 121604
+beacon_block_processing_committee_building_seconds_bucket{le="1"} 121604
+beacon_block_processing_committee_building_seconds_bucket{le="2.5"} 121604
+beacon_block_processing_committee_building_seconds_bucket{le="5"} 121604
+beacon_block_processing_committee_building_seconds_bucket{le="10"} 121604
+beacon_block_processing_committee_building_seconds_bucket{le="+Inf"} 121604
+beacon_block_processing_committee_building_seconds_sum 0.18660767400000175
+beacon_block_processing_committee_building_seconds_count 121604
+# HELP beacon_block_processing_core_seconds Time spent doing the core per_block_processing state processing.
+# TYPE beacon_block_processing_core_seconds histogram
+beacon_block_processing_core_seconds_bucket{le="0.005"} 121295
+beacon_block_processing_core_seconds_bucket{le="0.01"} 121314
+beacon_block_processing_core_seconds_bucket{le="0.025"} 121331
+beacon_block_processing_core_seconds_bucket{le="0.05"} 121351
+beacon_block_processing_core_seconds_bucket{le="0.1"} 121373
+beacon_block_processing_core_seconds_bucket{le="0.25"} 121604
+beacon_block_processing_core_seconds_bucket{le="0.5"} 121604
+beacon_block_processing_core_seconds_bucket{le="1"} 121604
+beacon_block_processing_core_seconds_bucket{le="2.5"} 121604
+beacon_block_processing_core_seconds_bucket{le="5"} 121604
+beacon_block_processing_core_seconds_bucket{le="10"} 121604
+beacon_block_processing_core_seconds_bucket{le="+Inf"} 121604
+beacon_block_processing_core_seconds_sum 69.4641379700004
+beacon_block_processing_core_seconds_count 121604
+# HELP beacon_block_processing_db_read_seconds Time spent loading block and state from DB for block processing
+# TYPE beacon_block_processing_db_read_seconds histogram
+beacon_block_processing_db_read_seconds_bucket{le="0.005"} 121666
+beacon_block_processing_db_read_seconds_bucket{le="0.01"} 121728
+beacon_block_processing_db_read_seconds_bucket{le="0.025"} 121827
+beacon_block_processing_db_read_seconds_bucket{le="0.05"} 121890
+beacon_block_processing_db_read_seconds_bucket{le="0.1"} 122023
+beacon_block_processing_db_read_seconds_bucket{le="0.25"} 122437
+beacon_block_processing_db_read_seconds_bucket{le="0.5"} 122438
+beacon_block_processing_db_read_seconds_bucket{le="1"} 122438
+beacon_block_processing_db_read_seconds_bucket{le="2.5"} 122440
+beacon_block_processing_db_read_seconds_bucket{le="5"} 122442
+beacon_block_processing_db_read_seconds_bucket{le="10"} 122442
+beacon_block_processing_db_read_seconds_bucket{le="+Inf"} 122442
+beacon_block_processing_db_read_seconds_sum 78.84573773600187
+beacon_block_processing_db_read_seconds_count 122442
+# HELP beacon_block_processing_db_write_seconds Time spent writing a newly processed block and state to DB
+# TYPE beacon_block_processing_db_write_seconds histogram
+beacon_block_processing_db_write_seconds_bucket{le="0.005"} 117120
+beacon_block_processing_db_write_seconds_bucket{le="0.01"} 121228
+beacon_block_processing_db_write_seconds_bucket{le="0.025"} 121575
+beacon_block_processing_db_write_seconds_bucket{le="0.05"} 121575
+beacon_block_processing_db_write_seconds_bucket{le="0.1"} 121579
+beacon_block_processing_db_write_seconds_bucket{le="0.25"} 121589
+beacon_block_processing_db_write_seconds_bucket{le="0.5"} 121592
+beacon_block_processing_db_write_seconds_bucket{le="1"} 121592
+beacon_block_processing_db_write_seconds_bucket{le="2.5"} 121592
+beacon_block_processing_db_write_seconds_bucket{le="5"} 121593
+beacon_block_processing_db_write_seconds_bucket{le="10"} 121593
+beacon_block_processing_db_write_seconds_bucket{le="+Inf"} 121598
+beacon_block_processing_db_write_seconds_sum 122.57966930499913
+beacon_block_processing_db_write_seconds_count 121598
+# HELP beacon_block_processing_requests_total Count of blocks submitted for processing
+# TYPE beacon_block_processing_requests_total counter
+beacon_block_processing_requests_total 122392
+# HELP beacon_block_processing_seconds Full runtime of block processing
+# TYPE beacon_block_processing_seconds histogram
+beacon_block_processing_seconds_bucket{le="0.005"} 620
+beacon_block_processing_seconds_bucket{le="0.01"} 630
+beacon_block_processing_seconds_bucket{le="0.025"} 38615
+beacon_block_processing_seconds_bucket{le="0.05"} 108632
+beacon_block_processing_seconds_bucket{le="0.1"} 120969
+beacon_block_processing_seconds_bucket{le="0.25"} 122315
+beacon_block_processing_seconds_bucket{le="0.5"} 122371
+beacon_block_processing_seconds_bucket{le="1"} 122379
+beacon_block_processing_seconds_bucket{le="2.5"} 122385
+beacon_block_processing_seconds_bucket{le="5"} 122387
+beacon_block_processing_seconds_bucket{le="10"} 122387
+beacon_block_processing_seconds_bucket{le="+Inf"} 122392
+beacon_block_processing_seconds_sum 4225.448912929043
+beacon_block_processing_seconds_count 122392
+# HELP beacon_block_processing_state_root_seconds Time spent calculating the state root when processing a block.
+# TYPE beacon_block_processing_state_root_seconds histogram
+beacon_block_processing_state_root_seconds_bucket{le="0.005"} 80827
+beacon_block_processing_state_root_seconds_bucket{le="0.01"} 121523
+beacon_block_processing_state_root_seconds_bucket{le="0.025"} 121538
+beacon_block_processing_state_root_seconds_bucket{le="0.05"} 121538
+beacon_block_processing_state_root_seconds_bucket{le="0.1"} 121604
+beacon_block_processing_state_root_seconds_bucket{le="0.25"} 121604
+beacon_block_processing_state_root_seconds_bucket{le="0.5"} 121604
+beacon_block_processing_state_root_seconds_bucket{le="1"} 121604
+beacon_block_processing_state_root_seconds_bucket{le="2.5"} 121604
+beacon_block_processing_state_root_seconds_bucket{le="5"} 121604
+beacon_block_processing_state_root_seconds_bucket{le="10"} 121604
+beacon_block_processing_state_root_seconds_bucket{le="+Inf"} 121604
+beacon_block_processing_state_root_seconds_sum 564.5171785439952
+beacon_block_processing_state_root_seconds_count 121604
+# HELP beacon_block_processing_successes_total Count of blocks processed without error
+# TYPE beacon_block_processing_successes_total counter
+beacon_block_processing_successes_total 243196
+# HELP beacon_block_production_requests_total Count of all block production requests
+# TYPE beacon_block_production_requests_total counter
+beacon_block_production_requests_total 804
+# HELP beacon_block_production_seconds Full runtime of block production
+# TYPE beacon_block_production_seconds histogram
+beacon_block_production_seconds_bucket{le="0.005"} 0
+beacon_block_production_seconds_bucket{le="0.01"} 38
+beacon_block_production_seconds_bucket{le="0.025"} 94
+beacon_block_production_seconds_bucket{le="0.05"} 94
+beacon_block_production_seconds_bucket{le="0.1"} 794
+beacon_block_production_seconds_bucket{le="0.25"} 804
+beacon_block_production_seconds_bucket{le="0.5"} 804
+beacon_block_production_seconds_bucket{le="1"} 804
+beacon_block_production_seconds_bucket{le="2.5"} 804
+beacon_block_production_seconds_bucket{le="5"} 804
+beacon_block_production_seconds_bucket{le="10"} 804
+beacon_block_production_seconds_bucket{le="+Inf"} 804
+beacon_block_production_seconds_sum 55.747459146999944
+beacon_block_production_seconds_count 804
+# HELP beacon_block_production_successes_total Count of blocks successfully produced.
+# TYPE beacon_block_production_successes_total counter
+beacon_block_production_successes_total 804
+# HELP beacon_fork_choice_changed_head_total Count of occasions fork choice has found a new head
+# TYPE beacon_fork_choice_changed_head_total counter
+beacon_fork_choice_changed_head_total 121071
+# HELP beacon_fork_choice_process_attestation_seconds Time taken to add an attestation to fork choice
+# TYPE beacon_fork_choice_process_attestation_seconds histogram
+beacon_fork_choice_process_attestation_seconds_bucket{le="0.005"} 1839733
+beacon_fork_choice_process_attestation_seconds_bucket{le="0.01"} 1839750
+beacon_fork_choice_process_attestation_seconds_bucket{le="0.025"} 1839751
+beacon_fork_choice_process_attestation_seconds_bucket{le="0.05"} 1839751
+beacon_fork_choice_process_attestation_seconds_bucket{le="0.1"} 1839751
+beacon_fork_choice_process_attestation_seconds_bucket{le="0.25"} 1839751
+beacon_fork_choice_process_attestation_seconds_bucket{le="0.5"} 1839751
+beacon_fork_choice_process_attestation_seconds_bucket{le="1"} 1839751
+beacon_fork_choice_process_attestation_seconds_bucket{le="2.5"} 1839751
+beacon_fork_choice_process_attestation_seconds_bucket{le="5"} 1839751
+beacon_fork_choice_process_attestation_seconds_bucket{le="10"} 1839751
+beacon_fork_choice_process_attestation_seconds_bucket{le="+Inf"} 1839751
+beacon_fork_choice_process_attestation_seconds_sum 16.773284389000548
+beacon_fork_choice_process_attestation_seconds_count 1839751
+# HELP beacon_fork_choice_process_block_seconds Time taken to add a block and all attestations to fork choice
+# TYPE beacon_fork_choice_process_block_seconds histogram
+beacon_fork_choice_process_block_seconds_bucket{le="0.005"} 121092
+beacon_fork_choice_process_block_seconds_bucket{le="0.01"} 121092
+beacon_fork_choice_process_block_seconds_bucket{le="0.025"} 121092
+beacon_fork_choice_process_block_seconds_bucket{le="0.05"} 121092
+beacon_fork_choice_process_block_seconds_bucket{le="0.1"} 121106
+beacon_fork_choice_process_block_seconds_bucket{le="0.25"} 121598
+beacon_fork_choice_process_block_seconds_bucket{le="0.5"} 121602
+beacon_fork_choice_process_block_seconds_bucket{le="1"} 121602
+beacon_fork_choice_process_block_seconds_bucket{le="2.5"} 121603
+beacon_fork_choice_process_block_seconds_bucket{le="5"} 121604
+beacon_fork_choice_process_block_seconds_bucket{le="10"} 121604
+beacon_fork_choice_process_block_seconds_bucket{le="+Inf"} 121604
+beacon_fork_choice_process_block_seconds_sum 83.28957500200056
+beacon_fork_choice_process_block_seconds_count 121604
+# HELP beacon_fork_choice_reorg_total Count of occasions fork choice has switched to a different chain
+# TYPE beacon_fork_choice_reorg_total counter
+beacon_fork_choice_reorg_total 101
+# HELP beacon_fork_choice_requests_total Count of occasions where fork choice has tried to find a head
+# TYPE beacon_fork_choice_requests_total counter
+beacon_fork_choice_requests_total 121593
+# HELP beacon_fork_choice_seconds Full runtime of fork choice
+# TYPE beacon_fork_choice_seconds histogram
+beacon_fork_choice_seconds_bucket{le="0.005"} 116541
+beacon_fork_choice_seconds_bucket{le="0.01"} 118107
+beacon_fork_choice_seconds_bucket{le="0.025"} 121078
+beacon_fork_choice_seconds_bucket{le="0.05"} 121085
+beacon_fork_choice_seconds_bucket{le="0.1"} 121099
+beacon_fork_choice_seconds_bucket{le="0.25"} 121587
+beacon_fork_choice_seconds_bucket{le="0.5"} 121591
+beacon_fork_choice_seconds_bucket{le="1"} 121591
+beacon_fork_choice_seconds_bucket{le="2.5"} 121592
+beacon_fork_choice_seconds_bucket{le="5"} 121593
+beacon_fork_choice_seconds_bucket{le="10"} 121593
+beacon_fork_choice_seconds_bucket{le="+Inf"} 121593
+beacon_fork_choice_seconds_sum 375.7525437870036
+beacon_fork_choice_seconds_count 121593
+# HELP beacon_head_state_active_validators_total Count of active validators at the head of the chain
+# TYPE beacon_head_state_active_validators_total gauge
+beacon_head_state_active_validators_total 4119
+# HELP beacon_head_state_current_justified_epoch Current justified epoch at the head of the chain
+# TYPE beacon_head_state_current_justified_epoch gauge
+beacon_head_state_current_justified_epoch 4357
+# HELP beacon_head_state_current_justified_root Current justified root at the head of the chain
+# TYPE beacon_head_state_current_justified_root gauge
+beacon_head_state_current_justified_root -3147544935251952600
+# HELP beacon_head_state_eth1_deposit_index Eth1 deposit index at the head of the chain
+# TYPE beacon_head_state_eth1_deposit_index gauge
+beacon_head_state_eth1_deposit_index 5157
+# HELP beacon_head_state_finalized_epoch Finalized epoch at the head of the chain
+# TYPE beacon_head_state_finalized_epoch gauge
+beacon_head_state_finalized_epoch 4356
+# HELP beacon_head_state_finalized_root Finalized root at the head of the chain
+# TYPE beacon_head_state_finalized_root gauge
+beacon_head_state_finalized_root -5729593758935774000
+# HELP beacon_head_state_latest_block_slot Latest block slot at the head of the chain
+# TYPE beacon_head_state_latest_block_slot gauge
+beacon_head_state_latest_block_slot 139473
+# HELP beacon_head_state_previous_justified_epoch Previous justified epoch at the head of the chain
+# TYPE beacon_head_state_previous_justified_epoch gauge
+beacon_head_state_previous_justified_epoch 4356
+# HELP beacon_head_state_previous_justified_root Previous justified root at the head of the chain
+# TYPE beacon_head_state_previous_justified_root gauge
+beacon_head_state_previous_justified_root -5729593758935774000
+# HELP beacon_head_state_root Root of the block at the head of the chain
+# TYPE beacon_head_state_root gauge
+beacon_head_state_root -8663267929456924000
+# HELP beacon_head_state_slashed_validators_total Count of all slashed validators at the head of the chain
+# TYPE beacon_head_state_slashed_validators_total gauge
+beacon_head_state_slashed_validators_total 72
+# HELP beacon_head_state_slot Slot of the block at the head of the chain
+# TYPE beacon_head_state_slot gauge
+beacon_head_state_slot 139473
+# HELP beacon_head_state_total_validators_total Count of validators at the head of the chain
+# TYPE beacon_head_state_total_validators_total gauge
+beacon_head_state_total_validators_total 4674
+# HELP beacon_head_state_validator_balances_total Sum of all validator balances at the head of the chain
+# TYPE beacon_head_state_validator_balances_total gauge
+beacon_head_state_validator_balances_total 150938525542273
+# HELP beacon_head_state_withdrawn_validators_total Sum of all validator balances at the head of the chain
+# TYPE beacon_head_state_withdrawn_validators_total gauge
+beacon_head_state_withdrawn_validators_total 484
+# HELP beacon_op_pool_attestations_total Count of attestations in the op pool
+# TYPE beacon_op_pool_attestations_total gauge
+beacon_op_pool_attestations_total 211
+# HELP beacon_op_pool_attester_slashings_total Count of attester slashings in the op pool
+# TYPE beacon_op_pool_attester_slashings_total gauge
+beacon_op_pool_attester_slashings_total 1
+# HELP beacon_op_pool_proposer_slashings_total Count of proposer slashings in the op pool
+# TYPE beacon_op_pool_proposer_slashings_total gauge
+beacon_op_pool_proposer_slashings_total 0
+# HELP beacon_op_pool_voluntary_exits_total Count of voluntary exits in the op pool
+# TYPE beacon_op_pool_voluntary_exits_total gauge
+beacon_op_pool_voluntary_exits_total 0
+# HELP beacon_operations_per_block_attestation_total Number of attestations in a block
+# TYPE beacon_operations_per_block_attestation_total histogram
+beacon_operations_per_block_attestation_total_bucket{le="0.005"} 160
+beacon_operations_per_block_attestation_total_bucket{le="0.01"} 160
+beacon_operations_per_block_attestation_total_bucket{le="0.025"} 160
+beacon_operations_per_block_attestation_total_bucket{le="0.05"} 160
+beacon_operations_per_block_attestation_total_bucket{le="0.1"} 160
+beacon_operations_per_block_attestation_total_bucket{le="0.25"} 160
+beacon_operations_per_block_attestation_total_bucket{le="0.5"} 160
+beacon_operations_per_block_attestation_total_bucket{le="1"} 8203
+beacon_operations_per_block_attestation_total_bucket{le="2.5"} 25436
+beacon_operations_per_block_attestation_total_bucket{le="5"} 78810
+beacon_operations_per_block_attestation_total_bucket{le="10"} 109487
+beacon_operations_per_block_attestation_total_bucket{le="+Inf"} 121598
+beacon_operations_per_block_attestation_total_sum 657424
+beacon_operations_per_block_attestation_total_count 121598
+# HELP beacon_participation_prev_epoch_attester Ratio of attesting balances to total balances
+# TYPE beacon_participation_prev_epoch_attester gauge
+beacon_participation_prev_epoch_attester 0.7831848662277204
+# HELP beacon_participation_prev_epoch_head_attester Ratio of head-attesting balances to total balances
+# TYPE beacon_participation_prev_epoch_head_attester gauge
+beacon_participation_prev_epoch_head_attester 0.78150654242514
+# HELP beacon_participation_prev_epoch_target_attester Ratio of target-attesting balances to total balances
+# TYPE beacon_participation_prev_epoch_target_attester gauge
+beacon_participation_prev_epoch_target_attester 0.7831848662277204
+# HELP beacon_persist_fork_choice Time taken to persist the fork choice struct
+# TYPE beacon_persist_fork_choice histogram
+beacon_persist_fork_choice_bucket{le="0.005"} 2902
+beacon_persist_fork_choice_bucket{le="0.01"} 4432
+beacon_persist_fork_choice_bucket{le="0.025"} 4453
+beacon_persist_fork_choice_bucket{le="0.05"} 4453
+beacon_persist_fork_choice_bucket{le="0.1"} 4453
+beacon_persist_fork_choice_bucket{le="0.25"} 4453
+beacon_persist_fork_choice_bucket{le="0.5"} 4453
+beacon_persist_fork_choice_bucket{le="1"} 4453
+beacon_persist_fork_choice_bucket{le="2.5"} 4453
+beacon_persist_fork_choice_bucket{le="5"} 4453
+beacon_persist_fork_choice_bucket{le="10"} 4453
+beacon_persist_fork_choice_bucket{le="+Inf"} 4453
+beacon_persist_fork_choice_sum 17.489473556999943
+beacon_persist_fork_choice_count 4453
+# HELP beacon_persist_head Time taken to persist the canonical head
+# TYPE beacon_persist_head histogram
+beacon_persist_head_bucket{le="0.005"} 4449
+beacon_persist_head_bucket{le="0.01"} 4453
+beacon_persist_head_bucket{le="0.025"} 4453
+beacon_persist_head_bucket{le="0.05"} 4453
+beacon_persist_head_bucket{le="0.1"} 4453
+beacon_persist_head_bucket{le="0.25"} 4453
+beacon_persist_head_bucket{le="0.5"} 4453
+beacon_persist_head_bucket{le="1"} 4453
+beacon_persist_head_bucket{le="2.5"} 4453
+beacon_persist_head_bucket{le="5"} 4453
+beacon_persist_head_bucket{le="10"} 4453
+beacon_persist_head_bucket{le="+Inf"} 4453
+beacon_persist_head_sum 0.1916411650000001
+beacon_persist_head_count 4453
+# HELP beacon_shuffling_cache_hits_total Count of times shuffling cache fulfils request
+# TYPE beacon_shuffling_cache_hits_total counter
+beacon_shuffling_cache_hits_total 1245207
+# HELP beacon_shuffling_cache_misses_total Count of times shuffling cache fulfils request
+# TYPE beacon_shuffling_cache_misses_total counter
+beacon_shuffling_cache_misses_total 1067
+# HELP beacon_unaggregated_attestation_gossip_verification_seconds Full runtime of aggregated attestation gossip verification
+# TYPE beacon_unaggregated_attestation_gossip_verification_seconds histogram
+beacon_unaggregated_attestation_gossip_verification_seconds_bucket{le="0.005"} 179
+beacon_unaggregated_attestation_gossip_verification_seconds_bucket{le="0.01"} 714815
+beacon_unaggregated_attestation_gossip_verification_seconds_bucket{le="0.025"} 718523
+beacon_unaggregated_attestation_gossip_verification_seconds_bucket{le="0.05"} 718543
+beacon_unaggregated_attestation_gossip_verification_seconds_bucket{le="0.1"} 718561
+beacon_unaggregated_attestation_gossip_verification_seconds_bucket{le="0.25"} 718904
+beacon_unaggregated_attestation_gossip_verification_seconds_bucket{le="0.5"} 718905
+beacon_unaggregated_attestation_gossip_verification_seconds_bucket{le="1"} 718905
+beacon_unaggregated_attestation_gossip_verification_seconds_bucket{le="2.5"} 718906
+beacon_unaggregated_attestation_gossip_verification_seconds_bucket{le="5"} 718909
+beacon_unaggregated_attestation_gossip_verification_seconds_bucket{le="10"} 718910
+beacon_unaggregated_attestation_gossip_verification_seconds_bucket{le="+Inf"} 718910
+beacon_unaggregated_attestation_gossip_verification_seconds_sum 5356.835481021815
+beacon_unaggregated_attestation_gossip_verification_seconds_count 718910
+# HELP beacon_unaggregated_attestation_processing_requests_total Count of all unaggregated attestations submitted for processing
+# TYPE beacon_unaggregated_attestation_processing_requests_total counter
+beacon_unaggregated_attestation_processing_requests_total 718910
+# HELP beacon_unaggregated_attestation_processing_successes_total Number of unaggregated attestations verified for gossip
+# TYPE beacon_unaggregated_attestation_processing_successes_total counter
+beacon_unaggregated_attestation_processing_successes_total 718663
+# HELP beacon_update_head_seconds Time taken to update the canonical head
+# TYPE beacon_update_head_seconds histogram
+beacon_update_head_seconds_bucket{le="0.005"} 121066
+beacon_update_head_seconds_bucket{le="0.01"} 121070
+beacon_update_head_seconds_bucket{le="0.025"} 121071
+beacon_update_head_seconds_bucket{le="0.05"} 121071
+beacon_update_head_seconds_bucket{le="0.1"} 121071
+beacon_update_head_seconds_bucket{le="0.25"} 121071
+beacon_update_head_seconds_bucket{le="0.5"} 121071
+beacon_update_head_seconds_bucket{le="1"} 121071
+beacon_update_head_seconds_bucket{le="2.5"} 121071
+beacon_update_head_seconds_bucket{le="5"} 121071
+beacon_update_head_seconds_bucket{le="10"} 121071
+beacon_update_head_seconds_bucket{le="+Inf"} 121071
+beacon_update_head_seconds_sum 8.492578889999804
+beacon_update_head_seconds_count 121071
+# HELP crit_total Count of crits logged
+# TYPE crit_total counter
+crit_total 39
+# HELP discovery_queue_size The number of discovery queries awaiting execution
+# TYPE discovery_queue_size gauge
+discovery_queue_size 0
+# HELP discovery_reqs_per_ip Unsolicited discovery requests per ip per second
+# TYPE discovery_reqs_per_ip gauge
+discovery_reqs_per_ip{Addresses="V4(118.169.44.253)"} 0.4
+discovery_reqs_per_ip{Addresses="V4(134.101.131.153)"} 0.8
+discovery_reqs_per_ip{Addresses="V4(178.151.98.28)"} 0.2
+discovery_reqs_per_ip{Addresses="V4(18.194.41.51)"} 0.2
+discovery_reqs_per_ip{Addresses="V4(18.196.31.30)"} 0.4
+discovery_reqs_per_ip{Addresses="V4(220.118.228.156)"} 0.2
+discovery_reqs_per_ip{Addresses="V4(3.92.43.55)"} 1.2
+discovery_reqs_per_ip{Addresses="V4(47.186.101.185)"} 0.2
+discovery_reqs_per_ip{Addresses="V4(80.235.228.181)"} 0.2
+# HELP discovery_requests The number of unsolicited discovery requests per second
+# TYPE discovery_requests gauge
+discovery_requests 3.8
+# HELP discovery_sessions The number of active discovery sessions with peers
+# TYPE discovery_sessions gauge
+discovery_sessions 999
+# HELP error_total Count of errors logged
+# TYPE error_total counter
+error_total 1196
+# HELP eth1_block_cache_len Count of eth1 blocks in cache
+# TYPE eth1_block_cache_len gauge
+eth1_block_cache_len 4096
+# HELP eth1_deposit_cache_len Number of deposits in the eth1 cache
+# TYPE eth1_deposit_cache_len gauge
+eth1_deposit_cache_len 5160
+# HELP eth1_highest_processed_deposit_block Number of the last block checked for deposits
+# TYPE eth1_highest_processed_deposit_block gauge
+eth1_highest_processed_deposit_block 3069061
+# HELP eth1_latest_cached_block_timestamp Timestamp of latest block in eth1 cache
+# TYPE eth1_latest_cached_block_timestamp gauge
+eth1_latest_cached_block_timestamp 1595092105
+# HELP http_server_request_duration_seconds Time taken to build a response to a HTTP request
+# TYPE http_server_request_duration_seconds histogram
+http_server_request_duration_seconds_bucket{le="0.005"} 2520476
+http_server_request_duration_seconds_bucket{le="0.01"} 2609770
+http_server_request_duration_seconds_bucket{le="0.025"} 2633448
+http_server_request_duration_seconds_bucket{le="0.05"} 2634582
+http_server_request_duration_seconds_bucket{le="0.1"} 2635418
+http_server_request_duration_seconds_bucket{le="0.25"} 2635646
+http_server_request_duration_seconds_bucket{le="0.5"} 2635646
+http_server_request_duration_seconds_bucket{le="1"} 2635646
+http_server_request_duration_seconds_bucket{le="2.5"} 2635646
+http_server_request_duration_seconds_bucket{le="5"} 2635647
+http_server_request_duration_seconds_bucket{le="10"} 2635648
+http_server_request_duration_seconds_bucket{le="+Inf"} 2635648
+http_server_request_duration_seconds_sum 4527.517384613159
+http_server_request_duration_seconds_count 2635648
+# HELP http_server_request_total Total count of HTTP requests received
+# TYPE http_server_request_total counter
+http_server_request_total 2635649
+# HELP http_server_success_total Total count of HTTP 200 responses sent
+# TYPE http_server_success_total counter
+http_server_success_total 2635157
+# HELP http_server_validator_attestation_get_request_duration_seconds Time taken to respond to GET /validator/attestation
+# TYPE http_server_validator_attestation_get_request_duration_seconds histogram
+http_server_validator_attestation_get_request_duration_seconds_bucket{le="0.005"} 44189
+http_server_validator_attestation_get_request_duration_seconds_bucket{le="0.01"} 44191
+http_server_validator_attestation_get_request_duration_seconds_bucket{le="0.025"} 44191
+http_server_validator_attestation_get_request_duration_seconds_bucket{le="0.05"} 44191
+http_server_validator_attestation_get_request_duration_seconds_bucket{le="0.1"} 44191
+http_server_validator_attestation_get_request_duration_seconds_bucket{le="0.25"} 44191
+http_server_validator_attestation_get_request_duration_seconds_bucket{le="0.5"} 44191
+http_server_validator_attestation_get_request_duration_seconds_bucket{le="1"} 44191
+http_server_validator_attestation_get_request_duration_seconds_bucket{le="2.5"} 44191
+http_server_validator_attestation_get_request_duration_seconds_bucket{le="5"} 44191
+http_server_validator_attestation_get_request_duration_seconds_bucket{le="10"} 44191
+http_server_validator_attestation_get_request_duration_seconds_bucket{le="+Inf"} 44191
+http_server_validator_attestation_get_request_duration_seconds_sum 2.292381657999964
+http_server_validator_attestation_get_request_duration_seconds_count 44191
+# HELP http_server_validator_block_get_request_duration_seconds Time taken to respond to GET /validator/block
+# TYPE http_server_validator_block_get_request_duration_seconds histogram
+http_server_validator_block_get_request_duration_seconds_bucket{le="0.005"} 0
+http_server_validator_block_get_request_duration_seconds_bucket{le="0.01"} 0
+http_server_validator_block_get_request_duration_seconds_bucket{le="0.025"} 0
+http_server_validator_block_get_request_duration_seconds_bucket{le="0.05"} 0
+http_server_validator_block_get_request_duration_seconds_bucket{le="0.1"} 776
+http_server_validator_block_get_request_duration_seconds_bucket{le="0.25"} 804
+http_server_validator_block_get_request_duration_seconds_bucket{le="0.5"} 804
+http_server_validator_block_get_request_duration_seconds_bucket{le="1"} 804
+http_server_validator_block_get_request_duration_seconds_bucket{le="2.5"} 804
+http_server_validator_block_get_request_duration_seconds_bucket{le="5"} 804
+http_server_validator_block_get_request_duration_seconds_bucket{le="10"} 804
+http_server_validator_block_get_request_duration_seconds_bucket{le="+Inf"} 804
+http_server_validator_block_get_request_duration_seconds_sum 64.15188955399994
+http_server_validator_block_get_request_duration_seconds_count 804
+# HELP http_server_validator_duties_get_request_duration_seconds Time taken to respond to GET /validator/duties
+# TYPE http_server_validator_duties_get_request_duration_seconds histogram
+http_server_validator_duties_get_request_duration_seconds_bucket{le="0.005"} 278948
+http_server_validator_duties_get_request_duration_seconds_bucket{le="0.01"} 278948
+http_server_validator_duties_get_request_duration_seconds_bucket{le="0.025"} 278948
+http_server_validator_duties_get_request_duration_seconds_bucket{le="0.05"} 278948
+http_server_validator_duties_get_request_duration_seconds_bucket{le="0.1"} 278948
+http_server_validator_duties_get_request_duration_seconds_bucket{le="0.25"} 278948
+http_server_validator_duties_get_request_duration_seconds_bucket{le="0.5"} 278948
+http_server_validator_duties_get_request_duration_seconds_bucket{le="1"} 278948
+http_server_validator_duties_get_request_duration_seconds_bucket{le="2.5"} 278948
+http_server_validator_duties_get_request_duration_seconds_bucket{le="5"} 278948
+http_server_validator_duties_get_request_duration_seconds_bucket{le="10"} 278948
+http_server_validator_duties_get_request_duration_seconds_bucket{le="+Inf"} 278948
+http_server_validator_duties_get_request_duration_seconds_sum 0.32393529600000154
+http_server_validator_duties_get_request_duration_seconds_count 278948
+# HELP info_total Count of infos logged
+# TYPE info_total counter
+info_total 268555
+# HELP libp2p_peer_connect_event_total Count of libp2p peer connect events (not the current number of connected peers)
+# TYPE libp2p_peer_connect_event_total counter
+libp2p_peer_connect_event_total 19937
+# HELP libp2p_peer_connected_peers_total Count of libp2p peers currently connected
+# TYPE libp2p_peer_connected_peers_total gauge
+libp2p_peer_connected_peers_total 263
+# HELP libp2p_peer_disconnect_event_total Count of libp2p peer disconnect events
+# TYPE libp2p_peer_disconnect_event_total counter
+libp2p_peer_disconnect_event_total 19675
+# HELP network_gossip_aggregated_attestations_rx_total Count of gossip aggregated attestations received
+# TYPE network_gossip_aggregated_attestations_rx_total counter
+network_gossip_aggregated_attestations_rx_total 1246927
+# HELP network_gossip_aggregated_attestations_tx_total Count of gossip aggregated attestations transmitted
+# TYPE network_gossip_aggregated_attestations_tx_total counter
+network_gossip_aggregated_attestations_tx_total 14307
+# HELP network_gossip_blocks_rx_total Count of gossip blocks received
+# TYPE network_gossip_blocks_rx_total counter
+network_gossip_blocks_rx_total 121160
+# HELP network_gossip_blocks_tx_total Count of gossip blocks transmitted
+# TYPE network_gossip_blocks_tx_total counter
+network_gossip_blocks_tx_total 804
+# HELP network_gossip_unaggregated_attestations_ignored_total Count of gossip unaggregated attestations ignored by attestation service
+# TYPE network_gossip_unaggregated_attestations_ignored_total counter
+network_gossip_unaggregated_attestations_ignored_total 8290121
+# HELP network_gossip_unaggregated_attestations_rx_total Count of gossip unaggregated attestations received
+# TYPE network_gossip_unaggregated_attestations_rx_total counter
+network_gossip_unaggregated_attestations_rx_total 8956729
+# HELP network_gossip_unaggregated_attestations_tx_total Count of gossip unaggregated attestations transmitted
+# TYPE network_gossip_unaggregated_attestations_tx_total counter
+network_gossip_unaggregated_attestations_tx_total 52302
+# HELP process_num_threads Number of threads used by the current process
+# TYPE process_num_threads gauge
+process_num_threads 15
+# HELP process_resident_memory_bytes Resident memory used by the current process
+# TYPE process_resident_memory_bytes gauge
+process_resident_memory_bytes 782659584
+# HELP process_virtual_memory_bytes Virtual memory used by the current process
+# TYPE process_virtual_memory_bytes gauge
+process_virtual_memory_bytes 2482544640
+# HELP slotclock_present_epoch The present wall-clock epoch
+# TYPE slotclock_present_epoch gauge
+slotclock_present_epoch 4358
+# HELP slotclock_present_slot The present wall-clock slot
+# TYPE slotclock_present_slot gauge
+slotclock_present_slot 139473
+# HELP slotclock_slot_time_milliseconds The duration in milliseconds between each slot
+# TYPE slotclock_slot_time_milliseconds gauge
+slotclock_slot_time_milliseconds 12000
+# HELP slotclock_slots_per_epoch Slots per epoch (constant)
+# TYPE slotclock_slots_per_epoch gauge
+slotclock_slots_per_epoch 32
+# HELP store_beacon_block_cache_hit_total Number of hits to the store's block cache
+# TYPE store_beacon_block_cache_hit_total counter
+store_beacon_block_cache_hit_total 20738
+# HELP store_beacon_block_get_total Total number of beacon blocks requested from the store (cache or DB)
+# TYPE store_beacon_block_get_total counter
+store_beacon_block_get_total 8452479
+# HELP store_beacon_block_read_bytes_total Total number of beacon block bytes read from the DB
+# TYPE store_beacon_block_read_bytes_total counter
+store_beacon_block_read_bytes_total 15765322334
+# HELP store_beacon_block_read_overhead_seconds Overhead on reading a beacon block from the DB (e.g., decoding)
+# TYPE store_beacon_block_read_overhead_seconds histogram
+store_beacon_block_read_overhead_seconds_bucket{le="0.005"} 8388293
+store_beacon_block_read_overhead_seconds_bucket{le="0.01"} 8417302
+store_beacon_block_read_overhead_seconds_bucket{le="0.025"} 8417556
+store_beacon_block_read_overhead_seconds_bucket{le="0.05"} 8417557
+store_beacon_block_read_overhead_seconds_bucket{le="0.1"} 8417557
+store_beacon_block_read_overhead_seconds_bucket{le="0.25"} 8417557
+store_beacon_block_read_overhead_seconds_bucket{le="0.5"} 8417557
+store_beacon_block_read_overhead_seconds_bucket{le="1"} 8417557
+store_beacon_block_read_overhead_seconds_bucket{le="2.5"} 8417557
+store_beacon_block_read_overhead_seconds_bucket{le="5"} 8417557
+store_beacon_block_read_overhead_seconds_bucket{le="10"} 8417557
+store_beacon_block_read_overhead_seconds_bucket{le="+Inf"} 8417557
+store_beacon_block_read_overhead_seconds_sum 13203.30094015161
+store_beacon_block_read_overhead_seconds_count 8417557
+# HELP store_beacon_block_read_total Total number of beacon block reads from the DB
+# TYPE store_beacon_block_read_total counter
+store_beacon_block_read_total 8417557
+# HELP store_beacon_block_write_bytes_total Total number of beacon block bytes written to the DB
+# TYPE store_beacon_block_write_bytes_total counter
+store_beacon_block_write_bytes_total 213759481
+# HELP store_beacon_block_write_overhead_seconds Overhead on writing a beacon block to the DB (e.g., encoding)
+# TYPE store_beacon_block_write_overhead_seconds histogram
+store_beacon_block_write_overhead_seconds_bucket{le="0.005"} 121596
+store_beacon_block_write_overhead_seconds_bucket{le="0.01"} 121598
+store_beacon_block_write_overhead_seconds_bucket{le="0.025"} 121598
+store_beacon_block_write_overhead_seconds_bucket{le="0.05"} 121598
+store_beacon_block_write_overhead_seconds_bucket{le="0.1"} 121598
+store_beacon_block_write_overhead_seconds_bucket{le="0.25"} 121598
+store_beacon_block_write_overhead_seconds_bucket{le="0.5"} 121598
+store_beacon_block_write_overhead_seconds_bucket{le="1"} 121598
+store_beacon_block_write_overhead_seconds_bucket{le="2.5"} 121598
+store_beacon_block_write_overhead_seconds_bucket{le="5"} 121598
+store_beacon_block_write_overhead_seconds_bucket{le="10"} 121598
+store_beacon_block_write_overhead_seconds_bucket{le="+Inf"} 121598
+store_beacon_block_write_overhead_seconds_sum 4.15833108300005
+store_beacon_block_write_overhead_seconds_count 121598
+# HELP store_beacon_block_write_total Total number of beacon block writes the DB
+# TYPE store_beacon_block_write_total counter
+store_beacon_block_write_total 121598
+# HELP store_beacon_state_get_total Total number of beacon states requested from the store (cache or DB)
+# TYPE store_beacon_state_get_total counter
+store_beacon_state_get_total 118663
+# HELP store_beacon_state_hot_get_total Total number of hot beacon states requested from the store (cache or DB)
+# TYPE store_beacon_state_hot_get_total counter
+store_beacon_state_hot_get_total 9888
+# HELP store_beacon_state_read_bytes_total Total number of beacon state bytes read from the DB
+# TYPE store_beacon_state_read_bytes_total counter
+store_beacon_state_read_bytes_total 32276805226
+# HELP store_beacon_state_read_overhead_seconds Overhead on reading a beacon state from the DB (e.g., decoding)
+# TYPE store_beacon_state_read_overhead_seconds histogram
+store_beacon_state_read_overhead_seconds_bucket{le="0.005"} 9866
+store_beacon_state_read_overhead_seconds_bucket{le="0.01"} 9897
+store_beacon_state_read_overhead_seconds_bucket{le="0.025"} 9904
+store_beacon_state_read_overhead_seconds_bucket{le="0.05"} 9904
+store_beacon_state_read_overhead_seconds_bucket{le="0.1"} 9904
+store_beacon_state_read_overhead_seconds_bucket{le="0.25"} 9904
+store_beacon_state_read_overhead_seconds_bucket{le="0.5"} 9904
+store_beacon_state_read_overhead_seconds_bucket{le="1"} 9904
+store_beacon_state_read_overhead_seconds_bucket{le="2.5"} 9904
+store_beacon_state_read_overhead_seconds_bucket{le="5"} 9904
+store_beacon_state_read_overhead_seconds_bucket{le="10"} 9904
+store_beacon_state_read_overhead_seconds_bucket{le="+Inf"} 9904
+store_beacon_state_read_overhead_seconds_sum 35.786653630000096
+store_beacon_state_read_overhead_seconds_count 9904
+# HELP store_beacon_state_read_seconds Total time required to read a BeaconState from the database
+# TYPE store_beacon_state_read_seconds histogram
+store_beacon_state_read_seconds_bucket{le="0.005"} 3235
+store_beacon_state_read_seconds_bucket{le="0.01"} 9870
+store_beacon_state_read_seconds_bucket{le="0.025"} 9901
+store_beacon_state_read_seconds_bucket{le="0.05"} 9904
+store_beacon_state_read_seconds_bucket{le="0.1"} 9904
+store_beacon_state_read_seconds_bucket{le="0.25"} 9904
+store_beacon_state_read_seconds_bucket{le="0.5"} 9904
+store_beacon_state_read_seconds_bucket{le="1"} 9904
+store_beacon_state_read_seconds_bucket{le="2.5"} 9904
+store_beacon_state_read_seconds_bucket{le="5"} 9904
+store_beacon_state_read_seconds_bucket{le="10"} 9904
+store_beacon_state_read_seconds_bucket{le="+Inf"} 9904
+store_beacon_state_read_seconds_sum 53.54641700600013
+store_beacon_state_read_seconds_count 9904
+# HELP store_beacon_state_read_total Total number of beacon state reads from the DB
+# TYPE store_beacon_state_read_total counter
+store_beacon_state_read_total 9904
+# HELP store_beacon_state_write_bytes_total Total number of beacon state bytes written to the DB
+# TYPE store_beacon_state_write_bytes_total counter
+store_beacon_state_write_bytes_total 17041885275
+# HELP store_beacon_state_write_overhead_seconds Overhead on writing a beacon state to the DB (e.g., encoding)
+# TYPE store_beacon_state_write_overhead_seconds histogram
+store_beacon_state_write_overhead_seconds_bucket{le="0.005"} 5199
+store_beacon_state_write_overhead_seconds_bucket{le="0.01"} 5260
+store_beacon_state_write_overhead_seconds_bucket{le="0.025"} 5262
+store_beacon_state_write_overhead_seconds_bucket{le="0.05"} 5262
+store_beacon_state_write_overhead_seconds_bucket{le="0.1"} 5262
+store_beacon_state_write_overhead_seconds_bucket{le="0.25"} 5262
+store_beacon_state_write_overhead_seconds_bucket{le="0.5"} 5262
+store_beacon_state_write_overhead_seconds_bucket{le="1"} 5262
+store_beacon_state_write_overhead_seconds_bucket{le="2.5"} 5262
+store_beacon_state_write_overhead_seconds_bucket{le="5"} 5262
+store_beacon_state_write_overhead_seconds_bucket{le="10"} 5262
+store_beacon_state_write_overhead_seconds_bucket{le="+Inf"} 5262
+store_beacon_state_write_overhead_seconds_sum 19.580418872000024
+store_beacon_state_write_overhead_seconds_count 5262
+# HELP store_beacon_state_write_seconds Total time required to write a BeaconState to the database
+# TYPE store_beacon_state_write_seconds histogram
+store_beacon_state_write_seconds_bucket{le="0.005"} 0
+store_beacon_state_write_seconds_bucket{le="0.01"} 5003
+store_beacon_state_write_seconds_bucket{le="0.025"} 5262
+store_beacon_state_write_seconds_bucket{le="0.05"} 5262
+store_beacon_state_write_seconds_bucket{le="0.1"} 5262
+store_beacon_state_write_seconds_bucket{le="0.25"} 5262
+store_beacon_state_write_seconds_bucket{le="0.5"} 5262
+store_beacon_state_write_seconds_bucket{le="1"} 5262
+store_beacon_state_write_seconds_bucket{le="2.5"} 5262
+store_beacon_state_write_seconds_bucket{le="5"} 5262
+store_beacon_state_write_seconds_bucket{le="10"} 5262
+store_beacon_state_write_seconds_bucket{le="+Inf"} 5262
+store_beacon_state_write_seconds_sum 45.03867877700008
+store_beacon_state_write_seconds_count 5262
+# HELP store_beacon_state_write_total Total number of beacon state writes the DB
+# TYPE store_beacon_state_write_total counter
+store_beacon_state_write_total 5262
+# HELP store_disk_db_delete_count_total Total number of deletions from the hot on-disk DB
+# TYPE store_disk_db_delete_count_total counter
+store_disk_db_delete_count_total 143748
+# HELP store_disk_db_exists_count_total Total number of checks if a key is in the hot on-disk DB
+# TYPE store_disk_db_exists_count_total counter
+store_disk_db_exists_count_total 865514
+# HELP store_disk_db_read_bytes_total Number of bytes read from the hot on-disk DB
+# TYPE store_disk_db_read_bytes_total counter
+store_disk_db_read_bytes_total 156437703944
+# HELP store_disk_db_read_count_total Total number of reads to the hot on-disk DB
+# TYPE store_disk_db_read_count_total counter
+store_disk_db_read_count_total 24785874
+# HELP store_disk_db_read_seconds Time taken to write bytes to store.
+# TYPE store_disk_db_read_seconds histogram
+store_disk_db_read_seconds_bucket{le="0.005"} 24785696
+store_disk_db_read_seconds_bucket{le="0.01"} 24785852
+store_disk_db_read_seconds_bucket{le="0.025"} 24785872
+store_disk_db_read_seconds_bucket{le="0.05"} 24785874
+store_disk_db_read_seconds_bucket{le="0.1"} 24785874
+store_disk_db_read_seconds_bucket{le="0.25"} 24785874
+store_disk_db_read_seconds_bucket{le="0.5"} 24785874
+store_disk_db_read_seconds_bucket{le="1"} 24785874
+store_disk_db_read_seconds_bucket{le="2.5"} 24785874
+store_disk_db_read_seconds_bucket{le="5"} 24785874
+store_disk_db_read_seconds_bucket{le="10"} 24785874
+store_disk_db_read_seconds_bucket{le="+Inf"} 24785874
+store_disk_db_read_seconds_sum 206.05470382643537
+store_disk_db_read_seconds_count 24785874
+# HELP store_disk_db_size Size of the hot on-disk database (bytes)
+# TYPE store_disk_db_size gauge
+store_disk_db_size 1047230571
+# HELP store_disk_db_write_bytes_total Number of bytes attempted to be written to the hot on-disk DB
+# TYPE store_disk_db_write_bytes_total counter
+store_disk_db_write_bytes_total 19001218563
+# HELP store_disk_db_write_count_total Total number of writes to the hot on-disk DB
+# TYPE store_disk_db_write_count_total counter
+store_disk_db_write_count_total 450234
+# HELP store_disk_db_write_seconds Time taken to write bytes to store.
+# TYPE store_disk_db_write_seconds histogram
+store_disk_db_write_seconds_bucket{le="0.005"} 447893
+store_disk_db_write_seconds_bucket{le="0.01"} 449938
+store_disk_db_write_seconds_bucket{le="0.025"} 450047
+store_disk_db_write_seconds_bucket{le="0.05"} 450050
+store_disk_db_write_seconds_bucket{le="0.1"} 450202
+store_disk_db_write_seconds_bucket{le="0.25"} 450212
+store_disk_db_write_seconds_bucket{le="0.5"} 450213
+store_disk_db_write_seconds_bucket{le="1"} 450214
+store_disk_db_write_seconds_bucket{le="2.5"} 450234
+store_disk_db_write_seconds_bucket{le="5"} 450234
+store_disk_db_write_seconds_bucket{le="10"} 450234
+store_disk_db_write_seconds_bucket{le="+Inf"} 450234
+store_disk_db_write_seconds_sum 98.10577562399966
+store_disk_db_write_seconds_count 450234
+# HELP store_freezer_db_size Size of the on-disk freezer database (bytes)
+# TYPE store_freezer_db_size gauge
+store_freezer_db_size 48351694
+# HELP sync_slots_per_second The number of blocks being imported per second
+# TYPE sync_slots_per_second gauge
+sync_slots_per_second 0
+# HELP system_loadavg_1 Loadavg over 1 minute
+# TYPE system_loadavg_1 gauge
+system_loadavg_1 0.35
+# HELP system_loadavg_15 Loadavg over 15 minutes
+# TYPE system_loadavg_15 gauge
+system_loadavg_15 0.12
+# HELP system_loadavg_5 Loadavg over 5 minutes
+# TYPE system_loadavg_5 gauge
+system_loadavg_5 0.19
+# HELP system_virt_mem_available_bytes Available system virtual memory
+# TYPE system_virt_mem_available_bytes gauge
+system_virt_mem_available_bytes 2999201792
+# HELP system_virt_mem_free_bytes Free system virtual memory
+# TYPE system_virt_mem_free_bytes gauge
+system_virt_mem_free_bytes 129138688
+# HELP system_virt_mem_percentage Percentage of used virtual memory
+# TYPE system_virt_mem_percentage gauge
+system_virt_mem_percentage 27.293228149414063
+# HELP system_virt_mem_total_bytes Total system virtual memory
+# TYPE system_virt_mem_total_bytes gauge
+system_virt_mem_total_bytes 4125065216
+# HELP system_virt_mem_used_bytes Used system virtual memory
+# TYPE system_virt_mem_used_bytes gauge
+system_virt_mem_used_bytes 860934144
+# HELP warn_total Count of warns logged
+# TYPE warn_total counter
+warn_total 7576

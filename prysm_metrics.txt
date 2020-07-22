@@ -1,0 +1,1102 @@
+# HELP aggregated_attestations_in_pool_total The number of aggregated attestations in the pool.
+# TYPE aggregated_attestations_in_pool_total gauge
+aggregated_attestations_in_pool_total 0
+# HELP attestation_cache_hit The number of attestation data requests that are present in the cache.
+# TYPE attestation_cache_hit counter
+attestation_cache_hit 9
+# HELP attestation_cache_miss The number of attestation data requests that aren't present in the cache.
+# TYPE attestation_cache_miss counter
+attestation_cache_miss 30
+# HELP attestation_cache_size The number of attestation data in the attestations cache
+# TYPE attestation_cache_size gauge
+attestation_cache_size 28
+# HELP attestation_inclusion_delay_slots The number of slots between att.Slot and block.Slot
+# TYPE attestation_inclusion_delay_slots histogram
+attestation_inclusion_delay_slots_bucket{le="1"} 354
+attestation_inclusion_delay_slots_bucket{le="2"} 467
+attestation_inclusion_delay_slots_bucket{le="3"} 519
+attestation_inclusion_delay_slots_bucket{le="4"} 550
+attestation_inclusion_delay_slots_bucket{le="6"} 579
+attestation_inclusion_delay_slots_bucket{le="32"} 708
+attestation_inclusion_delay_slots_bucket{le="64"} 708
+attestation_inclusion_delay_slots_bucket{le="+Inf"} 708
+attestation_inclusion_delay_slots_sum 3226
+attestation_inclusion_delay_slots_count 708
+# HELP attester_slashing_reattempts_total Times an attester slashing for an already slashed validator is received
+# TYPE attester_slashing_reattempts_total counter
+attester_slashing_reattempts_total 0
+# HELP attester_slashings_included_total Number of attester slashings included in blocks
+# TYPE attester_slashings_included_total counter
+attester_slashings_included_total 1
+# HELP beacon_attestations_not_recovered_total Count the number of times attestation not recovered and pruned because of missing block
+# TYPE beacon_attestations_not_recovered_total counter
+beacon_attestations_not_recovered_total 0
+# HELP beacon_attestations_recovered_total Count the number of times attestation recovered because of missing block
+# TYPE beacon_attestations_recovered_total counter
+beacon_attestations_recovered_total 0
+# HELP beacon_blocks_not_recovered_from_attestation_total Count the number of times a missing block not recovered and pruned from attestation vote.
+# TYPE beacon_blocks_not_recovered_from_attestation_total counter
+beacon_blocks_not_recovered_from_attestation_total 0
+# HELP beacon_blocks_recovered_from_attestation_total Count the number of times a missing block recovered from attestation vote.
+# TYPE beacon_blocks_recovered_from_attestation_total counter
+beacon_blocks_recovered_from_attestation_total 0
+# HELP beacon_clock_time_slot The current slot based on the genesis time and current clock
+# TYPE beacon_clock_time_slot gauge
+beacon_clock_time_slot 139474
+# HELP beacon_current_justified_epoch Current justified epoch of the processed state
+# TYPE beacon_current_justified_epoch gauge
+beacon_current_justified_epoch 4357
+# HELP beacon_current_justified_root Current justified root of the processed state
+# TYPE beacon_current_justified_root gauge
+beacon_current_justified_root -3.675592464861139e+18
+# HELP beacon_finalized_epoch Last finalized epoch of the processed state
+# TYPE beacon_finalized_epoch gauge
+beacon_finalized_epoch 4356
+# HELP beacon_finalized_root Last finalized root of the processed state
+# TYPE beacon_finalized_root gauge
+beacon_finalized_root -8.216352776921332e+18
+# HELP beacon_head_slot Slot of the head block of the beacon chain
+# TYPE beacon_head_slot gauge
+beacon_head_slot 139474
+# HELP beacon_previous_justified_epoch Previous justified epoch of the processed state
+# TYPE beacon_previous_justified_epoch gauge
+beacon_previous_justified_epoch 4356
+# HELP beacon_previous_justified_root Previous justified root of the processed state
+# TYPE beacon_previous_justified_root gauge
+beacon_previous_justified_root -8.216352776921332e+18
+# HELP beacon_reorg_total Count the number of times beacon chain has a reorg
+# TYPE beacon_reorg_total counter
+beacon_reorg_total 0
+# HELP beacon_slot Latest slot of the beacon chain state
+# TYPE beacon_slot gauge
+beacon_slot 139474
+# HELP beacondb_all_deposits The number of total deposits in the beaconDB in-memory database
+# TYPE beacondb_all_deposits counter
+beacondb_all_deposits 5160
+# HELP beacondb_pending_deposits The number of pending deposits in the beaconDB in-memory database
+# TYPE beacondb_pending_deposits gauge
+beacondb_pending_deposits 59
+# HELP block_arrival_latency_milliseconds Captures blocks propagation time. Blocks arrival in milliseconds distribution
+# TYPE block_arrival_latency_milliseconds histogram
+block_arrival_latency_milliseconds_bucket{le="1000"} 82
+block_arrival_latency_milliseconds_bucket{le="2000"} 86
+block_arrival_latency_milliseconds_bucket{le="3000"} 87
+block_arrival_latency_milliseconds_bucket{le="4000"} 87
+block_arrival_latency_milliseconds_bucket{le="5000"} 87
+block_arrival_latency_milliseconds_bucket{le="6000"} 87
+block_arrival_latency_milliseconds_bucket{le="+Inf"} 87
+block_arrival_latency_milliseconds_sum 43324
+block_arrival_latency_milliseconds_count 87
+# HELP block_sent_latency_milliseconds Captures blocks broadcast time. Blocks sent in milliseconds distribution
+# TYPE block_sent_latency_milliseconds histogram
+block_sent_latency_milliseconds_bucket{le="1000"} 0
+block_sent_latency_milliseconds_bucket{le="2000"} 0
+block_sent_latency_milliseconds_bucket{le="3000"} 0
+block_sent_latency_milliseconds_bucket{le="4000"} 0
+block_sent_latency_milliseconds_bucket{le="5000"} 0
+block_sent_latency_milliseconds_bucket{le="6000"} 0
+block_sent_latency_milliseconds_bucket{le="+Inf"} 0
+block_sent_latency_milliseconds_sum 0
+block_sent_latency_milliseconds_count 0
+# HELP bolt_bucket_buckets Number of buckets within a bucket, including the top bucket.
+# TYPE bolt_bucket_buckets gauge
+bolt_bucket_buckets{bucket="archived-active-changes",database="boltDB"} 1
+bolt_bucket_buckets{bucket="archived-balances",database="boltDB"} 1
+bolt_bucket_buckets{bucket="archived-committee-info",database="boltDB"} 1
+bolt_bucket_buckets{bucket="archived-validator-participation",database="boltDB"} 1
+bolt_bucket_buckets{bucket="attestation-head-block-root-indices",database="boltDB"} 1
+bolt_bucket_buckets{bucket="attestation-source-epoch-indices",database="boltDB"} 1
+bolt_bucket_buckets{bucket="attestation-source-root-indices",database="boltDB"} 1
+bolt_bucket_buckets{bucket="attestation-target-epoch-indices",database="boltDB"} 1
+bolt_bucket_buckets{bucket="attestation-target-root-indices",database="boltDB"} 1
+bolt_bucket_buckets{bucket="attestations",database="boltDB"} 1
+bolt_bucket_buckets{bucket="attester-slashings",database="boltDB"} 1
+bolt_bucket_buckets{bucket="block-parent-root-indices",database="boltDB"} 1
+bolt_bucket_buckets{bucket="block-slot-indices",database="boltDB"} 1
+bolt_bucket_buckets{bucket="blocks",database="boltDB"} 1
+bolt_bucket_buckets{bucket="chain-metadata",database="boltDB"} 1
+bolt_bucket_buckets{bucket="check-point",database="boltDB"} 1
+bolt_bucket_buckets{bucket="finalized-block-roots-index",database="boltDB"} 1
+bolt_bucket_buckets{bucket="migrations",database="boltDB"} 1
+bolt_bucket_buckets{bucket="new-state-compatible",database="boltDB"} 1
+bolt_bucket_buckets{bucket="powchain",database="boltDB"} 1
+bolt_bucket_buckets{bucket="proposer-slashings",database="boltDB"} 1
+bolt_bucket_buckets{bucket="state",database="boltDB"} 1
+bolt_bucket_buckets{bucket="state-slot-indices",database="boltDB"} 1
+bolt_bucket_buckets{bucket="state-summary",database="boltDB"} 1
+bolt_bucket_buckets{bucket="voluntary-exits",database="boltDB"} 1
+# HELP bolt_bucket_depth Number of levels in B+ tree for a bucket.
+# TYPE bolt_bucket_depth gauge
+bolt_bucket_depth{bucket="archived-active-changes",database="boltDB"} 1
+bolt_bucket_depth{bucket="archived-balances",database="boltDB"} 1
+bolt_bucket_depth{bucket="archived-committee-info",database="boltDB"} 1
+bolt_bucket_depth{bucket="archived-validator-participation",database="boltDB"} 1
+bolt_bucket_depth{bucket="attestation-head-block-root-indices",database="boltDB"} 1
+bolt_bucket_depth{bucket="attestation-source-epoch-indices",database="boltDB"} 1
+bolt_bucket_depth{bucket="attestation-source-root-indices",database="boltDB"} 1
+bolt_bucket_depth{bucket="attestation-target-epoch-indices",database="boltDB"} 1
+bolt_bucket_depth{bucket="attestation-target-root-indices",database="boltDB"} 1
+bolt_bucket_depth{bucket="attestations",database="boltDB"} 1
+bolt_bucket_depth{bucket="attester-slashings",database="boltDB"} 1
+bolt_bucket_depth{bucket="block-parent-root-indices",database="boltDB"} 3
+bolt_bucket_depth{bucket="block-slot-indices",database="boltDB"} 3
+bolt_bucket_depth{bucket="blocks",database="boltDB"} 4
+bolt_bucket_depth{bucket="chain-metadata",database="boltDB"} 1
+bolt_bucket_depth{bucket="check-point",database="boltDB"} 1
+bolt_bucket_depth{bucket="finalized-block-roots-index",database="boltDB"} 3
+bolt_bucket_depth{bucket="migrations",database="boltDB"} 1
+bolt_bucket_depth{bucket="new-state-compatible",database="boltDB"} 1
+bolt_bucket_depth{bucket="powchain",database="boltDB"} 1
+bolt_bucket_depth{bucket="proposer-slashings",database="boltDB"} 1
+bolt_bucket_depth{bucket="state",database="boltDB"} 2
+bolt_bucket_depth{bucket="state-slot-indices",database="boltDB"} 1
+bolt_bucket_depth{bucket="state-summary",database="boltDB"} 3
+bolt_bucket_depth{bucket="voluntary-exits",database="boltDB"} 1
+# HELP bolt_bucket_inlined_buckets Number of inlined buckets for a bucket.
+# TYPE bolt_bucket_inlined_buckets gauge
+bolt_bucket_inlined_buckets{bucket="archived-active-changes",database="boltDB"} 1
+bolt_bucket_inlined_buckets{bucket="archived-balances",database="boltDB"} 1
+bolt_bucket_inlined_buckets{bucket="archived-committee-info",database="boltDB"} 1
+bolt_bucket_inlined_buckets{bucket="archived-validator-participation",database="boltDB"} 1
+bolt_bucket_inlined_buckets{bucket="attestation-head-block-root-indices",database="boltDB"} 1
+bolt_bucket_inlined_buckets{bucket="attestation-source-epoch-indices",database="boltDB"} 1
+bolt_bucket_inlined_buckets{bucket="attestation-source-root-indices",database="boltDB"} 1
+bolt_bucket_inlined_buckets{bucket="attestation-target-epoch-indices",database="boltDB"} 1
+bolt_bucket_inlined_buckets{bucket="attestation-target-root-indices",database="boltDB"} 1
+bolt_bucket_inlined_buckets{bucket="attestations",database="boltDB"} 1
+bolt_bucket_inlined_buckets{bucket="attester-slashings",database="boltDB"} 1
+bolt_bucket_inlined_buckets{bucket="block-parent-root-indices",database="boltDB"} 0
+bolt_bucket_inlined_buckets{bucket="block-slot-indices",database="boltDB"} 0
+bolt_bucket_inlined_buckets{bucket="blocks",database="boltDB"} 0
+bolt_bucket_inlined_buckets{bucket="chain-metadata",database="boltDB"} 1
+bolt_bucket_inlined_buckets{bucket="check-point",database="boltDB"} 1
+bolt_bucket_inlined_buckets{bucket="finalized-block-roots-index",database="boltDB"} 0
+bolt_bucket_inlined_buckets{bucket="migrations",database="boltDB"} 1
+bolt_bucket_inlined_buckets{bucket="new-state-compatible",database="boltDB"} 1
+bolt_bucket_inlined_buckets{bucket="powchain",database="boltDB"} 0
+bolt_bucket_inlined_buckets{bucket="proposer-slashings",database="boltDB"} 1
+bolt_bucket_inlined_buckets{bucket="state",database="boltDB"} 0
+bolt_bucket_inlined_buckets{bucket="state-slot-indices",database="boltDB"} 0
+bolt_bucket_inlined_buckets{bucket="state-summary",database="boltDB"} 0
+bolt_bucket_inlined_buckets{bucket="voluntary-exits",database="boltDB"} 1
+# HELP bolt_bucket_inlined_buckets_in_use_bytes Number of bytes in use for inlined buckets.
+# TYPE bolt_bucket_inlined_buckets_in_use_bytes gauge
+bolt_bucket_inlined_buckets_in_use_bytes{bucket="archived-active-changes",database="boltDB"} 16
+bolt_bucket_inlined_buckets_in_use_bytes{bucket="archived-balances",database="boltDB"} 16
+bolt_bucket_inlined_buckets_in_use_bytes{bucket="archived-committee-info",database="boltDB"} 16
+bolt_bucket_inlined_buckets_in_use_bytes{bucket="archived-validator-participation",database="boltDB"} 16
+bolt_bucket_inlined_buckets_in_use_bytes{bucket="attestation-head-block-root-indices",database="boltDB"} 16
+bolt_bucket_inlined_buckets_in_use_bytes{bucket="attestation-source-epoch-indices",database="boltDB"} 16
+bolt_bucket_inlined_buckets_in_use_bytes{bucket="attestation-source-root-indices",database="boltDB"} 16
+bolt_bucket_inlined_buckets_in_use_bytes{bucket="attestation-target-epoch-indices",database="boltDB"} 16
+bolt_bucket_inlined_buckets_in_use_bytes{bucket="attestation-target-root-indices",database="boltDB"} 16
+bolt_bucket_inlined_buckets_in_use_bytes{bucket="attestations",database="boltDB"} 16
+bolt_bucket_inlined_buckets_in_use_bytes{bucket="attester-slashings",database="boltDB"} 16
+bolt_bucket_inlined_buckets_in_use_bytes{bucket="block-parent-root-indices",database="boltDB"} 0
+bolt_bucket_inlined_buckets_in_use_bytes{bucket="block-slot-indices",database="boltDB"} 0
+bolt_bucket_inlined_buckets_in_use_bytes{bucket="blocks",database="boltDB"} 0
+bolt_bucket_inlined_buckets_in_use_bytes{bucket="chain-metadata",database="boltDB"} 68
+bolt_bucket_inlined_buckets_in_use_bytes{bucket="check-point",database="boltDB"} 166
+bolt_bucket_inlined_buckets_in_use_bytes{bucket="finalized-block-roots-index",database="boltDB"} 0
+bolt_bucket_inlined_buckets_in_use_bytes{bucket="migrations",database="boltDB"} 89
+bolt_bucket_inlined_buckets_in_use_bytes{bucket="new-state-compatible",database="boltDB"} 106
+bolt_bucket_inlined_buckets_in_use_bytes{bucket="powchain",database="boltDB"} 0
+bolt_bucket_inlined_buckets_in_use_bytes{bucket="proposer-slashings",database="boltDB"} 16
+bolt_bucket_inlined_buckets_in_use_bytes{bucket="state",database="boltDB"} 0
+bolt_bucket_inlined_buckets_in_use_bytes{bucket="state-slot-indices",database="boltDB"} 0
+bolt_bucket_inlined_buckets_in_use_bytes{bucket="state-summary",database="boltDB"} 0
+bolt_bucket_inlined_buckets_in_use_bytes{bucket="voluntary-exits",database="boltDB"} 16
+# HELP bolt_bucket_keys Number of key/value pairs in a bucket.
+# TYPE bolt_bucket_keys gauge
+bolt_bucket_keys{bucket="archived-active-changes",database="boltDB"} 0
+bolt_bucket_keys{bucket="archived-balances",database="boltDB"} 0
+bolt_bucket_keys{bucket="archived-committee-info",database="boltDB"} 0
+bolt_bucket_keys{bucket="archived-validator-participation",database="boltDB"} 0
+bolt_bucket_keys{bucket="attestation-head-block-root-indices",database="boltDB"} 0
+bolt_bucket_keys{bucket="attestation-source-epoch-indices",database="boltDB"} 0
+bolt_bucket_keys{bucket="attestation-source-root-indices",database="boltDB"} 0
+bolt_bucket_keys{bucket="attestation-target-epoch-indices",database="boltDB"} 0
+bolt_bucket_keys{bucket="attestation-target-root-indices",database="boltDB"} 0
+bolt_bucket_keys{bucket="attestations",database="boltDB"} 0
+bolt_bucket_keys{bucket="attester-slashings",database="boltDB"} 0
+bolt_bucket_keys{bucket="block-parent-root-indices",database="boltDB"} 121011
+bolt_bucket_keys{bucket="block-slot-indices",database="boltDB"} 121564
+bolt_bucket_keys{bucket="blocks",database="boltDB"} 121609
+bolt_bucket_keys{bucket="chain-metadata",database="boltDB"} 1
+bolt_bucket_keys{bucket="check-point",database="boltDB"} 2
+bolt_bucket_keys{bucket="finalized-block-roots-index",database="boltDB"} 120960
+bolt_bucket_keys{bucket="migrations",database="boltDB"} 2
+bolt_bucket_keys{bucket="new-state-compatible",database="boltDB"} 2
+bolt_bucket_keys{bucket="powchain",database="boltDB"} 1
+bolt_bucket_keys{bucket="proposer-slashings",database="boltDB"} 0
+bolt_bucket_keys{bucket="state",database="boltDB"} 71
+bolt_bucket_keys{bucket="state-slot-indices",database="boltDB"} 68
+bolt_bucket_keys{bucket="state-summary",database="boltDB"} 121590
+bolt_bucket_keys{bucket="voluntary-exits",database="boltDB"} 0
+# HELP bolt_bucket_logical_branch_pages Number of logical branch pages for a bucket.
+# TYPE bolt_bucket_logical_branch_pages gauge
+bolt_bucket_logical_branch_pages{bucket="archived-active-changes",database="boltDB"} 0
+bolt_bucket_logical_branch_pages{bucket="archived-balances",database="boltDB"} 0
+bolt_bucket_logical_branch_pages{bucket="archived-committee-info",database="boltDB"} 0
+bolt_bucket_logical_branch_pages{bucket="archived-validator-participation",database="boltDB"} 0
+bolt_bucket_logical_branch_pages{bucket="attestation-head-block-root-indices",database="boltDB"} 0
+bolt_bucket_logical_branch_pages{bucket="attestation-source-epoch-indices",database="boltDB"} 0
+bolt_bucket_logical_branch_pages{bucket="attestation-source-root-indices",database="boltDB"} 0
+bolt_bucket_logical_branch_pages{bucket="attestation-target-epoch-indices",database="boltDB"} 0
+bolt_bucket_logical_branch_pages{bucket="attestation-target-root-indices",database="boltDB"} 0
+bolt_bucket_logical_branch_pages{bucket="attestations",database="boltDB"} 0
+bolt_bucket_logical_branch_pages{bucket="attester-slashings",database="boltDB"} 0
+bolt_bucket_logical_branch_pages{bucket="block-parent-root-indices",database="boltDB"} 65
+bolt_bucket_logical_branch_pages{bucket="block-slot-indices",database="boltDB"} 41
+bolt_bucket_logical_branch_pages{bucket="blocks",database="boltDB"} 741
+bolt_bucket_logical_branch_pages{bucket="chain-metadata",database="boltDB"} 0
+bolt_bucket_logical_branch_pages{bucket="check-point",database="boltDB"} 0
+bolt_bucket_logical_branch_pages{bucket="finalized-block-roots-index",database="boltDB"} 84
+bolt_bucket_logical_branch_pages{bucket="migrations",database="boltDB"} 0
+bolt_bucket_logical_branch_pages{bucket="new-state-compatible",database="boltDB"} 0
+bolt_bucket_logical_branch_pages{bucket="powchain",database="boltDB"} 0
+bolt_bucket_logical_branch_pages{bucket="proposer-slashings",database="boltDB"} 0
+bolt_bucket_logical_branch_pages{bucket="state",database="boltDB"} 1
+bolt_bucket_logical_branch_pages{bucket="state-slot-indices",database="boltDB"} 0
+bolt_bucket_logical_branch_pages{bucket="state-summary",database="boltDB"} 65
+bolt_bucket_logical_branch_pages{bucket="voluntary-exits",database="boltDB"} 0
+# HELP bolt_bucket_logical_leaf_pages Number of logical leaf pages for a bucket.
+# TYPE bolt_bucket_logical_leaf_pages gauge
+bolt_bucket_logical_leaf_pages{bucket="archived-active-changes",database="boltDB"} 0
+bolt_bucket_logical_leaf_pages{bucket="archived-balances",database="boltDB"} 0
+bolt_bucket_logical_leaf_pages{bucket="archived-committee-info",database="boltDB"} 0
+bolt_bucket_logical_leaf_pages{bucket="archived-validator-participation",database="boltDB"} 0
+bolt_bucket_logical_leaf_pages{bucket="attestation-head-block-root-indices",database="boltDB"} 0
+bolt_bucket_logical_leaf_pages{bucket="attestation-source-epoch-indices",database="boltDB"} 0
+bolt_bucket_logical_leaf_pages{bucket="attestation-source-root-indices",database="boltDB"} 0
+bolt_bucket_logical_leaf_pages{bucket="attestation-target-epoch-indices",database="boltDB"} 0
+bolt_bucket_logical_leaf_pages{bucket="attestation-target-root-indices",database="boltDB"} 0
+bolt_bucket_logical_leaf_pages{bucket="attestations",database="boltDB"} 0
+bolt_bucket_logical_leaf_pages{bucket="attester-slashings",database="boltDB"} 0
+bolt_bucket_logical_leaf_pages{bucket="block-parent-root-indices",database="boltDB"} 3455
+bolt_bucket_logical_leaf_pages{bucket="block-slot-indices",database="boltDB"} 3377
+bolt_bucket_logical_leaf_pages{bucket="blocks",database="boltDB"} 41684
+bolt_bucket_logical_leaf_pages{bucket="chain-metadata",database="boltDB"} 0
+bolt_bucket_logical_leaf_pages{bucket="check-point",database="boltDB"} 0
+bolt_bucket_logical_leaf_pages{bucket="finalized-block-roots-index",database="boltDB"} 5117
+bolt_bucket_logical_leaf_pages{bucket="migrations",database="boltDB"} 0
+bolt_bucket_logical_leaf_pages{bucket="new-state-compatible",database="boltDB"} 0
+bolt_bucket_logical_leaf_pages{bucket="powchain",database="boltDB"} 1
+bolt_bucket_logical_leaf_pages{bucket="proposer-slashings",database="boltDB"} 0
+bolt_bucket_logical_leaf_pages{bucket="state",database="boltDB"} 30
+bolt_bucket_logical_leaf_pages{bucket="state-slot-indices",database="boltDB"} 1
+bolt_bucket_logical_leaf_pages{bucket="state-summary",database="boltDB"} 3814
+bolt_bucket_logical_leaf_pages{bucket="voluntary-exits",database="boltDB"} 0
+# HELP bolt_bucket_physical_branch_overflow_pages Number of physical branch overflow pages for a bucket.
+# TYPE bolt_bucket_physical_branch_overflow_pages gauge
+bolt_bucket_physical_branch_overflow_pages{bucket="archived-active-changes",database="boltDB"} 0
+bolt_bucket_physical_branch_overflow_pages{bucket="archived-balances",database="boltDB"} 0
+bolt_bucket_physical_branch_overflow_pages{bucket="archived-committee-info",database="boltDB"} 0
+bolt_bucket_physical_branch_overflow_pages{bucket="archived-validator-participation",database="boltDB"} 0
+bolt_bucket_physical_branch_overflow_pages{bucket="attestation-head-block-root-indices",database="boltDB"} 0
+bolt_bucket_physical_branch_overflow_pages{bucket="attestation-source-epoch-indices",database="boltDB"} 0
+bolt_bucket_physical_branch_overflow_pages{bucket="attestation-source-root-indices",database="boltDB"} 0
+bolt_bucket_physical_branch_overflow_pages{bucket="attestation-target-epoch-indices",database="boltDB"} 0
+bolt_bucket_physical_branch_overflow_pages{bucket="attestation-target-root-indices",database="boltDB"} 0
+bolt_bucket_physical_branch_overflow_pages{bucket="attestations",database="boltDB"} 0
+bolt_bucket_physical_branch_overflow_pages{bucket="attester-slashings",database="boltDB"} 0
+bolt_bucket_physical_branch_overflow_pages{bucket="block-parent-root-indices",database="boltDB"} 0
+bolt_bucket_physical_branch_overflow_pages{bucket="block-slot-indices",database="boltDB"} 0
+bolt_bucket_physical_branch_overflow_pages{bucket="blocks",database="boltDB"} 0
+bolt_bucket_physical_branch_overflow_pages{bucket="chain-metadata",database="boltDB"} 0
+bolt_bucket_physical_branch_overflow_pages{bucket="check-point",database="boltDB"} 0
+bolt_bucket_physical_branch_overflow_pages{bucket="finalized-block-roots-index",database="boltDB"} 0
+bolt_bucket_physical_branch_overflow_pages{bucket="migrations",database="boltDB"} 0
+bolt_bucket_physical_branch_overflow_pages{bucket="new-state-compatible",database="boltDB"} 0
+bolt_bucket_physical_branch_overflow_pages{bucket="powchain",database="boltDB"} 0
+bolt_bucket_physical_branch_overflow_pages{bucket="proposer-slashings",database="boltDB"} 0
+bolt_bucket_physical_branch_overflow_pages{bucket="state",database="boltDB"} 0
+bolt_bucket_physical_branch_overflow_pages{bucket="state-slot-indices",database="boltDB"} 0
+bolt_bucket_physical_branch_overflow_pages{bucket="state-summary",database="boltDB"} 0
+bolt_bucket_physical_branch_overflow_pages{bucket="voluntary-exits",database="boltDB"} 0
+# HELP bolt_bucket_physical_branch_pages_allocated_bytes Number of bytes allocated in physical branch pages for a bucket.
+# TYPE bolt_bucket_physical_branch_pages_allocated_bytes gauge
+bolt_bucket_physical_branch_pages_allocated_bytes{bucket="archived-active-changes",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_allocated_bytes{bucket="archived-balances",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_allocated_bytes{bucket="archived-committee-info",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_allocated_bytes{bucket="archived-validator-participation",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_allocated_bytes{bucket="attestation-head-block-root-indices",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_allocated_bytes{bucket="attestation-source-epoch-indices",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_allocated_bytes{bucket="attestation-source-root-indices",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_allocated_bytes{bucket="attestation-target-epoch-indices",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_allocated_bytes{bucket="attestation-target-root-indices",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_allocated_bytes{bucket="attestations",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_allocated_bytes{bucket="attester-slashings",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_allocated_bytes{bucket="block-parent-root-indices",database="boltDB"} 266240
+bolt_bucket_physical_branch_pages_allocated_bytes{bucket="block-slot-indices",database="boltDB"} 167936
+bolt_bucket_physical_branch_pages_allocated_bytes{bucket="blocks",database="boltDB"} 3.035136e+06
+bolt_bucket_physical_branch_pages_allocated_bytes{bucket="chain-metadata",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_allocated_bytes{bucket="check-point",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_allocated_bytes{bucket="finalized-block-roots-index",database="boltDB"} 344064
+bolt_bucket_physical_branch_pages_allocated_bytes{bucket="migrations",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_allocated_bytes{bucket="new-state-compatible",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_allocated_bytes{bucket="powchain",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_allocated_bytes{bucket="proposer-slashings",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_allocated_bytes{bucket="state",database="boltDB"} 4096
+bolt_bucket_physical_branch_pages_allocated_bytes{bucket="state-slot-indices",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_allocated_bytes{bucket="state-summary",database="boltDB"} 266240
+bolt_bucket_physical_branch_pages_allocated_bytes{bucket="voluntary-exits",database="boltDB"} 0
+# HELP bolt_bucket_physical_branch_pages_in_use_bytes Number of bytes in use in physical branch pages for a bucket.
+# TYPE bolt_bucket_physical_branch_pages_in_use_bytes gauge
+bolt_bucket_physical_branch_pages_in_use_bytes{bucket="archived-active-changes",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_in_use_bytes{bucket="archived-balances",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_in_use_bytes{bucket="archived-committee-info",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_in_use_bytes{bucket="archived-validator-participation",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_in_use_bytes{bucket="attestation-head-block-root-indices",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_in_use_bytes{bucket="attestation-source-epoch-indices",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_in_use_bytes{bucket="attestation-source-root-indices",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_in_use_bytes{bucket="attestation-target-epoch-indices",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_in_use_bytes{bucket="attestation-target-root-indices",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_in_use_bytes{bucket="attestations",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_in_use_bytes{bucket="attester-slashings",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_in_use_bytes{bucket="block-parent-root-indices",database="boltDB"} 169952
+bolt_bucket_physical_branch_pages_in_use_bytes{bucket="block-slot-indices",database="boltDB"} 82664
+bolt_bucket_physical_branch_pages_in_use_bytes{bucket="blocks",database="boltDB"} 2.048165e+06
+bolt_bucket_physical_branch_pages_in_use_bytes{bucket="chain-metadata",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_in_use_bytes{bucket="check-point",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_in_use_bytes{bucket="finalized-block-roots-index",database="boltDB"} 250944
+bolt_bucket_physical_branch_pages_in_use_bytes{bucket="migrations",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_in_use_bytes{bucket="new-state-compatible",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_in_use_bytes{bucket="powchain",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_in_use_bytes{bucket="proposer-slashings",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_in_use_bytes{bucket="state",database="boltDB"} 1456
+bolt_bucket_physical_branch_pages_in_use_bytes{bucket="state-slot-indices",database="boltDB"} 0
+bolt_bucket_physical_branch_pages_in_use_bytes{bucket="state-summary",database="boltDB"} 187184
+bolt_bucket_physical_branch_pages_in_use_bytes{bucket="voluntary-exits",database="boltDB"} 0
+# HELP bolt_bucket_physical_leaf_overflow_pages Number of physical leaf overflow pages for a bucket.
+# TYPE bolt_bucket_physical_leaf_overflow_pages gauge
+bolt_bucket_physical_leaf_overflow_pages{bucket="archived-active-changes",database="boltDB"} 0
+bolt_bucket_physical_leaf_overflow_pages{bucket="archived-balances",database="boltDB"} 0
+bolt_bucket_physical_leaf_overflow_pages{bucket="archived-committee-info",database="boltDB"} 0
+bolt_bucket_physical_leaf_overflow_pages{bucket="archived-validator-participation",database="boltDB"} 0
+bolt_bucket_physical_leaf_overflow_pages{bucket="attestation-head-block-root-indices",database="boltDB"} 0
+bolt_bucket_physical_leaf_overflow_pages{bucket="attestation-source-epoch-indices",database="boltDB"} 0
+bolt_bucket_physical_leaf_overflow_pages{bucket="attestation-source-root-indices",database="boltDB"} 0
+bolt_bucket_physical_leaf_overflow_pages{bucket="attestation-target-epoch-indices",database="boltDB"} 0
+bolt_bucket_physical_leaf_overflow_pages{bucket="attestation-target-root-indices",database="boltDB"} 0
+bolt_bucket_physical_leaf_overflow_pages{bucket="attestations",database="boltDB"} 0
+bolt_bucket_physical_leaf_overflow_pages{bucket="attester-slashings",database="boltDB"} 0
+bolt_bucket_physical_leaf_overflow_pages{bucket="block-parent-root-indices",database="boltDB"} 0
+bolt_bucket_physical_leaf_overflow_pages{bucket="block-slot-indices",database="boltDB"} 0
+bolt_bucket_physical_leaf_overflow_pages{bucket="blocks",database="boltDB"} 16687
+bolt_bucket_physical_leaf_overflow_pages{bucket="chain-metadata",database="boltDB"} 0
+bolt_bucket_physical_leaf_overflow_pages{bucket="check-point",database="boltDB"} 0
+bolt_bucket_physical_leaf_overflow_pages{bucket="finalized-block-roots-index",database="boltDB"} 0
+bolt_bucket_physical_leaf_overflow_pages{bucket="migrations",database="boltDB"} 0
+bolt_bucket_physical_leaf_overflow_pages{bucket="new-state-compatible",database="boltDB"} 0
+bolt_bucket_physical_leaf_overflow_pages{bucket="powchain",database="boltDB"} 2188
+bolt_bucket_physical_leaf_overflow_pages{bucket="proposer-slashings",database="boltDB"} 0
+bolt_bucket_physical_leaf_overflow_pages{bucket="state",database="boltDB"} 15610
+bolt_bucket_physical_leaf_overflow_pages{bucket="state-slot-indices",database="boltDB"} 0
+bolt_bucket_physical_leaf_overflow_pages{bucket="state-summary",database="boltDB"} 0
+bolt_bucket_physical_leaf_overflow_pages{bucket="voluntary-exits",database="boltDB"} 0
+# HELP bolt_bucket_physical_leaf_pages_allocated_bytes Number of bytes allocated in physical leaf pages for a bucket.
+# TYPE bolt_bucket_physical_leaf_pages_allocated_bytes gauge
+bolt_bucket_physical_leaf_pages_allocated_bytes{bucket="archived-active-changes",database="boltDB"} 0
+bolt_bucket_physical_leaf_pages_allocated_bytes{bucket="archived-balances",database="boltDB"} 0
+bolt_bucket_physical_leaf_pages_allocated_bytes{bucket="archived-committee-info",database="boltDB"} 0
+bolt_bucket_physical_leaf_pages_allocated_bytes{bucket="archived-validator-participation",database="boltDB"} 0
+bolt_bucket_physical_leaf_pages_allocated_bytes{bucket="attestation-head-block-root-indices",database="boltDB"} 0
+bolt_bucket_physical_leaf_pages_allocated_bytes{bucket="attestation-source-epoch-indices",database="boltDB"} 0
+bolt_bucket_physical_leaf_pages_allocated_bytes{bucket="attestation-source-root-indices",database="boltDB"} 0
+bolt_bucket_physical_leaf_pages_allocated_bytes{bucket="attestation-target-epoch-indices",database="boltDB"} 0
+bolt_bucket_physical_leaf_pages_allocated_bytes{bucket="attestation-target-root-indices",database="boltDB"} 0
+bolt_bucket_physical_leaf_pages_allocated_bytes{bucket="attestations",database="boltDB"} 0
+bolt_bucket_physical_leaf_pages_allocated_bytes{bucket="attester-slashings",database="boltDB"} 0
+bolt_bucket_physical_leaf_pages_allocated_bytes{bucket="block-parent-root-indices",database="boltDB"} 1.415168e+07
+bolt_bucket_physical_leaf_pages_allocated_bytes{bucket="block-slot-indices",database="boltDB"} 1.3832192e+07
+bolt_bucket_physical_leaf_pages_allocated_bytes{bucket="blocks",database="boltDB"} 2.39087616e+08
+bolt_bucket_physical_leaf_pages_allocated_bytes{bucket="chain-metadata",database="boltDB"} 0
+bolt_bucket_physical_leaf_pages_allocated_bytes{bucket="check-point",database="boltDB"} 0
+bolt_bucket_physical_leaf_pages_allocated_bytes{bucket="finalized-block-roots-index",database="boltDB"} 2.0959232e+07
+bolt_bucket_physical_leaf_pages_allocated_bytes{bucket="migrations",database="boltDB"} 0
+bolt_bucket_physical_leaf_pages_allocated_bytes{bucket="new-state-compatible",database="boltDB"} 0
+bolt_bucket_physical_leaf_pages_allocated_bytes{bucket="powchain",database="boltDB"} 8.966144e+06
+bolt_bucket_physical_leaf_pages_allocated_bytes{bucket="proposer-slashings",database="boltDB"} 0
+bolt_bucket_physical_leaf_pages_allocated_bytes{bucket="state",database="boltDB"} 6.406144e+07
+bolt_bucket_physical_leaf_pages_allocated_bytes{bucket="state-slot-indices",database="boltDB"} 4096
+bolt_bucket_physical_leaf_pages_allocated_bytes{bucket="state-summary",database="boltDB"} 1.5622144e+07
+bolt_bucket_physical_leaf_pages_allocated_bytes{bucket="voluntary-exits",database="boltDB"} 0
+# HELP bolt_bucket_physical_leaf_pages_in_use_bytes Number of bytes in use in physical leaf pages for a bucket.
+# TYPE bolt_bucket_physical_leaf_pages_in_use_bytes gauge
+bolt_bucket_physical_leaf_pages_in_use_bytes{bucket="archived-active-changes",database="boltDB"} 0
+bolt_bucket_physical_leaf_pages_in_use_bytes{bucket="archived-balances",database="boltDB"} 0
+bolt_bucket_physical_leaf_pages_in_use_bytes{bucket="archived-committee-info",database="boltDB"} 0
+bolt_bucket_physical_leaf_pages_in_use_bytes{bucket="archived-validator-participation",database="boltDB"} 0
+bolt_bucket_physical_leaf_pages_in_use_bytes{bucket="attestation-head-block-root-indices",database="boltDB"} 0
+bolt_bucket_physical_leaf_pages_in_use_bytes{bucket="attestation-source-epoch-indices",database="boltDB"} 0
+bolt_bucket_physical_leaf_pages_in_use_bytes{bucket="attestation-source-root-indices",database="boltDB"} 0
+bolt_bucket_physical_leaf_pages_in_use_bytes{bucket="attestation-target-epoch-indices",database="boltDB"} 0
+bolt_bucket_physical_leaf_pages_in_use_bytes{bucket="attestation-target-root-indices",database="boltDB"} 0
+bolt_bucket_physical_leaf_pages_in_use_bytes{bucket="attestations",database="boltDB"} 0
+bolt_bucket_physical_leaf_pages_in_use_bytes{bucket="attester-slashings",database="boltDB"} 0
+bolt_bucket_physical_leaf_pages_in_use_bytes{bucket="block-parent-root-indices",database="boltDB"} 9.755232e+06
+bolt_bucket_physical_leaf_pages_in_use_bytes{bucket="block-slot-indices",database="boltDB"} 6.862992e+06
+bolt_bucket_physical_leaf_pages_in_use_bytes{bucket="blocks",database="boltDB"} 1.6109852e+08
+bolt_bucket_physical_leaf_pages_in_use_bytes{bucket="chain-metadata",database="boltDB"} 0
+bolt_bucket_physical_leaf_pages_in_use_bytes{bucket="check-point",database="boltDB"} 0
+bolt_bucket_physical_leaf_pages_in_use_bytes{bucket="finalized-block-roots-index",database="boltDB"} 1.4475149e+07
+bolt_bucket_physical_leaf_pages_in_use_bytes{bucket="migrations",database="boltDB"} 0
+bolt_bucket_physical_leaf_pages_in_use_bytes{bucket="new-state-compatible",database="boltDB"} 0
+bolt_bucket_physical_leaf_pages_in_use_bytes{bucket="powchain",database="boltDB"} 8.965943e+06
+bolt_bucket_physical_leaf_pages_in_use_bytes{bucket="proposer-slashings",database="boltDB"} 0
+bolt_bucket_physical_leaf_pages_in_use_bytes{bucket="state",database="boltDB"} 6.401392e+07
+bolt_bucket_physical_leaf_pages_in_use_bytes{bucket="state-slot-indices",database="boltDB"} 3824
+bolt_bucket_physical_leaf_pages_in_use_bytes{bucket="state-summary",database="boltDB"} 1.0744999e+07
+bolt_bucket_physical_leaf_pages_in_use_bytes{bucket="voluntary-exits",database="boltDB"} 0
+# HELP bolt_db_freelist_free_page_allocated_bytes Number of bytes allocated in free pages on the freelist.
+# TYPE bolt_db_freelist_free_page_allocated_bytes gauge
+bolt_db_freelist_free_page_allocated_bytes{database="boltDB"} 2.4059904e+07
+# HELP bolt_db_freelist_free_pages Number of free pages on the freelist.
+# TYPE bolt_db_freelist_free_pages gauge
+bolt_db_freelist_free_pages{database="boltDB"} 5817
+# HELP bolt_db_freelist_in_use_bytes Number of bytes in use by the freelist.
+# TYPE bolt_db_freelist_in_use_bytes gauge
+bolt_db_freelist_in_use_bytes{database="boltDB"} 47008
+# HELP bolt_db_freelist_pending_pages Number of pending pages on the freelist.
+# TYPE bolt_db_freelist_pending_pages gauge
+bolt_db_freelist_pending_pages{database="boltDB"} 57
+# HELP bolt_db_open_read_tx Number of currently open read-only transactions for the database.
+# TYPE bolt_db_open_read_tx gauge
+bolt_db_open_read_tx{database="boltDB"} 0
+# HELP bolt_db_read_tx_total Total number of started read transactions for the database.
+# TYPE bolt_db_read_tx_total counter
+bolt_db_read_tx_total{database="boltDB"} 20816
+# HELP bolt_tx_cursors_total Total number of cursors created by transactions
+# TYPE bolt_tx_cursors_total counter
+bolt_tx_cursors_total{database="boltDB"} 303769
+# HELP bolt_tx_node_rebalance_seconds_total Total amount of time in seconds spent rebalancing nodes by transactions
+# TYPE bolt_tx_node_rebalance_seconds_total counter
+bolt_tx_node_rebalance_seconds_total{database="boltDB"} 0.007795184
+# HELP bolt_tx_node_rebalances_total Total number of node rebalances by transactions.
+# TYPE bolt_tx_node_rebalances_total counter
+bolt_tx_node_rebalances_total{database="boltDB"} 6998
+# HELP bolt_tx_nodes_allocated_total Total number of nodes allocated by transactions.
+# TYPE bolt_tx_nodes_allocated_total counter
+bolt_tx_nodes_allocated_total{database="boltDB"} 7097
+# HELP bolt_tx_nodes_dereferenced_total Total number of nodes dereferenced by transactions.
+# TYPE bolt_tx_nodes_dereferenced_total counter
+bolt_tx_nodes_dereferenced_total{database="boltDB"} 0
+# HELP bolt_tx_nodes_spilled_seconds_total Total amount of time in seconds spent spilling nodes by transactions.
+# TYPE bolt_tx_nodes_spilled_seconds_total counter
+bolt_tx_nodes_spilled_seconds_total{database="boltDB"} 0.046655684
+# HELP bolt_tx_nodes_spilled_total Total number of nodes spilled by transactions.
+# TYPE bolt_tx_nodes_spilled_total counter
+bolt_tx_nodes_spilled_total{database="boltDB"} 7131
+# HELP bolt_tx_nodes_split_total Total number of nodes split by transactions.
+# TYPE bolt_tx_nodes_split_total counter
+bolt_tx_nodes_split_total{database="boltDB"} 3456
+# HELP bolt_tx_pages_allocated_bytes_total Total number of bytes allocated for transaction pages.
+# TYPE bolt_tx_pages_allocated_bytes_total counter
+bolt_tx_pages_allocated_bytes_total{database="boltDB"} 5.5885824e+07
+# HELP bolt_tx_pages_allocated_total Total number of transaction page allocations.
+# TYPE bolt_tx_pages_allocated_total counter
+bolt_tx_pages_allocated_total{database="boltDB"} 13644
+# HELP bolt_tx_write_seconds_total Total amount of time in seconds spent writing to disk by transactions.
+# TYPE bolt_tx_write_seconds_total counter
+bolt_tx_write_seconds_total{database="boltDB"} 0.811014773
+# HELP bolt_tx_writes_total Total number of writes to disk performed by transactions.
+# TYPE bolt_tx_writes_total counter
+bolt_tx_writes_total{database="boltDB"} 7673
+# HELP check_point_state_cache_hit The number of check point state requests that are present in the cache.
+# TYPE check_point_state_cache_hit counter
+check_point_state_cache_hit 1928
+# HELP check_point_statecache_miss The number of check point state requests that aren't present in the cache.
+# TYPE check_point_statecache_miss counter
+check_point_statecache_miss 6
+# HELP committee_cache_hit The number of committee requests that are present in the cache.
+# TYPE committee_cache_hit counter
+committee_cache_hit 133315
+# HELP committee_cache_miss The number of committee requests that aren't present in the cache.
+# TYPE committee_cache_miss counter
+committee_cache_miss 146
+# HELP current_eth1_data_deposit_count The current eth1 deposit count in the last processed state eth1data field.
+# TYPE current_eth1_data_deposit_count gauge
+current_eth1_data_deposit_count 5157
+# HELP expired_aggregated_atts_total The number of expired and deleted aggregated attestations in the pool.
+# TYPE expired_aggregated_atts_total counter
+expired_aggregated_atts_total 4
+# HELP expired_block_atts_total The number of expired and deleted block attestations in the pool.
+# TYPE expired_block_atts_total counter
+expired_block_atts_total 28
+# HELP expired_unaggregated_atts_total The number of expired and deleted unaggregated attestations in the pool.
+# TYPE expired_unaggregated_atts_total counter
+expired_unaggregated_atts_total 10
+# HELP go_gc_duration_seconds A summary of the pause duration of garbage collection cycles.
+# TYPE go_gc_duration_seconds summary
+go_gc_duration_seconds{quantile="0"} 1.5663e-05
+go_gc_duration_seconds{quantile="0.25"} 2.7368e-05
+go_gc_duration_seconds{quantile="0.5"} 4.7465e-05
+go_gc_duration_seconds{quantile="0.75"} 7.3647e-05
+go_gc_duration_seconds{quantile="1"} 0.000301244
+go_gc_duration_seconds_sum 0.002343106
+go_gc_duration_seconds_count 41
+# HELP go_goroutines Number of goroutines that currently exist.
+# TYPE go_goroutines gauge
+go_goroutines 533
+# HELP go_info Information about the Go environment.
+# TYPE go_info gauge
+go_info{version="go1.14.2"} 1
+# HELP go_maxprocs The result of runtime.GOMAXPROCS(0)
+# TYPE go_maxprocs gauge
+go_maxprocs 2
+# HELP go_memstats_alloc_bytes Number of bytes allocated and still in use.
+# TYPE go_memstats_alloc_bytes gauge
+go_memstats_alloc_bytes 3.07404744e+08
+# HELP go_memstats_alloc_bytes_total Total number of bytes allocated, even if freed.
+# TYPE go_memstats_alloc_bytes_total counter
+go_memstats_alloc_bytes_total 3.664456728e+09
+# HELP go_memstats_buck_hash_sys_bytes Number of bytes used by the profiling bucket hash table.
+# TYPE go_memstats_buck_hash_sys_bytes gauge
+go_memstats_buck_hash_sys_bytes 2.130827e+06
+# HELP go_memstats_frees_total Total number of frees.
+# TYPE go_memstats_frees_total counter
+go_memstats_frees_total 4.148719e+07
+# HELP go_memstats_gc_cpu_fraction The fraction of this program's available CPU time used by the GC since the program started.
+# TYPE go_memstats_gc_cpu_fraction gauge
+go_memstats_gc_cpu_fraction 0.0006346736795761136
+# HELP go_memstats_gc_sys_bytes Number of bytes used for garbage collection system metadata.
+# TYPE go_memstats_gc_sys_bytes gauge
+go_memstats_gc_sys_bytes 2.0130104e+07
+# HELP go_memstats_heap_alloc_bytes Number of heap bytes allocated and still in use.
+# TYPE go_memstats_heap_alloc_bytes gauge
+go_memstats_heap_alloc_bytes 3.07404744e+08
+# HELP go_memstats_heap_idle_bytes Number of heap bytes waiting to be used.
+# TYPE go_memstats_heap_idle_bytes gauge
+go_memstats_heap_idle_bytes 1.05586688e+08
+# HELP go_memstats_heap_inuse_bytes Number of heap bytes that are in use.
+# TYPE go_memstats_heap_inuse_bytes gauge
+go_memstats_heap_inuse_bytes 3.59653376e+08
+# HELP go_memstats_heap_objects Number of allocated objects.
+# TYPE go_memstats_heap_objects gauge
+go_memstats_heap_objects 1.24573e+06
+# HELP go_memstats_heap_released_bytes Number of heap bytes released to OS.
+# TYPE go_memstats_heap_released_bytes gauge
+go_memstats_heap_released_bytes 4.8717824e+07
+# HELP go_memstats_heap_sys_bytes Number of heap bytes obtained from system.
+# TYPE go_memstats_heap_sys_bytes gauge
+go_memstats_heap_sys_bytes 4.65240064e+08
+# HELP go_memstats_last_gc_time_seconds Number of seconds since 1970 of last garbage collection.
+# TYPE go_memstats_last_gc_time_seconds gauge
+go_memstats_last_gc_time_seconds 1.595107430920163e+09
+# HELP go_memstats_lookups_total Total number of pointer lookups.
+# TYPE go_memstats_lookups_total counter
+go_memstats_lookups_total 0
+# HELP go_memstats_mallocs_total Total number of mallocs.
+# TYPE go_memstats_mallocs_total counter
+go_memstats_mallocs_total 4.273292e+07
+# HELP go_memstats_mcache_inuse_bytes Number of bytes in use by mcache structures.
+# TYPE go_memstats_mcache_inuse_bytes gauge
+go_memstats_mcache_inuse_bytes 3472
+# HELP go_memstats_mcache_sys_bytes Number of bytes used for mcache structures obtained from system.
+# TYPE go_memstats_mcache_sys_bytes gauge
+go_memstats_mcache_sys_bytes 16384
+# HELP go_memstats_mspan_inuse_bytes Number of bytes in use by mspan structures.
+# TYPE go_memstats_mspan_inuse_bytes gauge
+go_memstats_mspan_inuse_bytes 2.367488e+06
+# HELP go_memstats_mspan_sys_bytes Number of bytes used for mspan structures obtained from system.
+# TYPE go_memstats_mspan_sys_bytes gauge
+go_memstats_mspan_sys_bytes 4.227072e+06
+# HELP go_memstats_next_gc_bytes Number of heap bytes when next garbage collection will take place.
+# TYPE go_memstats_next_gc_bytes gauge
+go_memstats_next_gc_bytes 4.96498624e+08
+# HELP go_memstats_other_sys_bytes Number of bytes used for other system allocations.
+# TYPE go_memstats_other_sys_bytes gauge
+go_memstats_other_sys_bytes 1.184877e+06
+# HELP go_memstats_stack_inuse_bytes Number of bytes in use by the stack allocator.
+# TYPE go_memstats_stack_inuse_bytes gauge
+go_memstats_stack_inuse_bytes 4.521984e+06
+# HELP go_memstats_stack_sys_bytes Number of bytes obtained from system for stack allocator.
+# TYPE go_memstats_stack_sys_bytes gauge
+go_memstats_stack_sys_bytes 4.521984e+06
+# HELP go_memstats_sys_bytes Number of bytes obtained from system.
+# TYPE go_memstats_sys_bytes gauge
+go_memstats_sys_bytes 4.97451312e+08
+# HELP go_threads Number of OS threads created.
+# TYPE go_threads gauge
+go_threads 52
+# HELP grpc_server_handled_total Total number of RPCs completed on the server, regardless of success or failure.
+# TYPE grpc_server_handled_total counter
+grpc_server_handled_total{grpc_code="OK",grpc_method="AttestationPool",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary"} 116
+grpc_server_handled_total{grpc_code="OK",grpc_method="DomainData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 112
+grpc_server_handled_total{grpc_code="OK",grpc_method="GetAttestationData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 37
+grpc_server_handled_total{grpc_code="OK",grpc_method="GetChainHead",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary"} 1
+grpc_server_handled_total{grpc_code="OK",grpc_method="GetDuties",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 8
+grpc_server_handled_total{grpc_code="OK",grpc_method="GetGenesis",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary"} 1
+grpc_server_handled_total{grpc_code="OK",grpc_method="GetSyncStatus",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary"} 116
+grpc_server_handled_total{grpc_code="OK",grpc_method="GetValidatorPerformance",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary"} 3
+grpc_server_handled_total{grpc_code="OK",grpc_method="GetVersion",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary"} 1
+grpc_server_handled_total{grpc_code="OK",grpc_method="ListPeers",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary"} 116
+grpc_server_handled_total{grpc_code="OK",grpc_method="ProposeAttestation",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 37
+grpc_server_handled_total{grpc_code="OK",grpc_method="SubmitAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 3
+grpc_server_handled_total{grpc_code="OK",grpc_method="SubmitSignedAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 3
+grpc_server_handled_total{grpc_code="OK",grpc_method="SubscribeCommitteeSubnets",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 4
+grpc_server_handled_total{grpc_code="Unavailable",grpc_method="GetDuties",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 45
+grpc_server_handled_total{grpc_code="Unavailable",grpc_method="GetValidatorPerformance",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary"} 5
+# HELP grpc_server_handling_seconds Histogram of response latency (seconds) of gRPC that had been application-level handled by the server.
+# TYPE grpc_server_handling_seconds histogram
+grpc_server_handling_seconds_bucket{grpc_method="AttestationPool",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="0.005"} 116
+grpc_server_handling_seconds_bucket{grpc_method="AttestationPool",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="0.01"} 116
+grpc_server_handling_seconds_bucket{grpc_method="AttestationPool",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="0.025"} 116
+grpc_server_handling_seconds_bucket{grpc_method="AttestationPool",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="0.05"} 116
+grpc_server_handling_seconds_bucket{grpc_method="AttestationPool",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="0.1"} 116
+grpc_server_handling_seconds_bucket{grpc_method="AttestationPool",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="0.25"} 116
+grpc_server_handling_seconds_bucket{grpc_method="AttestationPool",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="0.5"} 116
+grpc_server_handling_seconds_bucket{grpc_method="AttestationPool",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="1"} 116
+grpc_server_handling_seconds_bucket{grpc_method="AttestationPool",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="2.5"} 116
+grpc_server_handling_seconds_bucket{grpc_method="AttestationPool",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="5"} 116
+grpc_server_handling_seconds_bucket{grpc_method="AttestationPool",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="10"} 116
+grpc_server_handling_seconds_bucket{grpc_method="AttestationPool",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="+Inf"} 116
+grpc_server_handling_seconds_sum{grpc_method="AttestationPool",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary"} 0.005037906000000003
+grpc_server_handling_seconds_count{grpc_method="AttestationPool",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary"} 116
+grpc_server_handling_seconds_bucket{grpc_method="DomainData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.005"} 112
+grpc_server_handling_seconds_bucket{grpc_method="DomainData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.01"} 112
+grpc_server_handling_seconds_bucket{grpc_method="DomainData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.025"} 112
+grpc_server_handling_seconds_bucket{grpc_method="DomainData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.05"} 112
+grpc_server_handling_seconds_bucket{grpc_method="DomainData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.1"} 112
+grpc_server_handling_seconds_bucket{grpc_method="DomainData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.25"} 112
+grpc_server_handling_seconds_bucket{grpc_method="DomainData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.5"} 112
+grpc_server_handling_seconds_bucket{grpc_method="DomainData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="1"} 112
+grpc_server_handling_seconds_bucket{grpc_method="DomainData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="2.5"} 112
+grpc_server_handling_seconds_bucket{grpc_method="DomainData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="5"} 112
+grpc_server_handling_seconds_bucket{grpc_method="DomainData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="10"} 112
+grpc_server_handling_seconds_bucket{grpc_method="DomainData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="+Inf"} 112
+grpc_server_handling_seconds_sum{grpc_method="DomainData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 0.007294635999999999
+grpc_server_handling_seconds_count{grpc_method="DomainData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 112
+grpc_server_handling_seconds_bucket{grpc_method="GetAttestationData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.005"} 37
+grpc_server_handling_seconds_bucket{grpc_method="GetAttestationData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.01"} 37
+grpc_server_handling_seconds_bucket{grpc_method="GetAttestationData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.025"} 37
+grpc_server_handling_seconds_bucket{grpc_method="GetAttestationData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.05"} 37
+grpc_server_handling_seconds_bucket{grpc_method="GetAttestationData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.1"} 37
+grpc_server_handling_seconds_bucket{grpc_method="GetAttestationData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.25"} 37
+grpc_server_handling_seconds_bucket{grpc_method="GetAttestationData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.5"} 37
+grpc_server_handling_seconds_bucket{grpc_method="GetAttestationData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="1"} 37
+grpc_server_handling_seconds_bucket{grpc_method="GetAttestationData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="2.5"} 37
+grpc_server_handling_seconds_bucket{grpc_method="GetAttestationData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="5"} 37
+grpc_server_handling_seconds_bucket{grpc_method="GetAttestationData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="10"} 37
+grpc_server_handling_seconds_bucket{grpc_method="GetAttestationData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="+Inf"} 37
+grpc_server_handling_seconds_sum{grpc_method="GetAttestationData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 0.0042606829999999995
+grpc_server_handling_seconds_count{grpc_method="GetAttestationData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 37
+grpc_server_handling_seconds_bucket{grpc_method="GetChainHead",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="0.005"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetChainHead",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="0.01"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetChainHead",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="0.025"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetChainHead",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="0.05"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetChainHead",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="0.1"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetChainHead",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="0.25"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetChainHead",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="0.5"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetChainHead",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="1"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetChainHead",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="2.5"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetChainHead",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="5"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetChainHead",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="10"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetChainHead",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="+Inf"} 1
+grpc_server_handling_seconds_sum{grpc_method="GetChainHead",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary"} 0.000363495
+grpc_server_handling_seconds_count{grpc_method="GetChainHead",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetDuties",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.005"} 46
+grpc_server_handling_seconds_bucket{grpc_method="GetDuties",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.01"} 46
+grpc_server_handling_seconds_bucket{grpc_method="GetDuties",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.025"} 53
+grpc_server_handling_seconds_bucket{grpc_method="GetDuties",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.05"} 53
+grpc_server_handling_seconds_bucket{grpc_method="GetDuties",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.1"} 53
+grpc_server_handling_seconds_bucket{grpc_method="GetDuties",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.25"} 53
+grpc_server_handling_seconds_bucket{grpc_method="GetDuties",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.5"} 53
+grpc_server_handling_seconds_bucket{grpc_method="GetDuties",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="1"} 53
+grpc_server_handling_seconds_bucket{grpc_method="GetDuties",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="2.5"} 53
+grpc_server_handling_seconds_bucket{grpc_method="GetDuties",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="5"} 53
+grpc_server_handling_seconds_bucket{grpc_method="GetDuties",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="10"} 53
+grpc_server_handling_seconds_bucket{grpc_method="GetDuties",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="+Inf"} 53
+grpc_server_handling_seconds_sum{grpc_method="GetDuties",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 0.13001809700000003
+grpc_server_handling_seconds_count{grpc_method="GetDuties",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 53
+grpc_server_handling_seconds_bucket{grpc_method="GetGenesis",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="0.005"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetGenesis",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="0.01"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetGenesis",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="0.025"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetGenesis",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="0.05"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetGenesis",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="0.1"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetGenesis",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="0.25"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetGenesis",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="0.5"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetGenesis",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="1"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetGenesis",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="2.5"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetGenesis",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="5"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetGenesis",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="10"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetGenesis",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="+Inf"} 1
+grpc_server_handling_seconds_sum{grpc_method="GetGenesis",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary"} 6.4291e-05
+grpc_server_handling_seconds_count{grpc_method="GetGenesis",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetSyncStatus",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="0.005"} 116
+grpc_server_handling_seconds_bucket{grpc_method="GetSyncStatus",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="0.01"} 116
+grpc_server_handling_seconds_bucket{grpc_method="GetSyncStatus",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="0.025"} 116
+grpc_server_handling_seconds_bucket{grpc_method="GetSyncStatus",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="0.05"} 116
+grpc_server_handling_seconds_bucket{grpc_method="GetSyncStatus",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="0.1"} 116
+grpc_server_handling_seconds_bucket{grpc_method="GetSyncStatus",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="0.25"} 116
+grpc_server_handling_seconds_bucket{grpc_method="GetSyncStatus",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="0.5"} 116
+grpc_server_handling_seconds_bucket{grpc_method="GetSyncStatus",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="1"} 116
+grpc_server_handling_seconds_bucket{grpc_method="GetSyncStatus",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="2.5"} 116
+grpc_server_handling_seconds_bucket{grpc_method="GetSyncStatus",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="5"} 116
+grpc_server_handling_seconds_bucket{grpc_method="GetSyncStatus",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="10"} 116
+grpc_server_handling_seconds_bucket{grpc_method="GetSyncStatus",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="+Inf"} 116
+grpc_server_handling_seconds_sum{grpc_method="GetSyncStatus",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary"} 0.002392124
+grpc_server_handling_seconds_count{grpc_method="GetSyncStatus",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary"} 116
+grpc_server_handling_seconds_bucket{grpc_method="GetValidatorPerformance",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="0.005"} 6
+grpc_server_handling_seconds_bucket{grpc_method="GetValidatorPerformance",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="0.01"} 8
+grpc_server_handling_seconds_bucket{grpc_method="GetValidatorPerformance",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="0.025"} 8
+grpc_server_handling_seconds_bucket{grpc_method="GetValidatorPerformance",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="0.05"} 8
+grpc_server_handling_seconds_bucket{grpc_method="GetValidatorPerformance",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="0.1"} 8
+grpc_server_handling_seconds_bucket{grpc_method="GetValidatorPerformance",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="0.25"} 8
+grpc_server_handling_seconds_bucket{grpc_method="GetValidatorPerformance",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="0.5"} 8
+grpc_server_handling_seconds_bucket{grpc_method="GetValidatorPerformance",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="1"} 8
+grpc_server_handling_seconds_bucket{grpc_method="GetValidatorPerformance",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="2.5"} 8
+grpc_server_handling_seconds_bucket{grpc_method="GetValidatorPerformance",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="5"} 8
+grpc_server_handling_seconds_bucket{grpc_method="GetValidatorPerformance",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="10"} 8
+grpc_server_handling_seconds_bucket{grpc_method="GetValidatorPerformance",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary",le="+Inf"} 8
+grpc_server_handling_seconds_sum{grpc_method="GetValidatorPerformance",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary"} 0.01861165
+grpc_server_handling_seconds_count{grpc_method="GetValidatorPerformance",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary"} 8
+grpc_server_handling_seconds_bucket{grpc_method="GetVersion",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="0.005"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetVersion",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="0.01"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetVersion",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="0.025"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetVersion",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="0.05"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetVersion",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="0.1"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetVersion",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="0.25"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetVersion",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="0.5"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetVersion",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="1"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetVersion",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="2.5"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetVersion",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="5"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetVersion",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="10"} 1
+grpc_server_handling_seconds_bucket{grpc_method="GetVersion",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="+Inf"} 1
+grpc_server_handling_seconds_sum{grpc_method="GetVersion",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary"} 0.000221802
+grpc_server_handling_seconds_count{grpc_method="GetVersion",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary"} 1
+grpc_server_handling_seconds_bucket{grpc_method="ListPeers",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="0.005"} 116
+grpc_server_handling_seconds_bucket{grpc_method="ListPeers",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="0.01"} 116
+grpc_server_handling_seconds_bucket{grpc_method="ListPeers",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="0.025"} 116
+grpc_server_handling_seconds_bucket{grpc_method="ListPeers",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="0.05"} 116
+grpc_server_handling_seconds_bucket{grpc_method="ListPeers",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="0.1"} 116
+grpc_server_handling_seconds_bucket{grpc_method="ListPeers",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="0.25"} 116
+grpc_server_handling_seconds_bucket{grpc_method="ListPeers",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="0.5"} 116
+grpc_server_handling_seconds_bucket{grpc_method="ListPeers",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="1"} 116
+grpc_server_handling_seconds_bucket{grpc_method="ListPeers",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="2.5"} 116
+grpc_server_handling_seconds_bucket{grpc_method="ListPeers",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="5"} 116
+grpc_server_handling_seconds_bucket{grpc_method="ListPeers",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="10"} 116
+grpc_server_handling_seconds_bucket{grpc_method="ListPeers",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary",le="+Inf"} 116
+grpc_server_handling_seconds_sum{grpc_method="ListPeers",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary"} 0.05126237899999999
+grpc_server_handling_seconds_count{grpc_method="ListPeers",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary"} 116
+grpc_server_handling_seconds_bucket{grpc_method="ProposeAttestation",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.005"} 37
+grpc_server_handling_seconds_bucket{grpc_method="ProposeAttestation",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.01"} 37
+grpc_server_handling_seconds_bucket{grpc_method="ProposeAttestation",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.025"} 37
+grpc_server_handling_seconds_bucket{grpc_method="ProposeAttestation",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.05"} 37
+grpc_server_handling_seconds_bucket{grpc_method="ProposeAttestation",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.1"} 37
+grpc_server_handling_seconds_bucket{grpc_method="ProposeAttestation",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.25"} 37
+grpc_server_handling_seconds_bucket{grpc_method="ProposeAttestation",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.5"} 37
+grpc_server_handling_seconds_bucket{grpc_method="ProposeAttestation",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="1"} 37
+grpc_server_handling_seconds_bucket{grpc_method="ProposeAttestation",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="2.5"} 37
+grpc_server_handling_seconds_bucket{grpc_method="ProposeAttestation",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="5"} 37
+grpc_server_handling_seconds_bucket{grpc_method="ProposeAttestation",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="10"} 37
+grpc_server_handling_seconds_bucket{grpc_method="ProposeAttestation",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="+Inf"} 37
+grpc_server_handling_seconds_sum{grpc_method="ProposeAttestation",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 0.029964847999999992
+grpc_server_handling_seconds_count{grpc_method="ProposeAttestation",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 37
+grpc_server_handling_seconds_bucket{grpc_method="SubmitAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.005"} 0
+grpc_server_handling_seconds_bucket{grpc_method="SubmitAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.01"} 0
+grpc_server_handling_seconds_bucket{grpc_method="SubmitAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.025"} 0
+grpc_server_handling_seconds_bucket{grpc_method="SubmitAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.05"} 0
+grpc_server_handling_seconds_bucket{grpc_method="SubmitAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.1"} 1
+grpc_server_handling_seconds_bucket{grpc_method="SubmitAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.25"} 3
+grpc_server_handling_seconds_bucket{grpc_method="SubmitAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.5"} 3
+grpc_server_handling_seconds_bucket{grpc_method="SubmitAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="1"} 3
+grpc_server_handling_seconds_bucket{grpc_method="SubmitAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="2.5"} 3
+grpc_server_handling_seconds_bucket{grpc_method="SubmitAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="5"} 3
+grpc_server_handling_seconds_bucket{grpc_method="SubmitAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="10"} 3
+grpc_server_handling_seconds_bucket{grpc_method="SubmitAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="+Inf"} 3
+grpc_server_handling_seconds_sum{grpc_method="SubmitAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 0.303601075
+grpc_server_handling_seconds_count{grpc_method="SubmitAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 3
+grpc_server_handling_seconds_bucket{grpc_method="SubmitSignedAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.005"} 3
+grpc_server_handling_seconds_bucket{grpc_method="SubmitSignedAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.01"} 3
+grpc_server_handling_seconds_bucket{grpc_method="SubmitSignedAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.025"} 3
+grpc_server_handling_seconds_bucket{grpc_method="SubmitSignedAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.05"} 3
+grpc_server_handling_seconds_bucket{grpc_method="SubmitSignedAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.1"} 3
+grpc_server_handling_seconds_bucket{grpc_method="SubmitSignedAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.25"} 3
+grpc_server_handling_seconds_bucket{grpc_method="SubmitSignedAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.5"} 3
+grpc_server_handling_seconds_bucket{grpc_method="SubmitSignedAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="1"} 3
+grpc_server_handling_seconds_bucket{grpc_method="SubmitSignedAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="2.5"} 3
+grpc_server_handling_seconds_bucket{grpc_method="SubmitSignedAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="5"} 3
+grpc_server_handling_seconds_bucket{grpc_method="SubmitSignedAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="10"} 3
+grpc_server_handling_seconds_bucket{grpc_method="SubmitSignedAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="+Inf"} 3
+grpc_server_handling_seconds_sum{grpc_method="SubmitSignedAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 0.000531129
+grpc_server_handling_seconds_count{grpc_method="SubmitSignedAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 3
+grpc_server_handling_seconds_bucket{grpc_method="SubscribeCommitteeSubnets",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.005"} 4
+grpc_server_handling_seconds_bucket{grpc_method="SubscribeCommitteeSubnets",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.01"} 4
+grpc_server_handling_seconds_bucket{grpc_method="SubscribeCommitteeSubnets",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.025"} 4
+grpc_server_handling_seconds_bucket{grpc_method="SubscribeCommitteeSubnets",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.05"} 4
+grpc_server_handling_seconds_bucket{grpc_method="SubscribeCommitteeSubnets",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.1"} 4
+grpc_server_handling_seconds_bucket{grpc_method="SubscribeCommitteeSubnets",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.25"} 4
+grpc_server_handling_seconds_bucket{grpc_method="SubscribeCommitteeSubnets",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="0.5"} 4
+grpc_server_handling_seconds_bucket{grpc_method="SubscribeCommitteeSubnets",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="1"} 4
+grpc_server_handling_seconds_bucket{grpc_method="SubscribeCommitteeSubnets",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="2.5"} 4
+grpc_server_handling_seconds_bucket{grpc_method="SubscribeCommitteeSubnets",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="5"} 4
+grpc_server_handling_seconds_bucket{grpc_method="SubscribeCommitteeSubnets",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="10"} 4
+grpc_server_handling_seconds_bucket{grpc_method="SubscribeCommitteeSubnets",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary",le="+Inf"} 4
+grpc_server_handling_seconds_sum{grpc_method="SubscribeCommitteeSubnets",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 0.000503587
+grpc_server_handling_seconds_count{grpc_method="SubscribeCommitteeSubnets",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 4
+# HELP grpc_server_msg_received_total Total number of RPC stream messages received on the server.
+# TYPE grpc_server_msg_received_total counter
+grpc_server_msg_received_total{grpc_method="AttestationPool",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary"} 116
+grpc_server_msg_received_total{grpc_method="DomainData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 112
+grpc_server_msg_received_total{grpc_method="GetAttestationData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 37
+grpc_server_msg_received_total{grpc_method="GetChainHead",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary"} 1
+grpc_server_msg_received_total{grpc_method="GetDuties",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 53
+grpc_server_msg_received_total{grpc_method="GetGenesis",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary"} 1
+grpc_server_msg_received_total{grpc_method="GetSyncStatus",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary"} 116
+grpc_server_msg_received_total{grpc_method="GetValidatorPerformance",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary"} 8
+grpc_server_msg_received_total{grpc_method="GetVersion",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary"} 1
+grpc_server_msg_received_total{grpc_method="ListPeers",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary"} 116
+grpc_server_msg_received_total{grpc_method="ProposeAttestation",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 37
+grpc_server_msg_received_total{grpc_method="StreamChainHead",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="server_stream"} 1
+grpc_server_msg_received_total{grpc_method="SubmitAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 3
+grpc_server_msg_received_total{grpc_method="SubmitSignedAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 3
+grpc_server_msg_received_total{grpc_method="SubscribeCommitteeSubnets",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 4
+# HELP grpc_server_msg_sent_total Total number of gRPC stream messages sent by the server.
+# TYPE grpc_server_msg_sent_total counter
+grpc_server_msg_sent_total{grpc_method="AttestationPool",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary"} 116
+grpc_server_msg_sent_total{grpc_method="DomainData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 112
+grpc_server_msg_sent_total{grpc_method="GetAttestationData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 37
+grpc_server_msg_sent_total{grpc_method="GetChainHead",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary"} 1
+grpc_server_msg_sent_total{grpc_method="GetDuties",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 8
+grpc_server_msg_sent_total{grpc_method="GetGenesis",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary"} 1
+grpc_server_msg_sent_total{grpc_method="GetSyncStatus",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary"} 116
+grpc_server_msg_sent_total{grpc_method="GetValidatorPerformance",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary"} 3
+grpc_server_msg_sent_total{grpc_method="GetVersion",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary"} 1
+grpc_server_msg_sent_total{grpc_method="ListPeers",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary"} 116
+grpc_server_msg_sent_total{grpc_method="ProposeAttestation",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 37
+grpc_server_msg_sent_total{grpc_method="StreamChainHead",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="server_stream"} 1706
+grpc_server_msg_sent_total{grpc_method="SubmitAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 3
+grpc_server_msg_sent_total{grpc_method="SubmitSignedAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 3
+grpc_server_msg_sent_total{grpc_method="SubscribeCommitteeSubnets",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 4
+# HELP grpc_server_started_total Total number of RPCs started on the server.
+# TYPE grpc_server_started_total counter
+grpc_server_started_total{grpc_method="AttestationPool",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary"} 116
+grpc_server_started_total{grpc_method="DomainData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 112
+grpc_server_started_total{grpc_method="GetAttestationData",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 37
+grpc_server_started_total{grpc_method="GetChainHead",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary"} 1
+grpc_server_started_total{grpc_method="GetDuties",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 53
+grpc_server_started_total{grpc_method="GetGenesis",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary"} 1
+grpc_server_started_total{grpc_method="GetSyncStatus",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary"} 116
+grpc_server_started_total{grpc_method="GetValidatorPerformance",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="unary"} 8
+grpc_server_started_total{grpc_method="GetVersion",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary"} 1
+grpc_server_started_total{grpc_method="ListPeers",grpc_service="ethereum.eth.v1alpha1.Node",grpc_type="unary"} 116
+grpc_server_started_total{grpc_method="ProposeAttestation",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 37
+grpc_server_started_total{grpc_method="StreamChainHead",grpc_service="ethereum.eth.v1alpha1.BeaconChain",grpc_type="server_stream"} 1
+grpc_server_started_total{grpc_method="SubmitAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 3
+grpc_server_started_total{grpc_method="SubmitSignedAggregateSelectionProof",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 3
+grpc_server_started_total{grpc_method="SubscribeCommitteeSubnets",grpc_service="ethereum.eth.v1alpha1.BeaconNodeValidator",grpc_type="unary"} 4
+# HELP head_finalized_epoch Last finalized epoch of the head state
+# TYPE head_finalized_epoch gauge
+head_finalized_epoch 4356
+# HELP head_finalized_root Last finalized root of the head state
+# TYPE head_finalized_root gauge
+head_finalized_root -8.216352776921332e+18
+# HELP hot_state_cache_hit The total number of cache hits on the hot state cache.
+# TYPE hot_state_cache_hit counter
+hot_state_cache_hit 3543
+# HELP hot_state_cache_miss The total number of cache misses on the hot state cache.
+# TYPE hot_state_cache_miss counter
+hot_state_cache_miss 0
+# HELP infostream_eth1_blocktime_cache_hits The number of times the infostream Ethereum 1 block time cache is hit.
+# TYPE infostream_eth1_blocktime_cache_hits counter
+infostream_eth1_blocktime_cache_hits 0
+# HELP infostream_eth1_blocktime_cache_misses The number of times the infostream Ethereum 1 block time cache is missed.
+# TYPE infostream_eth1_blocktime_cache_misses counter
+infostream_eth1_blocktime_cache_misses 0
+# HELP infostream_eth1_deposit_cache_hits The number of times the infostream Ethereum 1 deposit cache is hit.
+# TYPE infostream_eth1_deposit_cache_hits counter
+infostream_eth1_deposit_cache_hits 0
+# HELP infostream_eth1_deposit_cache_misses The number of times the infostream Ethereum 1 deposit cache is missed.
+# TYPE infostream_eth1_deposit_cache_misses counter
+infostream_eth1_deposit_cache_misses 0
+# HELP log_entries_total Total number of log messages.
+# TYPE log_entries_total counter
+log_entries_total{level="error",prefix="p2p"} 8
+log_entries_total{level="error",prefix="sync"} 1
+log_entries_total{level="info",prefix="blockchain"} 215
+log_entries_total{level="info",prefix="gateway"} 1
+log_entries_total{level="info",prefix="initial-sync"} 96
+log_entries_total{level="info",prefix="node"} 1
+log_entries_total{level="info",prefix="p2p"} 68
+log_entries_total{level="info",prefix="powchain"} 1
+log_entries_total{level="info",prefix="rpc"} 4
+log_entries_total{level="info",prefix="slotutil"} 1
+log_entries_total{level="info",prefix="state-gen"} 1
+log_entries_total{level="warning",prefix="rpc"} 1
+log_entries_total{level="warning",prefix="sync"} 3
+# HELP num_pending_attester_slashings Number of pending attester slashings in the pool
+# TYPE num_pending_attester_slashings gauge
+num_pending_attester_slashings 1
+# HELP num_pending_proposer_slashings Number of pending proposer slashings in the pool
+# TYPE num_pending_proposer_slashings gauge
+num_pending_proposer_slashings 0
+# HELP number_of_times_resynced Count the number of times a node resyncs.
+# TYPE number_of_times_resynced counter
+number_of_times_resynced 0
+# HELP p2p_message_received_total Count of messages received.
+# TYPE p2p_message_received_total counter
+p2p_message_received_total{topic="/eth2/beacon_chain/req/beacon_blocks_by_range/1/ssz_snappy"} 4
+p2p_message_received_total{topic="/eth2/beacon_chain/req/beacon_blocks_by_root/1/ssz_snappy"} 26
+p2p_message_received_total{topic="/eth2/beacon_chain/req/metadata/1/ssz_snappy"} 78
+p2p_message_received_total{topic="/eth2/beacon_chain/req/ping/1/ssz_snappy"} 1974
+p2p_message_received_total{topic="/eth2/beacon_chain/req/status/1/ssz_snappy"} 154
+p2p_message_received_total{topic="/eth2/fdca39b0/attester_slashing/ssz_snappy"} 1
+p2p_message_received_total{topic="/eth2/fdca39b0/beacon_aggregate_and_proof/ssz_snappy"} 848
+p2p_message_received_total{topic="/eth2/fdca39b0/beacon_attestation_12/ssz_snappy"} 403
+p2p_message_received_total{topic="/eth2/fdca39b0/beacon_attestation_13/ssz_snappy"} 91
+p2p_message_received_total{topic="/eth2/fdca39b0/beacon_attestation_2/ssz_snappy"} 95
+p2p_message_received_total{topic="/eth2/fdca39b0/beacon_attestation_26/ssz_snappy"} 315
+p2p_message_received_total{topic="/eth2/fdca39b0/beacon_attestation_4/ssz_snappy"} 90
+p2p_message_received_total{topic="/eth2/fdca39b0/beacon_attestation_5/ssz_snappy"} 312
+p2p_message_received_total{topic="/eth2/fdca39b0/beacon_block/ssz_snappy"} 95
+# HELP p2p_peer_count The number of peers in a given state.
+# TYPE p2p_peer_count gauge
+p2p_peer_count{state="Bad"} 1
+p2p_peer_count{state="Connected"} 59
+p2p_peer_count{state="Connecting"} 0
+p2p_peer_count{state="Disconnected"} 43
+p2p_peer_count{state="Disconnecting"} 0
+# HELP p2p_repeat_attempts The number of repeat attempts the connection handler is triggered for a peer.
+# TYPE p2p_repeat_attempts counter
+p2p_repeat_attempts 0
+# HELP p2p_topic_peer_count The number of peers subscribed to a given topic.
+# TYPE p2p_topic_peer_count gauge
+p2p_topic_peer_count{topic="/eth2/fdca39b0/attester_slashing/ssz_snappy"} 54
+p2p_topic_peer_count{topic="/eth2/fdca39b0/beacon_aggregate_and_proof/ssz_snappy"} 59
+p2p_topic_peer_count{topic="/eth2/fdca39b0/beacon_attestation_13/ssz_snappy"} 19
+p2p_topic_peer_count{topic="/eth2/fdca39b0/beacon_attestation_2/ssz_snappy"} 19
+p2p_topic_peer_count{topic="/eth2/fdca39b0/beacon_attestation_28/ssz_snappy"} 22
+p2p_topic_peer_count{topic="/eth2/fdca39b0/beacon_attestation_4/ssz_snappy"} 20
+p2p_topic_peer_count{topic="/eth2/fdca39b0/beacon_block/ssz_snappy"} 59
+p2p_topic_peer_count{topic="/eth2/fdca39b0/proposer_slashing/ssz_snappy"} 54
+p2p_topic_peer_count{topic="/eth2/fdca39b0/voluntary_exit/ssz_snappy"} 54
+# HELP pending_attester_slashing_fail_sig_verify_total Times an pending attester slashing fails sig verification
+# TYPE pending_attester_slashing_fail_sig_verify_total counter
+pending_attester_slashing_fail_sig_verify_total 0
+# HELP pending_proposer_slashing_fail_sig_verify_total Times an pending proposer slashing fails sig verification
+# TYPE pending_proposer_slashing_fail_sig_verify_total counter
+pending_proposer_slashing_fail_sig_verify_total 0
+# HELP powchain_block_cache_hit The number of block requests that are present in the cache.
+# TYPE powchain_block_cache_hit counter
+powchain_block_cache_hit 0
+# HELP powchain_block_cache_miss The number of block requests that aren't present in the cache.
+# TYPE powchain_block_cache_miss counter
+powchain_block_cache_miss 0
+# HELP powchain_block_cache_size The number of blocks in the block cache
+# TYPE powchain_block_cache_size gauge
+powchain_block_cache_size 97
+# HELP powchain_block_number The current block number in the proof-of-work chain
+# TYPE powchain_block_number gauge
+powchain_block_number 3.070085e+06
+# HELP powchain_missed_deposit_logs The number of times a missed deposit log is detected
+# TYPE powchain_missed_deposit_logs counter
+powchain_missed_deposit_logs 0
+# HELP powchain_valid_deposits_received The number of valid deposits received in the deposit contract
+# TYPE powchain_valid_deposits_received counter
+powchain_valid_deposits_received 1138
+# HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.
+# TYPE process_cpu_seconds_total counter
+process_cpu_seconds_total 212.12
+# HELP process_max_fds Maximum number of open file descriptors.
+# TYPE process_max_fds gauge
+process_max_fds 1.048576e+06
+# HELP process_open_fds Number of open file descriptors.
+# TYPE process_open_fds gauge
+process_open_fds 80
+# HELP process_resident_memory_bytes Resident memory size in bytes.
+# TYPE process_resident_memory_bytes gauge
+process_resident_memory_bytes 8.41551872e+08
+# HELP process_start_time_seconds Start time of the process since unix epoch in seconds.
+# TYPE process_start_time_seconds gauge
+process_start_time_seconds 1.5951060863e+09
+# HELP process_virtual_memory_bytes Virtual memory size in bytes.
+# TYPE process_virtual_memory_bytes gauge
+process_virtual_memory_bytes 2.228969472e+09
+# HELP process_virtual_memory_max_bytes Maximum amount of virtual memory available in bytes.
+# TYPE process_virtual_memory_max_bytes gauge
+process_virtual_memory_max_bytes -1
+# HELP promhttp_metric_handler_requests_in_flight Current number of scrapes being served.
+# TYPE promhttp_metric_handler_requests_in_flight gauge
+promhttp_metric_handler_requests_in_flight 1
+# HELP promhttp_metric_handler_requests_total Total number of scrapes by HTTP status code.
+# TYPE promhttp_metric_handler_requests_total counter
+promhttp_metric_handler_requests_total{code="200"} 376
+promhttp_metric_handler_requests_total{code="500"} 0
+promhttp_metric_handler_requests_total{code="503"} 0
+# HELP proposer_slashing_reattempts_total Times a proposer slashing for an already slashed validator is received
+# TYPE proposer_slashing_reattempts_total counter
+proposer_slashing_reattempts_total 0
+# HELP proposer_slashings_included_total Number of proposer slashings included in blocks
+# TYPE proposer_slashings_included_total counter
+proposer_slashings_included_total 0
+# HELP proto_array_attestation_processed_count The number of times an attestation is processed for fork choice.
+# TYPE proto_array_attestation_processed_count counter
+proto_array_attestation_processed_count 12690
+# HELP proto_array_block_processed_count The number of times a block is processed for fork choice.
+# TYPE proto_array_block_processed_count counter
+proto_array_block_processed_count 1724
+# HELP proto_array_head_changed_count The number of times head changes.
+# TYPE proto_array_head_changed_count counter
+proto_array_head_changed_count 107
+# HELP proto_array_head_requested_count The number of times someone called head.
+# TYPE proto_array_head_requested_count counter
+proto_array_head_requested_count 490
+# HELP proto_array_head_slot The slot number of the current head.
+# TYPE proto_array_head_slot gauge
+proto_array_head_slot 139474
+# HELP proto_array_node_count The number of nodes in the DAG array based store structure.
+# TYPE proto_array_node_count gauge
+proto_array_node_count 144
+# HELP proto_array_pruned_count The number of times pruning happened.
+# TYPE proto_array_pruned_count counter
+proto_array_pruned_count 1
+# HELP roughtime_offset_nsec The absolute value delta between roughtime computed clock time and the system clock time.
+# TYPE roughtime_offset_nsec histogram
+roughtime_offset_nsec_bucket{le="5e+07"} 0
+roughtime_offset_nsec_bucket{le="1e+08"} 1
+roughtime_offset_nsec_bucket{le="5e+08"} 1
+roughtime_offset_nsec_bucket{le="1e+09"} 1
+roughtime_offset_nsec_bucket{le="2e+09"} 1
+roughtime_offset_nsec_bucket{le="1e+10"} 1
+roughtime_offset_nsec_bucket{le="+Inf"} 1
+roughtime_offset_nsec_sum 6.1412956e+07
+roughtime_offset_nsec_count 1
+# HELP roughtime_offsets_rejected The number of times that roughtime results could not be verified and the returned offset was rejected
+# TYPE roughtime_offsets_rejected counter
+roughtime_offsets_rejected 0
+# HELP skip_slot_cache_hit The total number of cache hits on the skip slot cache.
+# TYPE skip_slot_cache_hit counter
+skip_slot_cache_hit 96
+# HELP skip_slot_cache_miss The total number of cache misses on the skip slot cache.
+# TYPE skip_slot_cache_miss counter
+skip_slot_cache_miss 1724
+# HELP total_eligible_balances The total amount of ether, in gwei, that is eligible for voting of previous epoch
+# TYPE total_eligible_balances gauge
+total_eligible_balances 1.31679e+14
+# HELP total_voted_target_balances The total amount of ether, in gwei, that has been used in voting attestation target of previous epoch
+# TYPE total_voted_target_balances gauge
+total_voted_target_balances 1.03129e+14
+# HELP unaggregated_attestations_in_pool_total The number of unaggregated attestations in the pool.
+# TYPE unaggregated_attestations_in_pool_total gauge
+unaggregated_attestations_in_pool_total 0
+# HELP validator_count The total number of validators
+# TYPE validator_count gauge
+validator_count{state="Active"} 4118
+validator_count{state="Exited"} 484
+validator_count{state="Exiting"} 0
+validator_count{state="Pending"} 0
+validator_count{state="Slashed"} 71
+validator_count{state="Slashing"} 1
+# HELP validators_total_balance The total balance of validators, in GWei
+# TYPE validators_total_balance gauge
+validators_total_balance{state="Active"} 1.33252612098868e+14
+validators_total_balance{state="Exiting"} 0
+validators_total_balance{state="Pending"} 0
+validators_total_balance{state="Slashing"} 3.0520241305e+10
+# HELP validators_total_effective_balance The total effective balance of validators, in GWei
+# TYPE validators_total_effective_balance gauge
+validators_total_effective_balance{state="Active"} 1.31648e+14
+validators_total_effective_balance{state="Exiting"} 0
+validators_total_effective_balance{state="Slashing"} 3e+10
