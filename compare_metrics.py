@@ -49,4 +49,7 @@ for k, v in entries.items():
         print(k, v['doc'].keys())
 
 import json
-print(json.dumps(entries, indent='  ', sort_keys=True))
+
+with open('comparison.json', 'w') as f:
+    print(json.dump(entries, f, indent='  ', sort_keys=True))
+
