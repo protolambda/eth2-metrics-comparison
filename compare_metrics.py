@@ -5,7 +5,8 @@ clients = [
     'lighthouse',
     'prysm',
     'teku',
-    'nimbus'
+    'nimbus',
+    'lodestar',
 ]
 
 class Entry(TypedDict):

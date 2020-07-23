@@ -1,0 +1,159 @@
+# HELP beaconchain_peers number of connected peers
+# TYPE beaconchain_peers gauge
+beaconchain_peers 9
+
+# HELP beaconchain_current_slot latest slot
+# TYPE beaconchain_current_slot gauge
+beaconchain_current_slot 10017
+
+# HELP beaconchain_current_prev_justified_epoch previous justified epoch
+# TYPE beaconchain_current_prev_justified_epoch gauge
+beaconchain_current_prev_justified_epoch 311
+
+# HELP beaconchain_current_justified_epoch current justified epoch
+# TYPE beaconchain_current_justified_epoch gauge
+beaconchain_current_justified_epoch 312
+
+# HELP beaconchain_current_finalized_epoch current finalized epoch
+# TYPE beaconchain_current_finalized_epoch gauge
+beaconchain_current_finalized_epoch 311
+
+# HELP beaconchain_previous_epoch_live_validators number of active validators in previous epoch
+# TYPE beaconchain_previous_epoch_live_validators gauge
+beaconchain_previous_epoch_live_validators 0
+
+# HELP beaconchain_current_epoch_live_validators number of active validators in current epoch
+# TYPE beaconchain_current_epoch_live_validators gauge
+beaconchain_current_epoch_live_validators 1283
+
+# HELP beaconchain_reorg_events_total number of chain reorganizations
+# TYPE beaconchain_reorg_events_total counter
+beaconchain_reorg_events_total 0
+
+# HELP beaconchain_pending_deposits number of pending deposits
+# TYPE beaconchain_pending_deposits gauge
+beaconchain_pending_deposits 0
+
+# HELP beaconchain_pending_exits number of pending voluntary exits
+# TYPE beaconchain_pending_exits gauge
+beaconchain_pending_exits 0
+
+# HELP beaconchain_total_deposits number of total deposits
+# TYPE beaconchain_total_deposits gauge
+beaconchain_total_deposits 0
+
+# HELP beaconchain_previous_epoch_stale_blocks number of blocks not included into the chain in previous epoch
+# TYPE beaconchain_previous_epoch_stale_blocks gauge
+beaconchain_previous_epoch_stale_blocks 0
+
+# HELP beaconchain_propagated_attestations number of distinct attestations received
+# TYPE beaconchain_propagated_attestations gauge
+beaconchain_propagated_attestations 0
+
+# HELP process_cpu_user_seconds_total Total user CPU time spent in seconds.
+# TYPE process_cpu_user_seconds_total counter
+process_cpu_user_seconds_total 33.178317 1595511122215
+
+# HELP process_cpu_system_seconds_total Total system CPU time spent in seconds.
+# TYPE process_cpu_system_seconds_total counter
+process_cpu_system_seconds_total 0.45385800000000004 1595511122215
+
+# HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.
+# TYPE process_cpu_seconds_total counter
+process_cpu_seconds_total 33.632175000000004 1595511122215
+
+# HELP process_start_time_seconds Start time of the process since unix epoch in seconds.
+# TYPE process_start_time_seconds gauge
+process_start_time_seconds 1595511005
+
+# HELP process_resident_memory_bytes Resident memory size in bytes.
+# TYPE process_resident_memory_bytes gauge
+process_resident_memory_bytes 252321792 1595511122217
+
+# HELP process_virtual_memory_bytes Virtual memory size in bytes.
+# TYPE process_virtual_memory_bytes gauge
+process_virtual_memory_bytes 22712295424 1595511122217
+
+# HELP process_heap_bytes Process heap size in bytes.
+# TYPE process_heap_bytes gauge
+process_heap_bytes 368271360 1595511122217
+
+# HELP process_open_fds Number of open file descriptors.
+# TYPE process_open_fds gauge
+process_open_fds 46 1595511122216
+
+# HELP process_max_fds Maximum number of open file descriptors.
+# TYPE process_max_fds gauge
+process_max_fds 9223372036854776000
+
+# HELP nodejs_eventloop_lag_seconds Lag of event loop in seconds.
+# TYPE nodejs_eventloop_lag_seconds gauge
+nodejs_eventloop_lag_seconds 0.001179686 1595511122216
+
+# HELP nodejs_active_handles Number of active libuv handles grouped by handle type. Every handle type is C++ class name.
+# TYPE nodejs_active_handles gauge
+nodejs_active_handles{type="Socket"} 13 1595511122215
+nodejs_active_handles{type="WriteStream"} 1 1595511122215
+nodejs_active_handles{type="ReadStream"} 1 1595511122215
+nodejs_active_handles{type="Server"} 3 1595511122215
+
+# HELP nodejs_active_handles_total Total number of active handles.
+# TYPE nodejs_active_handles_total gauge
+nodejs_active_handles_total 18 1595511122215
+
+# HELP nodejs_active_requests Number of active libuv requests grouped by request type. Every request type is C++ class name.
+# TYPE nodejs_active_requests gauge
+nodejs_active_requests{type="FSReqCallback"} 2
+
+# HELP nodejs_active_requests_total Total number of active requests.
+# TYPE nodejs_active_requests_total gauge
+nodejs_active_requests_total 2 1595511122215
+
+# HELP nodejs_heap_size_total_bytes Process heap size from node.js in bytes.
+# TYPE nodejs_heap_size_total_bytes gauge
+nodejs_heap_size_total_bytes 137736192 1595511122216
+
+# HELP nodejs_heap_size_used_bytes Process heap size used from node.js in bytes.
+# TYPE nodejs_heap_size_used_bytes gauge
+nodejs_heap_size_used_bytes 98597600 1595511122216
+
+# HELP nodejs_external_memory_bytes Nodejs external memory size in bytes.
+# TYPE nodejs_external_memory_bytes gauge
+nodejs_external_memory_bytes 24534885 1595511122216
+
+# HELP nodejs_heap_space_size_total_bytes Process heap space size total from node.js in bytes.
+# TYPE nodejs_heap_space_size_total_bytes gauge
+nodejs_heap_space_size_total_bytes{space="read_only"} 118784 1595511122216
+nodejs_heap_space_size_total_bytes{space="new"} 33554432 1595511122216
+nodejs_heap_space_size_total_bytes{space="old"} 94515200 1595511122216
+nodejs_heap_space_size_total_bytes{space="code"} 1912832 1595511122216
+nodejs_heap_space_size_total_bytes{space="map"} 2887680 1595511122216
+nodejs_heap_space_size_total_bytes{space="large_object"} 3973120 1595511122216
+nodejs_heap_space_size_total_bytes{space="code_large_object"} 774144 1595511122216
+nodejs_heap_space_size_total_bytes{space="new_large_object"} 0 1595511122216
+
+# HELP nodejs_heap_space_size_used_bytes Process heap space size used from node.js in bytes.
+# TYPE nodejs_heap_space_size_used_bytes gauge
+nodejs_heap_space_size_used_bytes{space="read_only"} 117808 1595511122216
+nodejs_heap_space_size_used_bytes{space="new"} 3486272 1595511122216
+nodejs_heap_space_size_used_bytes{space="old"} 87403696 1595511122216
+nodejs_heap_space_size_used_bytes{space="code"} 1235776 1595511122216
+nodejs_heap_space_size_used_bytes{space="map"} 1726056 1595511122216
+nodejs_heap_space_size_used_bytes{space="large_object"} 3948864 1595511122216
+nodejs_heap_space_size_used_bytes{space="code_large_object"} 681216 1595511122216
+nodejs_heap_space_size_used_bytes{space="new_large_object"} 0 1595511122216
+
+# HELP nodejs_heap_space_size_available_bytes Process heap space size available from node.js in bytes.
+# TYPE nodejs_heap_space_size_available_bytes gauge
+nodejs_heap_space_size_available_bytes{space="read_only"} 0 1595511122216
+nodejs_heap_space_size_available_bytes{space="new"} 13272512 1595511122216
+nodejs_heap_space_size_available_bytes{space="old"} 6887472 1595511122216
+nodejs_heap_space_size_available_bytes{space="code"} 578560 1595511122216
+nodejs_heap_space_size_available_bytes{space="map"} 1157432 1595511122216
+nodejs_heap_space_size_available_bytes{space="large_object"} 0 1595511122216
+nodejs_heap_space_size_available_bytes{space="code_large_object"} 0 1595511122216
+nodejs_heap_space_size_available_bytes{space="new_large_object"} 16758784 1595511122216
+
+# HELP nodejs_version_info Node.js version info.
+# TYPE nodejs_version_info gauge
+nodejs_version_info{version="v14.0.0",major="14",minor="0",patch="0"} 1
